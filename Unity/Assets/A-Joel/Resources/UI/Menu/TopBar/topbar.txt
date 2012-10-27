@@ -1,0 +1,92 @@
+{"frames": {
+
+"appicon-webslinger.png":
+{
+	"frame": {"x":2,"y":63,"w":291,"h":39},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":291,"h":39},
+	"sourceSize": {"w":291,"h":39}
+},
+"blank-bar-horizontal-slice.png":
+{
+	"frame": {"x":2,"y":2,"w":1,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1,"h":59},
+	"sourceSize": {"w":1,"h":59}
+},
+"button-iconretake.png":
+{
+	"frame": {"x":157,"y":2,"w":36,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":36},
+	"sourceSize": {"w":36,"h":36}
+},
+"button-next.png":
+{
+	"frame": {"x":119,"y":2,"w":36,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":36},
+	"sourceSize": {"w":36,"h":36}
+},
+"icon-back-on.png":
+{
+	"frame": {"x":43,"y":2,"w":36,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":36},
+	"sourceSize": {"w":36,"h":36}
+},
+"icon-back.png":
+{
+	"frame": {"x":271,"y":2,"w":28,"h":29},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":28,"h":29},
+	"sourceSize": {"w":28,"h":29}
+},
+"icon-gear-on.png":
+{
+	"frame": {"x":81,"y":2,"w":36,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":36},
+	"sourceSize": {"w":36,"h":36}
+},
+"icon-gear.png":
+{
+	"frame": {"x":233,"y":2,"w":36,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":36},
+	"sourceSize": {"w":36,"h":36}
+},
+"icon-home-on.png":
+{
+	"frame": {"x":5,"y":2,"w":36,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":36},
+	"sourceSize": {"w":36,"h":36}
+},
+"icon-home.png":
+{
+	"frame": {"x":195,"y":2,"w":36,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":36},
+	"sourceSize": {"w":36,"h":36}
+}},
+"meta": {
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "topbar.png",
+	"format": "RGBA8888",
+	"size": {"w":512,"h":128},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:507650a88c2b56feeb4079434495df6c$"
+}
+}
