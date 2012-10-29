@@ -1,0 +1,36 @@
+{"frames": {
+
+"banner1.png":
+{
+	"frame": {"x":2,"y":273,"w":818,"h":269},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":818,"h":269},
+	"sourceSize": {"w":818,"h":269}
+},
+"banner2.png":
+{
+	"frame": {"x":2,"y":2,"w":818,"h":269},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":818,"h":269},
+	"sourceSize": {"w":818,"h":269}
+},
+"logo-mwg.png":
+{
+	"frame": {"x":2,"y":544,"w":282,"h":102},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":282,"h":102},
+	"sourceSize": {"w":282,"h":102}
+}},
+"meta": {
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "banners.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:1be7b9e083be6c649d4191e18d8dde2b$"
+}
+}
