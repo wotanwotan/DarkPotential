@@ -83,6 +83,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 190992373}
   - 114: {fileID: 190992374}
+  - 81: {fileID: 190992375}
   m_Layer: 9
   m_Name: SceneLoader
   m_TagString: Untagged
@@ -111,6 +112,13 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ce87c69cc29944399c275e23e7fae96, type: 1}
   m_Name: 
+--- !u!81 &190992375
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 190992372}
+  m_Enabled: 1
 --- !u!1 &1201229251
 GameObject:
   m_ObjectHideFlags: 0

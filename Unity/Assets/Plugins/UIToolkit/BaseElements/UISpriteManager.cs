@@ -94,7 +94,7 @@ public class UISpriteManager : MonoBehaviour
 		// load our texture, at 2x if necessary
 		if (UI.instance.isHD)
 			texturePackerConfigName = texturePackerConfigName + UI.instance.hdExtension;
-
+		
 		var texture = (Texture)Resources.Load(texturePackerConfigName, typeof(Texture));
 		if (texture == null)
 			Debug.Log("UI texture is being autoloaded and it doesn't exist.  Cannot find texturePackerConfigName: " + texturePackerConfigName);

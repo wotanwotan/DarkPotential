@@ -9,15 +9,5 @@ EditorBuildSettings:
     path: Assets/A-Joel/Scenes/Initialization.unity
   - enabled: 1
     path: Assets/A-Joel/Scenes/Menu.unity
-  - enabled: 0
-    path: Assets/Ad-Dispatch/Scenes/Practice.unity
   - enabled: 1
     path: Assets/A-Joel/Scenes/StrippingIncludes.unity
-  - enabled: 0
-    path: Assets/Ad-Dispatch/Scenes/Comic.unity
-  - enabled: 0
-    path: Assets/Ad-Dispatch/Scenes/DVD_PhotoShoot.unity
-  - enabled: 0
-    path: Assets/Ad-Dispatch/Scenes/Bring_spidey_to_life.unity
-  - enabled: 0
-    path: Assets/Ad-Dispatch/Scenes/DVD_Unlock.unity
