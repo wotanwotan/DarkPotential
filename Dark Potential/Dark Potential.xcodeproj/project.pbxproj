@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2A1CB671643518F009F1CBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1CB661643518F009F1CBA /* UIKit.framework */; };
+		E2A1CB691643518F009F1CBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1CB681643518F009F1CBA /* Foundation.framework */; };
+		E2A1CB6B1643518F009F1CBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1CB6A1643518F009F1CBA /* CoreGraphics.framework */; };
+		E2A1CB711643518F009F1CBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CB6F1643518F009F1CBA /* InfoPlist.strings */; };
+		E2A1CB731643518F009F1CBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A1CB721643518F009F1CBA /* main.m */; };
+		E2A1CB771643518F009F1CBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A1CB761643518F009F1CBA /* AppDelegate.m */; };
+		E2A1CB791643518F009F1CBA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CB781643518F009F1CBA /* Default.png */; };
+		E2A1CB7B1643518F009F1CBA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CB7A1643518F009F1CBA /* Default@2x.png */; };
+		E2A1CB7D1643518F009F1CBA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CB7C1643518F009F1CBA /* Default-568h@2x.png */; };
+		E2A1CB801643518F009F1CBA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CB7E1643518F009F1CBA /* MainStoryboard.storyboard */; };
+		E2A1CB831643518F009F1CBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A1CB821643518F009F1CBA /* ViewController.m */; };
+		E2A1CB8B16435190009F1CBA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1CB8A16435190009F1CBA /* SenTestingKit.framework */; };
+		E2A1CB8C16435190009F1CBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1CB661643518F009F1CBA /* UIKit.framework */; };
+		E2A1CB8D16435190009F1CBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1CB681643518F009F1CBA /* Foundation.framework */; };
+		E2A1CB9516435190009F1CBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CB9316435190009F1CBA /* InfoPlist.strings */; };
+		E2A1CB9816435190009F1CBA /* Dark_PotentialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A1CB9716435190009F1CBA /* Dark_PotentialTests.m */; };
+		E2A1CBA31643521A009F1CBA /* DarkPotential-AppIcon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBA21643521A009F1CBA /* DarkPotential-AppIcon-57.png */; };
+		E2A1CBA51643521E009F1CBA /* DarkPotential-AppIcon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBA41643521E009F1CBA /* DarkPotential-AppIcon-114.png */; };
+		E2A1CBAD164354C5009F1CBA /* dp-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBA6164354C5009F1CBA /* dp-logo.png */; };
+		E2A1CBAE164354C5009F1CBA /* experience-banner.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBA7164354C5009F1CBA /* experience-banner.png */; };
+		E2A1CBAF164354C5009F1CBA /* logo-mwg.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBA8164354C5009F1CBA /* logo-mwg.png */; };
+		E2A1CBB0164354C5009F1CBA /* menu-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBA9164354C5009F1CBA /* menu-bg.png */; };
+		E2A1CBB1164354C5009F1CBA /* menu-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBAA164354C5009F1CBA /* menu-bg@2x.png */; };
+		E2A1CBB2164354C5009F1CBA /* navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBAB164354C5009F1CBA /* navbar.png */; };
+		E2A1CBB3164354C5009F1CBA /* navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBAC164354C5009F1CBA /* navbar@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2A1CB8E16435190009F1CBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2A1CB591643518F009F1CBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2A1CB611643518F009F1CBA;
+			remoteInfo = "Dark Potential";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E2A1CB621643518F009F1CBA /* Dark Potential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dark Potential.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2A1CB661643518F009F1CBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E2A1CB681643518F009F1CBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E2A1CB6A1643518F009F1CBA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E2A1CB6E1643518F009F1CBA /* Dark Potential-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dark Potential-Info.plist"; sourceTree = "<group>"; };
+		E2A1CB701643518F009F1CBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E2A1CB721643518F009F1CBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2A1CB741643518F009F1CBA /* Dark Potential-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dark Potential-Prefix.pch"; sourceTree = "<group>"; };
+		E2A1CB751643518F009F1CBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E2A1CB761643518F009F1CBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E2A1CB781643518F009F1CBA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E2A1CB7A1643518F009F1CBA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E2A1CB7C1643518F009F1CBA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E2A1CB7F1643518F009F1CBA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E2A1CB811643518F009F1CBA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E2A1CB821643518F009F1CBA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E2A1CB8916435190009F1CBA /* Dark PotentialTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dark PotentialTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2A1CB8A16435190009F1CBA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E2A1CB9216435190009F1CBA /* Dark PotentialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dark PotentialTests-Info.plist"; sourceTree = "<group>"; };
+		E2A1CB9416435190009F1CBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E2A1CB9616435190009F1CBA /* Dark_PotentialTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dark_PotentialTests.h; sourceTree = "<group>"; };
+		E2A1CB9716435190009F1CBA /* Dark_PotentialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dark_PotentialTests.m; sourceTree = "<group>"; };
+		E2A1CBA21643521A009F1CBA /* DarkPotential-AppIcon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DarkPotential-AppIcon-57.png"; sourceTree = "<group>"; };
+		E2A1CBA41643521E009F1CBA /* DarkPotential-AppIcon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DarkPotential-AppIcon-114.png"; sourceTree = "<group>"; };
+		E2A1CBA6164354C5009F1CBA /* dp-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dp-logo.png"; sourceTree = "<group>"; };
+		E2A1CBA7164354C5009F1CBA /* experience-banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "experience-banner.png"; sourceTree = "<group>"; };
+		E2A1CBA8164354C5009F1CBA /* logo-mwg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-mwg.png"; sourceTree = "<group>"; };
+		E2A1CBA9164354C5009F1CBA /* menu-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bg.png"; sourceTree = "<group>"; };
+		E2A1CBAA164354C5009F1CBA /* menu-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bg@2x.png"; sourceTree = "<group>"; };
+		E2A1CBAB164354C5009F1CBA /* navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbar.png; sourceTree = "<group>"; };
+		E2A1CBAC164354C5009F1CBA /* navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbar@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2A1CB5F1643518F009F1CBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A1CB671643518F009F1CBA /* UIKit.framework in Frameworks */,
+				E2A1CB691643518F009F1CBA /* Foundation.framework in Frameworks */,
+				E2A1CB6B1643518F009F1CBA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2A1CB8516435190009F1CBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A1CB8B16435190009F1CBA /* SenTestingKit.framework in Frameworks */,
+				E2A1CB8C16435190009F1CBA /* UIKit.framework in Frameworks */,
+				E2A1CB8D16435190009F1CBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2A1CB571643518F009F1CBA = {
+			isa = PBXGroup;
+			children = (
+				E2A1CBA41643521E009F1CBA /* DarkPotential-AppIcon-114.png */,
+				E2A1CBA21643521A009F1CBA /* DarkPotential-AppIcon-57.png */,
+				E2A1CB6C1643518F009F1CBA /* Dark Potential */,
+				E2A1CB9016435190009F1CBA /* Dark PotentialTests */,
+				E2A1CB651643518F009F1CBA /* Frameworks */,
+				E2A1CB631643518F009F1CBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2A1CB631643518F009F1CBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1CB621643518F009F1CBA /* Dark Potential.app */,
+				E2A1CB8916435190009F1CBA /* Dark PotentialTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2A1CB651643518F009F1CBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1CB661643518F009F1CBA /* UIKit.framework */,
+				E2A1CB681643518F009F1CBA /* Foundation.framework */,
+				E2A1CB6A1643518F009F1CBA /* CoreGraphics.framework */,
+				E2A1CB8A16435190009F1CBA /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2A1CB6C1643518F009F1CBA /* Dark Potential */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1CBA1164351F6009F1CBA /* Images */,
+				E2A1CB751643518F009F1CBA /* AppDelegate.h */,
+				E2A1CB761643518F009F1CBA /* AppDelegate.m */,
+				E2A1CB7E1643518F009F1CBA /* MainStoryboard.storyboard */,
+				E2A1CB811643518F009F1CBA /* ViewController.h */,
+				E2A1CB821643518F009F1CBA /* ViewController.m */,
+				E2A1CB6D1643518F009F1CBA /* Supporting Files */,
+			);
+			path = "Dark Potential";
+			sourceTree = "<group>";
+		};
+		E2A1CB6D1643518F009F1CBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1CB6E1643518F009F1CBA /* Dark Potential-Info.plist */,
+				E2A1CB6F1643518F009F1CBA /* InfoPlist.strings */,
+				E2A1CB721643518F009F1CBA /* main.m */,
+				E2A1CB741643518F009F1CBA /* Dark Potential-Prefix.pch */,
+				E2A1CB781643518F009F1CBA /* Default.png */,
+				E2A1CB7A1643518F009F1CBA /* Default@2x.png */,
+				E2A1CB7C1643518F009F1CBA /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2A1CB9016435190009F1CBA /* Dark PotentialTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1CB9616435190009F1CBA /* Dark_PotentialTests.h */,
+				E2A1CB9716435190009F1CBA /* Dark_PotentialTests.m */,
+				E2A1CB9116435190009F1CBA /* Supporting Files */,
+			);
+			path = "Dark PotentialTests";
+			sourceTree = "<group>";
+		};
+		E2A1CB9116435190009F1CBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1CB9216435190009F1CBA /* Dark PotentialTests-Info.plist */,
+				E2A1CB9316435190009F1CBA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2A1CBA1164351F6009F1CBA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1CBB4164354C9009F1CBA /* Menu */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		E2A1CBB4164354C9009F1CBA /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1CBA6164354C5009F1CBA /* dp-logo.png */,
+				E2A1CBA7164354C5009F1CBA /* experience-banner.png */,
+				E2A1CBA8164354C5009F1CBA /* logo-mwg.png */,
+				E2A1CBA9164354C5009F1CBA /* menu-bg.png */,
+				E2A1CBAA164354C5009F1CBA /* menu-bg@2x.png */,
+				E2A1CBAB164354C5009F1CBA /* navbar.png */,
+				E2A1CBAC164354C5009F1CBA /* navbar@2x.png */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2A1CB611643518F009F1CBA /* Dark Potential */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2A1CB9B16435190009F1CBA /* Build configuration list for PBXNativeTarget "Dark Potential" */;
+			buildPhases = (
+				E2A1CB5E1643518F009F1CBA /* Sources */,
+				E2A1CB5F1643518F009F1CBA /* Frameworks */,
+				E2A1CB601643518F009F1CBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dark Potential";
+			productName = "Dark Potential";
+			productReference = E2A1CB621643518F009F1CBA /* Dark Potential.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2A1CB8816435190009F1CBA /* Dark PotentialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2A1CB9E16435190009F1CBA /* Build configuration list for PBXNativeTarget "Dark PotentialTests" */;
+			buildPhases = (
+				E2A1CB8416435190009F1CBA /* Sources */,
+				E2A1CB8516435190009F1CBA /* Frameworks */,
+				E2A1CB8616435190009F1CBA /* Resources */,
+				E2A1CB8716435190009F1CBA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2A1CB8F16435190009F1CBA /* PBXTargetDependency */,
+			);
+			name = "Dark PotentialTests";
+			productName = "Dark PotentialTests";
+			productReference = E2A1CB8916435190009F1CBA /* Dark PotentialTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2A1CB591643518F009F1CBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Joel Glanfield";
+			};
+			buildConfigurationList = E2A1CB5C1643518F009F1CBA /* Build configuration list for PBXProject "Dark Potential" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E2A1CB571643518F009F1CBA;
+			productRefGroup = E2A1CB631643518F009F1CBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2A1CB611643518F009F1CBA /* Dark Potential */,
+				E2A1CB8816435190009F1CBA /* Dark PotentialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2A1CB601643518F009F1CBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A1CB711643518F009F1CBA /* InfoPlist.strings in Resources */,
+				E2A1CB791643518F009F1CBA /* Default.png in Resources */,
+				E2A1CB7B1643518F009F1CBA /* Default@2x.png in Resources */,
+				E2A1CB7D1643518F009F1CBA /* Default-568h@2x.png in Resources */,
+				E2A1CB801643518F009F1CBA /* MainStoryboard.storyboard in Resources */,
+				E2A1CBA31643521A009F1CBA /* DarkPotential-AppIcon-57.png in Resources */,
+				E2A1CBA51643521E009F1CBA /* DarkPotential-AppIcon-114.png in Resources */,
+				E2A1CBAD164354C5009F1CBA /* dp-logo.png in Resources */,
+				E2A1CBAE164354C5009F1CBA /* experience-banner.png in Resources */,
+				E2A1CBAF164354C5009F1CBA /* logo-mwg.png in Resources */,
+				E2A1CBB0164354C5009F1CBA /* menu-bg.png in Resources */,
+				E2A1CBB1164354C5009F1CBA /* menu-bg@2x.png in Resources */,
+				E2A1CBB2164354C5009F1CBA /* navbar.png in Resources */,
+				E2A1CBB3164354C5009F1CBA /* navbar@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2A1CB8616435190009F1CBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A1CB9516435190009F1CBA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E2A1CB8716435190009F1CBA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2A1CB5E1643518F009F1CBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A1CB731643518F009F1CBA /* main.m in Sources */,
+				E2A1CB771643518F009F1CBA /* AppDelegate.m in Sources */,
+				E2A1CB831643518F009F1CBA /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2A1CB8416435190009F1CBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A1CB9816435190009F1CBA /* Dark_PotentialTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2A1CB8F16435190009F1CBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2A1CB611643518F009F1CBA /* Dark Potential */;
+			targetProxy = E2A1CB8E16435190009F1CBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2A1CB6F1643518F009F1CBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2A1CB701643518F009F1CBA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E2A1CB7E1643518F009F1CBA /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2A1CB7F1643518F009F1CBA /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		E2A1CB9316435190009F1CBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2A1CB9416435190009F1CBA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2A1CB9916435190009F1CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E2A1CB9A16435190009F1CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2A1CB9C16435190009F1CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dark Potential/Dark Potential-Prefix.pch";
+				INFOPLIST_FILE = "Dark Potential/Dark Potential-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E2A1CB9D16435190009F1CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dark Potential/Dark Potential-Prefix.pch";
+				INFOPLIST_FILE = "Dark Potential/Dark Potential-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E2A1CB9F16435190009F1CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dark Potential.app/Dark Potential";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dark Potential/Dark Potential-Prefix.pch";
+				INFOPLIST_FILE = "Dark PotentialTests/Dark PotentialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E2A1CBA016435190009F1CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dark Potential.app/Dark Potential";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dark Potential/Dark Potential-Prefix.pch";
+				INFOPLIST_FILE = "Dark PotentialTests/Dark PotentialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2A1CB5C1643518F009F1CBA /* Build configuration list for PBXProject "Dark Potential" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2A1CB9916435190009F1CBA /* Debug */,
+				E2A1CB9A16435190009F1CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2A1CB9B16435190009F1CBA /* Build configuration list for PBXNativeTarget "Dark Potential" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2A1CB9C16435190009F1CBA /* Debug */,
+				E2A1CB9D16435190009F1CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E2A1CB9E16435190009F1CBA /* Build configuration list for PBXNativeTarget "Dark PotentialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2A1CB9F16435190009F1CBA /* Debug */,
+				E2A1CBA016435190009F1CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2A1CB591643518F009F1CBA /* Project object */;
+}
