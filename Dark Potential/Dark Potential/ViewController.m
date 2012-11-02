@@ -34,6 +34,13 @@
 
 }
 
+- (IBAction)launchDPWebsite:(id)sender
+{
+    NSURL *url = [ [ NSURL alloc ] initWithString: @"http://www.darkpotential.com" ];
+    
+    [[UIApplication sharedApplication] openURL:url];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -43,4 +50,5 @@
 - (void)viewDidUnload {
     [super viewDidUnload];
 }
+
 @end

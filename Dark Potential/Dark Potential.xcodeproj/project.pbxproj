@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D74774E1643F4FD003C576B /* menu-bg-iphone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D74774C1643F4FD003C576B /* menu-bg-iphone5.png */; };
+		5D74774F1643F4FD003C576B /* menu-bg-iphone5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D74774D1643F4FD003C576B /* menu-bg-iphone5@2x.png */; };
 		E2A1CB671643518F009F1CBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1CB661643518F009F1CBA /* UIKit.framework */; };
 		E2A1CB691643518F009F1CBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1CB681643518F009F1CBA /* Foundation.framework */; };
 		E2A1CB6B1643518F009F1CBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1CB6A1643518F009F1CBA /* CoreGraphics.framework */; };
@@ -28,8 +30,6 @@
 		E2A1CBAD164354C5009F1CBA /* dp-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBA6164354C5009F1CBA /* dp-logo.png */; };
 		E2A1CBAE164354C5009F1CBA /* experience-banner.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBA7164354C5009F1CBA /* experience-banner.png */; };
 		E2A1CBAF164354C5009F1CBA /* logo-mwg.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBA8164354C5009F1CBA /* logo-mwg.png */; };
-		E2A1CBB0164354C5009F1CBA /* menu-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBA9164354C5009F1CBA /* menu-bg.png */; };
-		E2A1CBB1164354C5009F1CBA /* menu-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBAA164354C5009F1CBA /* menu-bg@2x.png */; };
 		E2A1CBB2164354C5009F1CBA /* navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBAB164354C5009F1CBA /* navbar.png */; };
 		E2A1CBB3164354C5009F1CBA /* navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBAC164354C5009F1CBA /* navbar@2x.png */; };
 		E2DABFE2164362B200C0D750 /* dp-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2DABFE1164362B200C0D750 /* dp-logo@2x.png */; };
@@ -46,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D74774C1643F4FD003C576B /* menu-bg-iphone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bg-iphone5.png"; sourceTree = "<group>"; };
+		5D74774D1643F4FD003C576B /* menu-bg-iphone5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bg-iphone5@2x.png"; sourceTree = "<group>"; };
 		E2A1CB621643518F009F1CBA /* Dark Potential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dark Potential.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A1CB661643518F009F1CBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E2A1CB681643518F009F1CBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,8 +75,6 @@
 		E2A1CBA6164354C5009F1CBA /* dp-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dp-logo.png"; sourceTree = "<group>"; };
 		E2A1CBA7164354C5009F1CBA /* experience-banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "experience-banner.png"; sourceTree = "<group>"; };
 		E2A1CBA8164354C5009F1CBA /* logo-mwg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-mwg.png"; sourceTree = "<group>"; };
-		E2A1CBA9164354C5009F1CBA /* menu-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bg.png"; sourceTree = "<group>"; };
-		E2A1CBAA164354C5009F1CBA /* menu-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bg@2x.png"; sourceTree = "<group>"; };
 		E2A1CBAB164354C5009F1CBA /* navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbar.png; sourceTree = "<group>"; };
 		E2A1CBAC164354C5009F1CBA /* navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbar@2x.png"; sourceTree = "<group>"; };
 		E2DABFE1164362B200C0D750 /* dp-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dp-logo@2x.png"; sourceTree = "<group>"; };
@@ -104,6 +104,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D74774A1643F0E7003C576B /* App icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "App icons";
+			sourceTree = "<group>";
+		};
 		E2A1CB571643518F009F1CBA = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +193,7 @@
 		E2A1CBA1164351F6009F1CBA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5D74774A1643F0E7003C576B /* App icons */,
 				E2A1CBB4164354C9009F1CBA /* Menu */,
 			);
 			name = Images;
@@ -198,8 +206,8 @@
 				E2DABFE1164362B200C0D750 /* dp-logo@2x.png */,
 				E2A1CBA7164354C5009F1CBA /* experience-banner.png */,
 				E2A1CBA8164354C5009F1CBA /* logo-mwg.png */,
-				E2A1CBA9164354C5009F1CBA /* menu-bg.png */,
-				E2A1CBAA164354C5009F1CBA /* menu-bg@2x.png */,
+				5D74774C1643F4FD003C576B /* menu-bg-iphone5.png */,
+				5D74774D1643F4FD003C576B /* menu-bg-iphone5@2x.png */,
 				E2A1CBAB164354C5009F1CBA /* navbar.png */,
 				E2A1CBAC164354C5009F1CBA /* navbar@2x.png */,
 			);
@@ -287,11 +295,11 @@
 				E2A1CBAD164354C5009F1CBA /* dp-logo.png in Resources */,
 				E2A1CBAE164354C5009F1CBA /* experience-banner.png in Resources */,
 				E2A1CBAF164354C5009F1CBA /* logo-mwg.png in Resources */,
-				E2A1CBB0164354C5009F1CBA /* menu-bg.png in Resources */,
-				E2A1CBB1164354C5009F1CBA /* menu-bg@2x.png in Resources */,
 				E2A1CBB2164354C5009F1CBA /* navbar.png in Resources */,
 				E2A1CBB3164354C5009F1CBA /* navbar@2x.png in Resources */,
 				E2DABFE2164362B200C0D750 /* dp-logo@2x.png in Resources */,
+				5D74774E1643F4FD003C576B /* menu-bg-iphone5.png in Resources */,
+				5D74774F1643F4FD003C576B /* menu-bg-iphone5@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
