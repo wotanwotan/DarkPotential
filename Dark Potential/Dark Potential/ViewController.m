@@ -26,6 +26,12 @@
     [logoView setUserInteractionEnabled:NO];
     
     self.navigationItem.titleView = logoView;
+
+    if ([self.navigationController.navigationBar
+         respondsToSelector:@selector(shadowImage)]) {
+        self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
+    }
+
 }
 
 - (void)didReceiveMemoryWarning
