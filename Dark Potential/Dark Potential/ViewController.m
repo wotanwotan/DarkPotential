@@ -10,9 +10,16 @@
 
 @interface ViewController ()
 
+- (void) animateButton:(UIButton*)theButton animateFromLeft:(BOOL)fromLeft;
+- (void) animateMWGLogo;
+- (void) playMWGAudio;
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag;
+
 @end
 
 @implementation ViewController
+
+@synthesize audioPlayer, experienceBtn1, experienceBtn2, experienceBtn3, mwgLogo;
 
 - (void)viewDidLoad
 {
@@ -31,12 +38,89 @@
          respondsToSelector:@selector(shadowImage)]) {
         self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
     }
+    
+    currentButtonToAnimate = 0;
+    numButtonsToAnimate = 3;
+    animatedButtons = [NSArray arrayWithObjects:experienceBtn1, experienceBtn2, experienceBtn3, nil];
+    
+    // play audio
+    [self playMWGAudio];
 
+    // first button
+    [self animateButton:[animatedButtons objectAtIndex:currentButtonToAnimate] animateFromLeft:YES];
+}
+
+- (void) animateButton:(UIButton*)theButton animateFromLeft:(BOOL)fromLeft
+{    
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    CGRect btnFrame = theButton.frame;
+    CGRect finalFrame = CGRectMake(btnFrame.origin.x, btnFrame.origin.y, btnFrame.size.width, btnFrame.size.height);
+    
+    // move button off screen
+    if (fromLeft)
+        theButton.frame = CGRectMake(finalFrame.origin.x - screenBounds.size.width, finalFrame.origin.y, finalFrame.size.width, finalFrame.size.height);
+    else
+        theButton.frame = CGRectMake(finalFrame.origin.x + screenBounds.size.width, finalFrame.origin.y, finalFrame.size.width, finalFrame.size.height);
+
+    // un-hide the button
+    [theButton setHidden:NO];
+    
+    float dur = 0.2;
+    float delay = currentButtonToAnimate == 0 ? 0.4 : 0.2;
+    
+    // animate the button
+    [UIView animateWithDuration:dur delay:delay options:UIViewAnimationOptionAllowUserInteraction animations:^{
+        theButton.frame = finalFrame;
+    } completion:^(BOOL finished){
+        if (finished)
+        {
+            currentButtonToAnimate++;
+            if (currentButtonToAnimate < numButtonsToAnimate)
+            {
+                BOOL fromLeft = currentButtonToAnimate % 2 == 0;
+                [self animateButton:[animatedButtons objectAtIndex:currentButtonToAnimate] animateFromLeft:fromLeft];
+            }
+            else // animate the logo
+            {
+                [self animateMWGLogo];
+            }
+        }
+    }];
+}
+
+- (void) animateMWGLogo
+{
+    [mwgLogo setAlpha:0.0];
+    [mwgLogo setHidden:NO];
+    
+    [UIView animateWithDuration:0.2 delay:0.25 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+        [mwgLogo setAlpha:1.0];
+    } completion:^(BOOL finished){
+    }];
+}
+
+- (void) playMWGAudio
+{
+    NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/MWGIntro.mp3", [[NSBundle mainBundle] resourcePath]]];
+    NSLog(@"Resource path: %@", [[NSBundle mainBundle] resourcePath]);
+    
+    NSError *error;
+    self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+    self.audioPlayer.delegate = self;
+    self.audioPlayer.numberOfLoops = 0;
+    self.audioPlayer.volume = 1.0;
+    
+    [self.audioPlayer play];
+}
+
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    [self.audioPlayer stop]; // necessary?
 }
 
 - (IBAction)launchDPWebsite:(id)sender
 {
-    NSURL *url = [ [ NSURL alloc ] initWithString: @"http://www.darkpotential.com" ];
+    NSURL *url = [ [ NSURL alloc ] initWithString: @"http://miniwargaming" ];
     
     [[UIApplication sharedApplication] openURL:url];
 }
@@ -48,6 +132,10 @@
 }
 
 - (void)viewDidUnload {
+    [self setExperienceBtn1:nil];
+    [self setExperienceBtn2:nil];
+    [self setExperienceBtn3:nil];
+    [self setMwgLogo:nil];
     [super viewDidUnload];
 }
 

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		5D74774E1643F4FD003C576B /* menu-bg-iphone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D74774C1643F4FD003C576B /* menu-bg-iphone5.png */; };
 		5D74774F1643F4FD003C576B /* menu-bg-iphone5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D74774D1643F4FD003C576B /* menu-bg-iphone5@2x.png */; };
+		E21F25CF1644890900CA0971 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E21F25CE1644890900CA0971 /* InfoViewController.m */; };
+		E21F25D21644896200CA0971 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21F25D11644896200CA0971 /* MediaPlayer.framework */; };
+		E28BBD7A16449D3C0016B2D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28BBD7916449D3C0016B2D2 /* AVFoundation.framework */; };
+		E28BBD801644A6510016B2D2 /* MWGIntro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E28BBD7F1644A6510016B2D2 /* MWGIntro.mp3 */; };
 		E2A1CB671643518F009F1CBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1CB661643518F009F1CBA /* UIKit.framework */; };
 		E2A1CB691643518F009F1CBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1CB681643518F009F1CBA /* Foundation.framework */; };
 		E2A1CB6B1643518F009F1CBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1CB6A1643518F009F1CBA /* CoreGraphics.framework */; };
@@ -23,8 +27,6 @@
 		E2A1CB8B16435190009F1CBA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1CB8A16435190009F1CBA /* SenTestingKit.framework */; };
 		E2A1CB8C16435190009F1CBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1CB661643518F009F1CBA /* UIKit.framework */; };
 		E2A1CB8D16435190009F1CBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1CB681643518F009F1CBA /* Foundation.framework */; };
-		E2A1CB9516435190009F1CBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CB9316435190009F1CBA /* InfoPlist.strings */; };
-		E2A1CB9816435190009F1CBA /* Dark_PotentialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A1CB9716435190009F1CBA /* Dark_PotentialTests.m */; };
 		E2A1CBA31643521A009F1CBA /* DarkPotential-AppIcon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBA21643521A009F1CBA /* DarkPotential-AppIcon-57.png */; };
 		E2A1CBA51643521E009F1CBA /* DarkPotential-AppIcon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBA41643521E009F1CBA /* DarkPotential-AppIcon-114.png */; };
 		E2A1CBAD164354C5009F1CBA /* dp-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBA6164354C5009F1CBA /* dp-logo.png */; };
@@ -48,6 +50,11 @@
 /* Begin PBXFileReference section */
 		5D74774C1643F4FD003C576B /* menu-bg-iphone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bg-iphone5.png"; sourceTree = "<group>"; };
 		5D74774D1643F4FD003C576B /* menu-bg-iphone5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bg-iphone5@2x.png"; sourceTree = "<group>"; };
+		E21F25CD1644890900CA0971 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		E21F25CE1644890900CA0971 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		E21F25D11644896200CA0971 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		E28BBD7916449D3C0016B2D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E28BBD7F1644A6510016B2D2 /* MWGIntro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MWGIntro.mp3; sourceTree = "<group>"; };
 		E2A1CB621643518F009F1CBA /* Dark Potential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dark Potential.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A1CB661643518F009F1CBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E2A1CB681643518F009F1CBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,12 +73,8 @@
 		E2A1CB821643518F009F1CBA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E2A1CB8916435190009F1CBA /* Dark PotentialTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dark PotentialTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A1CB8A16435190009F1CBA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E2A1CB9216435190009F1CBA /* Dark PotentialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dark PotentialTests-Info.plist"; sourceTree = "<group>"; };
-		E2A1CB9416435190009F1CBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E2A1CB9616435190009F1CBA /* Dark_PotentialTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dark_PotentialTests.h; sourceTree = "<group>"; };
-		E2A1CB9716435190009F1CBA /* Dark_PotentialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dark_PotentialTests.m; sourceTree = "<group>"; };
-		E2A1CBA21643521A009F1CBA /* DarkPotential-AppIcon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DarkPotential-AppIcon-57.png"; sourceTree = "<group>"; };
-		E2A1CBA41643521E009F1CBA /* DarkPotential-AppIcon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DarkPotential-AppIcon-114.png"; sourceTree = "<group>"; };
+		E2A1CBA21643521A009F1CBA /* DarkPotential-AppIcon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DarkPotential-AppIcon-57.png"; path = "../DarkPotential-AppIcon-57.png"; sourceTree = "<group>"; };
+		E2A1CBA41643521E009F1CBA /* DarkPotential-AppIcon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DarkPotential-AppIcon-114.png"; path = "../DarkPotential-AppIcon-114.png"; sourceTree = "<group>"; };
 		E2A1CBA6164354C5009F1CBA /* dp-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dp-logo.png"; sourceTree = "<group>"; };
 		E2A1CBA7164354C5009F1CBA /* experience-banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "experience-banner.png"; sourceTree = "<group>"; };
 		E2A1CBA8164354C5009F1CBA /* logo-mwg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-mwg.png"; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E28BBD7A16449D3C0016B2D2 /* AVFoundation.framework in Frameworks */,
+				E21F25D21644896200CA0971 /* MediaPlayer.framework in Frameworks */,
 				E2A1CB671643518F009F1CBA /* UIKit.framework in Frameworks */,
 				E2A1CB691643518F009F1CBA /* Foundation.framework in Frameworks */,
 				E2A1CB6B1643518F009F1CBA /* CoreGraphics.framework in Frameworks */,
@@ -107,17 +112,24 @@
 		5D74774A1643F0E7003C576B /* App icons */ = {
 			isa = PBXGroup;
 			children = (
+				E2A1CBA41643521E009F1CBA /* DarkPotential-AppIcon-114.png */,
+				E2A1CBA21643521A009F1CBA /* DarkPotential-AppIcon-57.png */,
 			);
 			name = "App icons";
+			sourceTree = "<group>";
+		};
+		E28BBD7C16449F850016B2D2 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				E28BBD7F1644A6510016B2D2 /* MWGIntro.mp3 */,
+			);
+			name = Audio;
 			sourceTree = "<group>";
 		};
 		E2A1CB571643518F009F1CBA = {
 			isa = PBXGroup;
 			children = (
-				E2A1CBA41643521E009F1CBA /* DarkPotential-AppIcon-114.png */,
-				E2A1CBA21643521A009F1CBA /* DarkPotential-AppIcon-57.png */,
 				E2A1CB6C1643518F009F1CBA /* Dark Potential */,
-				E2A1CB9016435190009F1CBA /* Dark PotentialTests */,
 				E2A1CB651643518F009F1CBA /* Frameworks */,
 				E2A1CB631643518F009F1CBA /* Products */,
 			);
@@ -135,6 +147,8 @@
 		E2A1CB651643518F009F1CBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E28BBD7916449D3C0016B2D2 /* AVFoundation.framework */,
+				E21F25D11644896200CA0971 /* MediaPlayer.framework */,
 				E2A1CB661643518F009F1CBA /* UIKit.framework */,
 				E2A1CB681643518F009F1CBA /* Foundation.framework */,
 				E2A1CB6A1643518F009F1CBA /* CoreGraphics.framework */,
@@ -146,6 +160,7 @@
 		E2A1CB6C1643518F009F1CBA /* Dark Potential */ = {
 			isa = PBXGroup;
 			children = (
+				E28BBD7C16449F850016B2D2 /* Audio */,
 				E2A1CBA1164351F6009F1CBA /* Images */,
 				E2A1CB751643518F009F1CBA /* AppDelegate.h */,
 				E2A1CB761643518F009F1CBA /* AppDelegate.m */,
@@ -153,6 +168,8 @@
 				E2A1CB811643518F009F1CBA /* ViewController.h */,
 				E2A1CB821643518F009F1CBA /* ViewController.m */,
 				E2A1CB6D1643518F009F1CBA /* Supporting Files */,
+				E21F25CD1644890900CA0971 /* InfoViewController.h */,
+				E21F25CE1644890900CA0971 /* InfoViewController.m */,
 			);
 			path = "Dark Potential";
 			sourceTree = "<group>";
@@ -167,25 +184,6 @@
 				E2A1CB781643518F009F1CBA /* Default.png */,
 				E2A1CB7A1643518F009F1CBA /* Default@2x.png */,
 				E2A1CB7C1643518F009F1CBA /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E2A1CB9016435190009F1CBA /* Dark PotentialTests */ = {
-			isa = PBXGroup;
-			children = (
-				E2A1CB9616435190009F1CBA /* Dark_PotentialTests.h */,
-				E2A1CB9716435190009F1CBA /* Dark_PotentialTests.m */,
-				E2A1CB9116435190009F1CBA /* Supporting Files */,
-			);
-			path = "Dark PotentialTests";
-			sourceTree = "<group>";
-		};
-		E2A1CB9116435190009F1CBA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E2A1CB9216435190009F1CBA /* Dark PotentialTests-Info.plist */,
-				E2A1CB9316435190009F1CBA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -300,6 +298,7 @@
 				E2DABFE2164362B200C0D750 /* dp-logo@2x.png in Resources */,
 				5D74774E1643F4FD003C576B /* menu-bg-iphone5.png in Resources */,
 				5D74774F1643F4FD003C576B /* menu-bg-iphone5@2x.png in Resources */,
+				E28BBD801644A6510016B2D2 /* MWGIntro.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +306,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2A1CB9516435190009F1CBA /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +335,7 @@
 				E2A1CB731643518F009F1CBA /* main.m in Sources */,
 				E2A1CB771643518F009F1CBA /* AppDelegate.m in Sources */,
 				E2A1CB831643518F009F1CBA /* ViewController.m in Sources */,
+				E21F25CF1644890900CA0971 /* InfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +343,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2A1CB9816435190009F1CBA /* Dark_PotentialTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,14 +371,6 @@
 				E2A1CB7F1643518F009F1CBA /* en */,
 			);
 			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
-		E2A1CB9316435190009F1CBA /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E2A1CB9416435190009F1CBA /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
