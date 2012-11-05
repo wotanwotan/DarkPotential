@@ -13,7 +13,7 @@
 - (void) animateButton:(UIButton*)theButton animateFromLeft:(BOOL)fromLeft;
 - (void) animateMWGLogo;
 - (void) playMWGAudio;
-- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag;
+- (void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag;
 
 @end
 
@@ -113,14 +113,14 @@
     [self.audioPlayer play];
 }
 
-- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+- (void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
 {
     [self.audioPlayer stop]; // necessary?
 }
 
-- (IBAction)launchDPWebsite:(id)sender
+- (IBAction)launchMWGWebsite:(id)sender
 {
-    NSURL *url = [ [ NSURL alloc ] initWithString: @"http://miniwargaming" ];
+    NSURL *url = [ [ NSURL alloc ] initWithString: @"http://miniwargaming.com" ];
     
     [[UIApplication sharedApplication] openURL:url];
 }

@@ -21,7 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *experienceBtn3;
 @property (weak, nonatomic) IBOutlet UIButton *mwgLogo;
 
-- (IBAction)launchDPWebsite:(id)sender;
+- (IBAction)launchMWGWebsite:(id)sender;
 
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 
