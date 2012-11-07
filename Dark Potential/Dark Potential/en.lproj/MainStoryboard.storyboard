@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
     <scenes>
         <!--Info View Controller-->
@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="dp-logo.png" id="K42-xp-S4b">
-                                <rect key="frame" x="27" y="0.0" width="266" height="71"/>
+                                <rect key="frame" x="27" y="-2" width="266" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FXS-bI-9ch">
@@ -120,7 +120,7 @@
                                         </state>
                                         <connections>
                                             <action selector="experienceButtonPressed:" destination="2" eventType="touchUpInside" id="HeL-4N-UNu"/>
-                                            <segue destination="gPb-Sc-TVT" kind="modal" identifier="ShowCharacterPageSegue" modalTransitionStyle="partialCurl" id="LxC-wS-TPI"/>
+                                            <segue destination="gPb-Sc-TVT" kind="modal" identifier="ShowCharacterPageSegue1" modalTransitionStyle="flipHorizontal" id="LxC-wS-TPI"/>
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pgX-JP-VPt">
@@ -135,7 +135,7 @@
                                         </state>
                                         <connections>
                                             <action selector="experienceButtonPressed:" destination="2" eventType="touchUpInside" id="BX5-GC-xkW"/>
-                                            <segue destination="gPb-Sc-TVT" kind="modal" identifier="ShowCharacterPageSegue" modalTransitionStyle="partialCurl" id="Vpf-vQ-Zly"/>
+                                            <segue destination="gPb-Sc-TVT" kind="modal" identifier="ShowCharacterPageSegue2" modalTransitionStyle="crossDissolve" id="Vpf-vQ-Zly"/>
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tnp-ga-Xmy">
@@ -150,7 +150,7 @@
                                         </state>
                                         <connections>
                                             <action selector="experienceButtonPressed:" destination="2" eventType="touchUpInside" id="ksC-dm-jT0"/>
-                                            <segue destination="gPb-Sc-TVT" kind="modal" identifier="ShowCharacterPageSegue" modalTransitionStyle="partialCurl" id="rof-Im-paD"/>
+                                            <segue destination="gPb-Sc-TVT" kind="modal" identifier="ShowCharacterPageSegue3" modalTransitionStyle="partialCurl" id="rof-Im-paD"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -164,7 +164,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xYE-NB-sop">
-                                <rect key="frame" x="301" y="7" width="15" height="15"/>
+                                <rect key="frame" x="297" y="5" width="18" height="18"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="button-info.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -252,6 +252,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="cSR-6o-nnF" kind="modal" modalTransitionStyle="crossDissolve" id="MMU-HJ-COD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -261,6 +264,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AC1-ZT-tEx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="474" y="22"/>
+        </scene>
+        <!--Parent View Controller-->
+        <scene sceneID="B5d-Dc-pi7">
+            <objects>
+                <viewController id="cSR-6o-nnF" customClass="ARParentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="59h-Ob-LID">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wmP-mr-ZB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="22"/>
         </scene>
     </scenes>
     <resources>
@@ -278,6 +296,9 @@
         <image name="steph.png" width="67" height="33"/>
     </resources>
     <classes>
+        <class className="ARParentViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ARParentViewController.h"/>
+        </class>
         <class className="CharacterViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CharacterViewController.h"/>
             <relationships>
@@ -311,6 +332,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="rof-Im-paD"/>
+        <segue reference="Vpf-vQ-Zly"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,11 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import "QCARutils.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // QCAR stuff
+    QCARutils *qUtils = [QCARutils getInstance];
+    [qUtils addTargetName:@"Stones & Chips" atPath:@"StonesAndChips.xml"];
+    [qUtils addTargetName:@"Tarmac" atPath:@"Tarmac.xml"];
+    
     // Override point for customization after application launch.
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navbar.png"] forBarMetrics:UIBarMetricsDefault];
     

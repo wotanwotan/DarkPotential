@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D5B77D2164AFACF00C330CE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5B77D0164AFACF00C330CE /* OpenGLES.framework */; };
+		5D5B77D3164AFACF00C330CE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5B77D1164AFACF00C330CE /* QuartzCore.framework */; };
+		5D5B77D5164AFAF100C330CE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5B77D4164AFAF100C330CE /* CoreMedia.framework */; };
+		5D5B77D7164AFAFF00C330CE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5B77D6164AFAFF00C330CE /* SystemConfiguration.framework */; };
+		5D5B77D9164AFB0E00C330CE /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5B77D8164AFB0E00C330CE /* CoreVideo.framework */; };
+		5D5B77DB164AFB1A00C330CE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5B77DA164AFB1A00C330CE /* Security.framework */; };
+		5D5B77E4164AFDFF00C330CE /* StonesAndChips.dat in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B77DD164AFDFF00C330CE /* StonesAndChips.dat */; };
+		5D5B77E5164AFDFF00C330CE /* StonesAndChips.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B77DE164AFDFF00C330CE /* StonesAndChips.xml */; };
+		5D5B77E6164AFDFF00C330CE /* Tarmac.dat in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B77DF164AFDFF00C330CE /* Tarmac.dat */; };
+		5D5B77E7164AFDFF00C330CE /* Tarmac.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B77E0164AFDFF00C330CE /* Tarmac.xml */; };
+		5D5B77E8164AFDFF00C330CE /* TextureTeapotBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B77E1164AFDFF00C330CE /* TextureTeapotBlue.png */; };
+		5D5B77E9164AFDFF00C330CE /* TextureTeapotBrass.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B77E2164AFDFF00C330CE /* TextureTeapotBrass.png */; };
+		5D5B77EA164AFDFF00C330CE /* TextureTeapotRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B77E3164AFDFF00C330CE /* TextureTeapotRed.png */; };
+		5DA87179164AF5FA0017B893 /* libQCAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA87178164AF5FA0017B893 /* libQCAR.a */; };
+		5DA8717F164AF81C0017B893 /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA8717D164AF81C0017B893 /* EAGLView.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA87195164AF86E0017B893 /* AR_EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87183164AF86E0017B893 /* AR_EAGLView.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA87196164AF86E0017B893 /* ARParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87185164AF86E0017B893 /* ARParentViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA87197164AF86E0017B893 /* ARViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87187164AF86E0017B893 /* ARViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA87198164AF86E0017B893 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87189164AF86E0017B893 /* OverlayView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA87199164AF86E0017B893 /* OverlayViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA8718B164AF86E0017B893 /* OverlayViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA8719A164AF86E0017B893 /* QCARutils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA8718D164AF86E0017B893 /* QCARutils.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA8719D164AF86E0017B893 /* ShaderUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87191164AF86E0017B893 /* ShaderUtils.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA8719E164AF86E0017B893 /* Texture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87194164AF86E0017B893 /* Texture.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E2186A4416473A2200FEADC3 /* experiencebanner-xlanthos-onclick.png in Resources */ = {isa = PBXBuildFile; fileRef = E2186A4016473A2200FEADC3 /* experiencebanner-xlanthos-onclick.png */; };
 		E2186A4516473A2200FEADC3 /* experiencebanner-xlanthos-onclick@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2186A4116473A2200FEADC3 /* experiencebanner-xlanthos-onclick@2x.png */; };
 		E2186A4616473A2200FEADC3 /* experiencebanner-xlanthos.png in Resources */ = {isa = PBXBuildFile; fileRef = E2186A4216473A2200FEADC3 /* experiencebanner-xlanthos.png */; };
@@ -41,7 +64,7 @@
 		E2A1CB6B1643518F009F1CBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1CB6A1643518F009F1CBA /* CoreGraphics.framework */; };
 		E2A1CB711643518F009F1CBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CB6F1643518F009F1CBA /* InfoPlist.strings */; };
 		E2A1CB731643518F009F1CBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A1CB721643518F009F1CBA /* main.m */; };
-		E2A1CB771643518F009F1CBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A1CB761643518F009F1CBA /* AppDelegate.m */; };
+		E2A1CB771643518F009F1CBA /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E2A1CB761643518F009F1CBA /* AppDelegate.mm */; };
 		E2A1CB801643518F009F1CBA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CB7E1643518F009F1CBA /* MainStoryboard.storyboard */; };
 		E2A1CB831643518F009F1CBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A1CB821643518F009F1CBA /* ViewController.m */; };
 		E2A1CB8B16435190009F1CBA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1CB8A16435190009F1CBA /* SenTestingKit.framework */; };
@@ -67,6 +90,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D5B77D0164AFACF00C330CE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		5D5B77D1164AFACF00C330CE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5D5B77D4164AFAF100C330CE /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		5D5B77D6164AFAFF00C330CE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5D5B77D8164AFB0E00C330CE /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		5D5B77DA164AFB1A00C330CE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5D5B77DD164AFDFF00C330CE /* StonesAndChips.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = StonesAndChips.dat; sourceTree = "<group>"; };
+		5D5B77DE164AFDFF00C330CE /* StonesAndChips.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = StonesAndChips.xml; sourceTree = "<group>"; };
+		5D5B77DF164AFDFF00C330CE /* Tarmac.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tarmac.dat; sourceTree = "<group>"; };
+		5D5B77E0164AFDFF00C330CE /* Tarmac.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tarmac.xml; sourceTree = "<group>"; };
+		5D5B77E1164AFDFF00C330CE /* TextureTeapotBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureTeapotBlue.png; sourceTree = "<group>"; };
+		5D5B77E2164AFDFF00C330CE /* TextureTeapotBrass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureTeapotBrass.png; sourceTree = "<group>"; };
+		5D5B77E3164AFDFF00C330CE /* TextureTeapotRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureTeapotRed.png; sourceTree = "<group>"; };
+		5DA87178164AF5FA0017B893 /* libQCAR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQCAR.a; path = "../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/lib/arm/libQCAR.a"; sourceTree = "<group>"; };
+		5DA8717C164AF81C0017B893 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		5DA8717D164AF81C0017B893 /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EAGLView.mm; sourceTree = "<group>"; };
+		5DA8717E164AF81C0017B893 /* Teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teapot.h; sourceTree = "<group>"; };
+		5DA87182164AF86E0017B893 /* AR_EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AR_EAGLView.h; sourceTree = "<group>"; };
+		5DA87183164AF86E0017B893 /* AR_EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AR_EAGLView.mm; sourceTree = "<group>"; };
+		5DA87184164AF86E0017B893 /* ARParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARParentViewController.h; sourceTree = "<group>"; };
+		5DA87185164AF86E0017B893 /* ARParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARParentViewController.m; sourceTree = "<group>"; };
+		5DA87186164AF86E0017B893 /* ARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
+		5DA87187164AF86E0017B893 /* ARViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ARViewController.mm; sourceTree = "<group>"; };
+		5DA87188164AF86E0017B893 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		5DA87189164AF86E0017B893 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
+		5DA8718A164AF86E0017B893 /* OverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayViewController.h; sourceTree = "<group>"; };
+		5DA8718B164AF86E0017B893 /* OverlayViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OverlayViewController.mm; sourceTree = "<group>"; };
+		5DA8718C164AF86E0017B893 /* QCARutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCARutils.h; sourceTree = "<group>"; };
+		5DA8718D164AF86E0017B893 /* QCARutils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QCARutils.mm; sourceTree = "<group>"; };
+		5DA8718F164AF86E0017B893 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		5DA87190164AF86E0017B893 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		5DA87191164AF86E0017B893 /* ShaderUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderUtils.cpp; sourceTree = "<group>"; };
+		5DA87192164AF86E0017B893 /* ShaderUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderUtils.h; sourceTree = "<group>"; };
+		5DA87193164AF86E0017B893 /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture.h; sourceTree = "<group>"; };
+		5DA87194164AF86E0017B893 /* Texture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Texture.mm; sourceTree = "<group>"; };
 		E2186A4016473A2200FEADC3 /* experiencebanner-xlanthos-onclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "experiencebanner-xlanthos-onclick.png"; sourceTree = "<group>"; };
 		E2186A4116473A2200FEADC3 /* experiencebanner-xlanthos-onclick@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "experiencebanner-xlanthos-onclick@2x.png"; sourceTree = "<group>"; };
 		E2186A4216473A2200FEADC3 /* experiencebanner-xlanthos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "experiencebanner-xlanthos.png"; sourceTree = "<group>"; };
@@ -107,7 +165,7 @@
 		E2A1CB721643518F009F1CBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2A1CB741643518F009F1CBA /* Dark Potential-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dark Potential-Prefix.pch"; sourceTree = "<group>"; };
 		E2A1CB751643518F009F1CBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E2A1CB761643518F009F1CBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E2A1CB761643518F009F1CBA /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		E2A1CB7F1643518F009F1CBA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		E2A1CB811643518F009F1CBA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E2A1CB821643518F009F1CBA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -127,6 +185,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D5B77DB164AFB1A00C330CE /* Security.framework in Frameworks */,
+				5D5B77D9164AFB0E00C330CE /* CoreVideo.framework in Frameworks */,
+				5D5B77D7164AFAFF00C330CE /* SystemConfiguration.framework in Frameworks */,
+				5D5B77D5164AFAF100C330CE /* CoreMedia.framework in Frameworks */,
+				5D5B77D2164AFACF00C330CE /* OpenGLES.framework in Frameworks */,
+				5D5B77D3164AFACF00C330CE /* QuartzCore.framework in Frameworks */,
+				5DA87179164AF5FA0017B893 /* libQCAR.a in Frameworks */,
 				E28BBD7A16449D3C0016B2D2 /* AVFoundation.framework in Frameworks */,
 				E21F25D21644896200CA0971 /* MediaPlayer.framework in Frameworks */,
 				E2A1CB671643518F009F1CBA /* UIKit.framework in Frameworks */,
@@ -148,6 +213,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D5B77DC164AFDD500C330CE /* Image targets */ = {
+			isa = PBXGroup;
+			children = (
+				5D5B77DD164AFDFF00C330CE /* StonesAndChips.dat */,
+				5D5B77DE164AFDFF00C330CE /* StonesAndChips.xml */,
+				5D5B77DF164AFDFF00C330CE /* Tarmac.dat */,
+				5D5B77E0164AFDFF00C330CE /* Tarmac.xml */,
+				5D5B77E1164AFDFF00C330CE /* TextureTeapotBlue.png */,
+				5D5B77E2164AFDFF00C330CE /* TextureTeapotBrass.png */,
+				5D5B77E3164AFDFF00C330CE /* TextureTeapotRed.png */,
+			);
+			name = "Image targets";
+			sourceTree = "<group>";
+		};
 		5D74774A1643F0E7003C576B /* App icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +234,51 @@
 				E2A1CBA21643521A009F1CBA /* DarkPotential-AppIcon-57.png */,
 			);
 			name = "App icons";
+			sourceTree = "<group>";
+		};
+		5DA8717B164AF8030017B893 /* QCAR stuff */ = {
+			isa = PBXGroup;
+			children = (
+				5D5B77DC164AFDD500C330CE /* Image targets */,
+				5DA87181164AF86E0017B893 /* ARCommon */,
+				5DA8717C164AF81C0017B893 /* EAGLView.h */,
+				5DA8717D164AF81C0017B893 /* EAGLView.mm */,
+				5DA8717E164AF81C0017B893 /* Teapot.h */,
+			);
+			name = "QCAR stuff";
+			sourceTree = "<group>";
+		};
+		5DA87181164AF86E0017B893 /* ARCommon */ = {
+			isa = PBXGroup;
+			children = (
+				5DA87182164AF86E0017B893 /* AR_EAGLView.h */,
+				5DA87183164AF86E0017B893 /* AR_EAGLView.mm */,
+				5DA87184164AF86E0017B893 /* ARParentViewController.h */,
+				5DA87185164AF86E0017B893 /* ARParentViewController.m */,
+				5DA87186164AF86E0017B893 /* ARViewController.h */,
+				5DA87187164AF86E0017B893 /* ARViewController.mm */,
+				5DA87188164AF86E0017B893 /* OverlayView.h */,
+				5DA87189164AF86E0017B893 /* OverlayView.m */,
+				5DA8718A164AF86E0017B893 /* OverlayViewController.h */,
+				5DA8718B164AF86E0017B893 /* OverlayViewController.mm */,
+				5DA8718C164AF86E0017B893 /* QCARutils.h */,
+				5DA8718D164AF86E0017B893 /* QCARutils.mm */,
+				5DA8718E164AF86E0017B893 /* Shaders */,
+				5DA87191164AF86E0017B893 /* ShaderUtils.cpp */,
+				5DA87192164AF86E0017B893 /* ShaderUtils.h */,
+				5DA87193164AF86E0017B893 /* Texture.h */,
+				5DA87194164AF86E0017B893 /* Texture.mm */,
+			);
+			path = ARCommon;
+			sourceTree = "<group>";
+		};
+		5DA8718E164AF86E0017B893 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				5DA8718F164AF86E0017B893 /* Shader.fsh */,
+				5DA87190164AF86E0017B893 /* Shader.vsh */,
+			);
+			path = Shaders;
 			sourceTree = "<group>";
 		};
 		E2186A3E164739DA00FEADC3 /* Experience buttons */ = {
@@ -225,6 +349,13 @@
 		E2A1CB651643518F009F1CBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5DA87178164AF5FA0017B893 /* libQCAR.a */,
+				5D5B77DA164AFB1A00C330CE /* Security.framework */,
+				5D5B77D8164AFB0E00C330CE /* CoreVideo.framework */,
+				5D5B77D6164AFAFF00C330CE /* SystemConfiguration.framework */,
+				5D5B77D4164AFAF100C330CE /* CoreMedia.framework */,
+				5D5B77D0164AFACF00C330CE /* OpenGLES.framework */,
+				5D5B77D1164AFACF00C330CE /* QuartzCore.framework */,
 				E28BBD7916449D3C0016B2D2 /* AVFoundation.framework */,
 				E21F25D11644896200CA0971 /* MediaPlayer.framework */,
 				E2A1CB661643518F009F1CBA /* UIKit.framework */,
@@ -239,10 +370,11 @@
 			isa = PBXGroup;
 			children = (
 				E28BBD7C16449F850016B2D2 /* Audio */,
+				5DA8717B164AF8030017B893 /* QCAR stuff */,
 				E2186A56164741EF00FEADC3 /* View Controllers */,
 				E2A1CBA1164351F6009F1CBA /* Images */,
 				E2A1CB751643518F009F1CBA /* AppDelegate.h */,
-				E2A1CB761643518F009F1CBA /* AppDelegate.m */,
+				E2A1CB761643518F009F1CBA /* AppDelegate.mm */,
 				E2A1CB7E1643518F009F1CBA /* MainStoryboard.storyboard */,
 				E2A1CB6D1643518F009F1CBA /* Supporting Files */,
 			);
@@ -400,6 +532,13 @@
 				E270AC2D164A015E003E6A1F /* steph@2x.png in Resources */,
 				E270AC32164A06F5003E6A1F /* background-iphone5.jpg in Resources */,
 				E270AC33164A06F5003E6A1F /* background-iphone5@2x.jpg in Resources */,
+				5D5B77E4164AFDFF00C330CE /* StonesAndChips.dat in Resources */,
+				5D5B77E5164AFDFF00C330CE /* StonesAndChips.xml in Resources */,
+				5D5B77E6164AFDFF00C330CE /* Tarmac.dat in Resources */,
+				5D5B77E7164AFDFF00C330CE /* Tarmac.xml in Resources */,
+				5D5B77E8164AFDFF00C330CE /* TextureTeapotBlue.png in Resources */,
+				5D5B77E9164AFDFF00C330CE /* TextureTeapotBrass.png in Resources */,
+				5D5B77EA164AFDFF00C330CE /* TextureTeapotRed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,10 +573,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2A1CB731643518F009F1CBA /* main.m in Sources */,
-				E2A1CB771643518F009F1CBA /* AppDelegate.m in Sources */,
+				E2A1CB771643518F009F1CBA /* AppDelegate.mm in Sources */,
 				E2A1CB831643518F009F1CBA /* ViewController.m in Sources */,
 				E21F25CF1644890900CA0971 /* InfoViewController.m in Sources */,
 				E2186A591647421400FEADC3 /* CharacterViewController.m in Sources */,
+				5DA8717F164AF81C0017B893 /* EAGLView.mm in Sources */,
+				5DA87195164AF86E0017B893 /* AR_EAGLView.mm in Sources */,
+				5DA87196164AF86E0017B893 /* ARParentViewController.m in Sources */,
+				5DA87197164AF86E0017B893 /* ARViewController.mm in Sources */,
+				5DA87198164AF86E0017B893 /* OverlayView.m in Sources */,
+				5DA87199164AF86E0017B893 /* OverlayViewController.mm in Sources */,
+				5DA8719A164AF86E0017B893 /* QCARutils.mm in Sources */,
+				5DA8719D164AF86E0017B893 /* ShaderUtils.cpp in Sources */,
+				5DA8719E164AF86E0017B893 /* Texture.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,9 +681,15 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dark Potential/Dark Potential-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/include";
 				INFOPLIST_FILE = "Dark Potential/Dark Potential-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/lib/arm\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -545,9 +699,15 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dark Potential/Dark Potential-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/include";
 				INFOPLIST_FILE = "Dark Potential/Dark Potential-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/lib/arm\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
