@@ -14,6 +14,8 @@
 
 @implementation CharacterViewController
 
+@synthesize delegate;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -37,6 +39,7 @@
 
 - (IBAction)exitButtonPressed:(id)sender
 {
-    [self dismissModalViewControllerAnimated:YES];
+    if (delegate != nil && [delegate respondsToSelector:@selector(characterViewDidClose:)])
+        [self.delegate characterViewDidClose:self];
 }
 @end

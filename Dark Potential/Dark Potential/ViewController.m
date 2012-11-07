@@ -14,6 +14,8 @@
 - (void) animateMWGLogo;
 - (void) playMWGAudio;
 - (void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag;
+- (void) playAudioWithName:(NSString*)audioFileName;
+//- (void) characterViewDidClose:(CharacterViewController*)controller;
 
 @end
 
@@ -48,6 +50,15 @@
 
     // first button
     [self animateButton:[animatedButtons objectAtIndex:currentButtonToAnimate] animateFromLeft:YES];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+	if ([segue.identifier isEqualToString:@"ShowCharacterPageSegue"])
+	{
+        CharacterViewController* controller = segue.destinationViewController;
+		controller.delegate = self;
+	}
 }
 
 - (void) animateButton:(UIButton*)theButton animateFromLeft:(BOOL)fromLeft
@@ -99,9 +110,11 @@
     }];
 }
 
-- (void) playMWGAudio
+- (void) playAudioWithName:(NSString*)audioFileName
 {
-    NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/MWGIntro.mp3", [[NSBundle mainBundle] resourcePath]]];
+    NSString* resourcesPath = [[NSBundle mainBundle] resourcePath];
+    NSString* pathToAudio = [resourcesPath stringByAppendingFormat:@"/%@", audioFileName];
+    NSURL* url = [NSURL fileURLWithPath:pathToAudio];//[NSString stringWithFormat:@"%@/MWGIntro.mp3", [[NSBundle mainBundle] resourcePath]]];
     NSLog(@"Resource path: %@", [[NSBundle mainBundle] resourcePath]);
     
     NSError *error;
@@ -111,6 +124,11 @@
     self.audioPlayer.volume = 1.0;
     
     [self.audioPlayer play];
+}
+
+- (void) playMWGAudio
+{
+    [self playAudioWithName:@"MWGIntro.mp3"];
 }
 
 - (void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
@@ -123,6 +141,17 @@
     NSURL *url = [ [ NSURL alloc ] initWithString: @"http://miniwargaming.com" ];
     
     [[UIApplication sharedApplication] openURL:url];
+}
+
+- (IBAction)experienceButtonPressed:(id)sender
+{
+    [self playAudioWithName:@"menu_whoosh_in.mp3"];
+}
+
+- (void) characterViewDidClose:(CharacterViewController*)controller
+{
+    [self playAudioWithName:@"menu_whoosh_in.mp3"];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning

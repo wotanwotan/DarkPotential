@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "CharacterViewController.h"
 
-@interface ViewController : UIViewController<AVAudioPlayerDelegate>
+@interface ViewController : UIViewController<AVAudioPlayerDelegate,CharacterViewClosedDelegate>
 {
     int currentButtonToAnimate;
     int numButtonsToAnimate;
@@ -22,6 +23,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *mwgLogo;
 
 - (IBAction)launchMWGWebsite:(id)sender;
+- (IBAction)experienceButtonPressed:(id)sender;
+
 
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 

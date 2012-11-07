@@ -53,4 +53,18 @@
 {
     [self dismissModalViewControllerAnimated:YES];
 }
+
+- (IBAction)launchJGWebsite:(id)sender
+{
+    NSURL *url = [ [ NSURL alloc ] initWithString: @"http://www.joelglanfield.com" ];
+    
+    [[UIApplication sharedApplication] openURL:url];
+}
+
+- (IBAction)launchSMWebsite:(id)sender
+{
+    NSURL *url = [ [ NSURL alloc ] initWithString: @"http://www.stephaniemunn.com" ];
+    
+    [[UIApplication sharedApplication] openURL:url];
+}
 @end
