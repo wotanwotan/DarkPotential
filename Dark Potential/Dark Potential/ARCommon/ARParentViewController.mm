@@ -7,8 +7,10 @@
 #import "ARParentViewController.h"
 #import "ARViewController.h"
 #import "OverlayViewController.h"
+#import "ScreenshotViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "QCARutils.h"
+#import "EAGLView.h"
 
 
 @implementation ARParentViewController
@@ -126,8 +128,22 @@
         [btnLayer setBorderColor:[[UIColor whiteColor] CGColor]];
     //}
     
+    // camera button
+    UIButton *camButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [camButton setFrame:CGRectMake (200, 10, 30, 30)];
+    [camButton setTitle:@"O" forState:UIControlStateNormal];
+    [camButton setTag:2];
+    //    [backButton setImage:[UIImage imageNamed:@"button-info.png"] forState:UIControlStateNormal];
+    [camButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    btnLayer = [camButton layer];
+    [btnLayer setCornerRadius:15.0f];
+    [btnLayer setBorderWidth:1.0f];
+    [btnLayer setBorderColor:[[UIColor whiteColor] CGColor]];
+
+    
     [overlayViewController.view addSubview:backButton];
     [overlayViewController.view addSubview:torchButton];
+    [overlayViewController.view addSubview:camButton];
     // END: custom UI stuff
     
     [parentView addSubview: overlayViewController.view];
@@ -154,14 +170,91 @@
     switch ([sender tag])
     {
         case 0:
+        {
             [self dismissModalViewControllerAnimated:YES];
             break;
+        }
         case 1:
+        {
             QCARutils *qUtils = [QCARutils getInstance];
             BOOL newTorchMode = ![qUtils cameraTorchOn];
             [qUtils cameraSetTorchMode:newTorchMode];
             break;
+        }
+        case 2:
+        {
+            [self takeScreenshot];
+            break;
+        }
     }
+}
+
+- (void) takeScreenshot
+{
+//    [[arViewController arView] context
+    //UIImage *screenshotImage = [[arViewController arView] snapshot];
+    UIImage *screenshotImage = [self glToUIImage];
+    
+    // now, show the photo-share view
+    ScreenshotViewController *pictureView;
+    if ([[[UIDevice currentDevice] model] isEqualToString:@"iPad"])
+        pictureView = [[ScreenshotViewController alloc] initWithNibName:@"ScreenshotViewController-iPad" bundle:nil];
+    else
+        pictureView = [[ScreenshotViewController alloc] initWithNibName:@"ScreenshotViewController" bundle:nil];
+    
+    //[pictureView setDelegate:self];
+    [pictureView setScreenshotImage:screenshotImage];
+    //[pictureView setScreenshotImage:[UIImage imageNamed:@"DarkPotential-AppIcon-114.png"]];
+    
+    //[pictureView setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+    
+    [self presentModalViewController:pictureView animated:YES];
+}
+
+- (UIImage*) glToUIImage
+{
+    CGFloat scale = [[UIScreen mainScreen] scale];
+    CGRect s;
+    if ([[[UIDevice currentDevice] model] isEqualToString:@"iPad"])
+        s = CGRectMake(0, 0, 768.0f * scale, (1024.0f) * scale);
+    else
+        s = CGRectMake(0, 0, 320.0f * scale, (480.0f) * scale);
+    
+    uint8_t *buffer = (uint8_t *) malloc(s.size.width * s.size.height * 4);
+    
+    glReadPixels(0, 0, s.size.width, s.size.height, GL_RGBA, GL_UNSIGNED_BYTE, buffer);
+    
+    CGDataProviderRef ref = CGDataProviderCreateWithData(NULL, buffer, s.size.width * s.size.height * 4, NULL);
+    
+    CGImageRef iref = CGImageCreate(s.size.width, s.size.height, 8, 32, s.size.width * 4, CGColorSpaceCreateDeviceRGB(), kCGBitmapByteOrderDefault, ref, NULL, true, kCGRenderingIntentDefault);
+    
+    size_t width = CGImageGetWidth(iref);
+    size_t height = CGImageGetHeight(iref);
+    size_t length = width * height * 4;
+    uint32_t *pixels = (uint32_t *)malloc(length);
+    
+    CGContextRef context = CGBitmapContextCreate(pixels, width, height, 8, width * 4,
+                                                 CGImageGetColorSpace(iref), kCGImageAlphaNoneSkipFirst | kCGBitmapByteOrder32Big);
+    
+    CGAffineTransform transform = CGAffineTransformIdentity;
+    transform = CGAffineTransformMakeTranslation(0.0f, height);
+    transform = CGAffineTransformScale(transform, 1.0, -1.0);
+    CGContextConcatCTM(context, transform);
+    CGContextDrawImage(context, CGRectMake(0.0f, 0.0f, width, height), iref);
+    CGImageRef outputRef = CGBitmapContextCreateImage(context);
+    
+    UIImage * outputImage = [UIImage imageWithCGImage: outputRef];
+    
+    CGDataProviderRelease(ref);
+    CGImageRelease(iref);
+    CGContextRelease(context);
+    CGImageRelease(outputRef);
+    free(pixels);
+    free(buffer);
+    
+    NSLog(@"Screenshot size: %d, %d", (int)[outputImage size].width, (int)[outputImage size].height);
+
+    return outputImage;
 }
 
 - (void)viewWillAppear:(BOOL)animated
