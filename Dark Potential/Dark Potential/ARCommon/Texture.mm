@@ -66,7 +66,6 @@
         delete[] pngData;
     }
     
-    [super dealloc];
 }
 
 @end

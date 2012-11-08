@@ -7,10 +7,24 @@
 #import "ARParentViewController.h"
 #import "ARViewController.h"
 #import "OverlayViewController.h"
+#import <QuartzCore/QuartzCore.h>
+#import "QCARutils.h"
+
 
 @implementation ARParentViewController
 
 @synthesize arViewRect;
+
+- (void)setup{
+    QCARutils *qUtils = [QCARutils getInstance];
+    
+    // Provide a list of targets we're expecting - the first in the list is the default
+    [qUtils addTargetName:@"Stones & Chips" atPath:@"StonesAndChips.xml"];
+    [qUtils addTargetName:@"Tarmac" atPath:@"Tarmac.xml"];
+    
+    arViewRect.size = [[UIScreen mainScreen] bounds].size;
+    arViewRect.origin.x = arViewRect.origin.y = 0;
+}
 
 // initialisation functions set up size of managed view
 - (id)init
@@ -18,8 +32,7 @@
     self = [super init];
     if (self) {
         // Custom initialization
-        arViewRect.size = [[UIScreen mainScreen] bounds].size;
-        arViewRect.origin.x = arViewRect.origin.y = 0;
+        [self setup];
     }
     return self;
 }
@@ -29,32 +42,22 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        arViewRect.size = [[UIScreen mainScreen] bounds].size;
-        arViewRect.origin.x = arViewRect.origin.y = 0;
-    }
+        [self setup];    }
     return self;    
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
+    NSLog(@"ARParentVC: initWithCoder");
     self = [super initWithCoder:aDecoder];
     if (self) {
-        // Custom initialization
-        arViewRect.size = [[UIScreen mainScreen] bounds].size;
-        arViewRect.origin.x = arViewRect.origin.y = 0;
+        [self setup];
     }
-    return self;    
+    return self;
 }
 
-- (void)dealloc
-{
-    [arViewController release];
-    [overlayViewController release];
-    [parentView release];
-    [super dealloc];
-}
 
-- (void) loadView
+/*- (void) loadView
 {
     NSLog(@"ARParentVC: creating");
     parentView = [[UIView alloc] initWithFrame:arViewRect];
@@ -76,10 +79,65 @@
     [parentView addSubview:btn];
     
     self.view = parentView;
-}
+}*/
 
 - (void)viewDidLoad
 {
+    NSLog(@"ARParentVC: viewDidLoad");
+    parentView = [[UIView alloc] initWithFrame:arViewRect];
+    
+    // Add the EAGLView and the overlay view to the window
+    arViewController = [[ARViewController alloc] init];
+    
+    // need to set size here to setup camera image size for AR
+    arViewController.arViewSize = arViewRect.size;
+    [parentView addSubview:arViewController.view];
+    
+    // Create an auto-rotating overlay view and its view controller (used for
+    // displaying UI objects, such as the camera control menu)
+    overlayViewController = [[OverlayViewController alloc] init];
+    
+    // BEGIN: custom UI stuff (by Joel)
+    
+    // back button
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backButton setFrame:CGRectMake (10, 10, 30, 30)];
+    [backButton setTitle:@"X" forState:UIControlStateNormal];
+    [backButton setTag:0];
+//    [backButton setImage:[UIImage imageNamed:@"button-info.png"] forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    CALayer *btnLayer = [backButton layer];
+    [btnLayer setCornerRadius:15.0f];
+    [btnLayer setBorderWidth:1.0f];
+    [btnLayer setBorderColor:[[UIColor whiteColor] CGColor]];
+
+    // torch button
+    //if (YES == cameraCapabilities.torch)
+    //{
+        UIButton *torchButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [torchButton setFrame:CGRectMake (50, 10, 30, 30)];
+        [torchButton setTitle:@"T" forState:UIControlStateNormal];
+        [torchButton setTag:1];
+        //    [torchButton setImage:[UIImage imageNamed:@"button-info.png"] forState:UIControlStateNormal];
+        [torchButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+        btnLayer = [torchButton layer];
+        [btnLayer setCornerRadius:15.0f];
+        [btnLayer setBorderWidth:1.0f];
+        [btnLayer setBorderColor:[[UIColor whiteColor] CGColor]];
+    //}
+    
+    [overlayViewController.view addSubview:backButton];
+    [overlayViewController.view addSubview:torchButton];
+    // END: custom UI stuff
+    
+    [parentView addSubview: overlayViewController.view];
+    
+    UIButton* btn = [[UIButton alloc] init];
+    [btn setTitle:@"Beans" forState:UIControlStateNormal];
+    [parentView addSubview:btn];
+    
+    self.view = parentView;
+    
     NSLog(@"ARParentVC: loading");
     // it's important to do this from here as arViewController has the wrong idea of orientation
     [arViewController handleARViewRotation:self.interfaceOrientation];
@@ -90,8 +148,23 @@
 //    [arViewController.view addSubview:[self tempButton]];
 }
 
+- (IBAction)buttonPressed:(id)sender
+{
+    NSLog(@"ARParentViewController: buttonPressed: %d", [sender tag]);
+    switch ([sender tag])
+    {
+        case 0:
+            [self dismissModalViewControllerAnimated:YES];
+            break;
+        case 1:
+            QCARutils *qUtils = [QCARutils getInstance];
+            BOOL newTorchMode = ![qUtils cameraTorchOn];
+            [qUtils cameraSetTorchMode:newTorchMode];
+            break;
+    }
+}
 
-- (void)viewWillAppear:(BOOL)animated 
+- (void)viewWillAppear:(BOOL)animated
 {
     /*if (parentView == nil)
     {
@@ -161,7 +234,7 @@
 
 
 // touch handlers
-- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+/*- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch* touch = [touches anyObject];
     
@@ -170,7 +243,7 @@
         // Show camera control action sheet
         [overlayViewController showOverlay];
     }
-}
+}*/
 
 - (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {

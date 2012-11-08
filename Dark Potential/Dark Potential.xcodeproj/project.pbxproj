@@ -21,15 +21,15 @@
 		5D5B77E9164AFDFF00C330CE /* TextureTeapotBrass.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B77E2164AFDFF00C330CE /* TextureTeapotBrass.png */; };
 		5D5B77EA164AFDFF00C330CE /* TextureTeapotRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B77E3164AFDFF00C330CE /* TextureTeapotRed.png */; };
 		5DA87179164AF5FA0017B893 /* libQCAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA87178164AF5FA0017B893 /* libQCAR.a */; };
-		5DA8717F164AF81C0017B893 /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA8717D164AF81C0017B893 /* EAGLView.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5DA87195164AF86E0017B893 /* AR_EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87183164AF86E0017B893 /* AR_EAGLView.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5DA87196164AF86E0017B893 /* ARParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87185164AF86E0017B893 /* ARParentViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5DA87197164AF86E0017B893 /* ARViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87187164AF86E0017B893 /* ARViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5DA87198164AF86E0017B893 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87189164AF86E0017B893 /* OverlayView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5DA87199164AF86E0017B893 /* OverlayViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA8718B164AF86E0017B893 /* OverlayViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5DA8719A164AF86E0017B893 /* QCARutils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA8718D164AF86E0017B893 /* QCARutils.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5DA8719D164AF86E0017B893 /* ShaderUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87191164AF86E0017B893 /* ShaderUtils.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5DA8719E164AF86E0017B893 /* Texture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87194164AF86E0017B893 /* Texture.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA8717F164AF81C0017B893 /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA8717D164AF81C0017B893 /* EAGLView.mm */; };
+		5DA87195164AF86E0017B893 /* AR_EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87183164AF86E0017B893 /* AR_EAGLView.mm */; };
+		5DA87196164AF86E0017B893 /* ARParentViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87185164AF86E0017B893 /* ARParentViewController.mm */; };
+		5DA87197164AF86E0017B893 /* ARViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87187164AF86E0017B893 /* ARViewController.mm */; };
+		5DA87198164AF86E0017B893 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87189164AF86E0017B893 /* OverlayView.m */; };
+		5DA87199164AF86E0017B893 /* OverlayViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA8718B164AF86E0017B893 /* OverlayViewController.mm */; };
+		5DA8719A164AF86E0017B893 /* QCARutils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA8718D164AF86E0017B893 /* QCARutils.mm */; };
+		5DA8719D164AF86E0017B893 /* ShaderUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87191164AF86E0017B893 /* ShaderUtils.cpp */; };
+		5DA8719E164AF86E0017B893 /* Texture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87194164AF86E0017B893 /* Texture.mm */; };
 		E2186A4416473A2200FEADC3 /* experiencebanner-xlanthos-onclick.png in Resources */ = {isa = PBXBuildFile; fileRef = E2186A4016473A2200FEADC3 /* experiencebanner-xlanthos-onclick.png */; };
 		E2186A4516473A2200FEADC3 /* experiencebanner-xlanthos-onclick@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2186A4116473A2200FEADC3 /* experiencebanner-xlanthos-onclick@2x.png */; };
 		E2186A4616473A2200FEADC3 /* experiencebanner-xlanthos.png in Resources */ = {isa = PBXBuildFile; fileRef = E2186A4216473A2200FEADC3 /* experiencebanner-xlanthos.png */; };
@@ -110,7 +110,7 @@
 		5DA87182164AF86E0017B893 /* AR_EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AR_EAGLView.h; sourceTree = "<group>"; };
 		5DA87183164AF86E0017B893 /* AR_EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AR_EAGLView.mm; sourceTree = "<group>"; };
 		5DA87184164AF86E0017B893 /* ARParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARParentViewController.h; sourceTree = "<group>"; };
-		5DA87185164AF86E0017B893 /* ARParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARParentViewController.m; sourceTree = "<group>"; };
+		5DA87185164AF86E0017B893 /* ARParentViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ARParentViewController.mm; sourceTree = "<group>"; };
 		5DA87186164AF86E0017B893 /* ARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
 		5DA87187164AF86E0017B893 /* ARViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ARViewController.mm; sourceTree = "<group>"; };
 		5DA87188164AF86E0017B893 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
@@ -254,7 +254,7 @@
 				5DA87182164AF86E0017B893 /* AR_EAGLView.h */,
 				5DA87183164AF86E0017B893 /* AR_EAGLView.mm */,
 				5DA87184164AF86E0017B893 /* ARParentViewController.h */,
-				5DA87185164AF86E0017B893 /* ARParentViewController.m */,
+				5DA87185164AF86E0017B893 /* ARParentViewController.mm */,
 				5DA87186164AF86E0017B893 /* ARViewController.h */,
 				5DA87187164AF86E0017B893 /* ARViewController.mm */,
 				5DA87188164AF86E0017B893 /* OverlayView.h */,
@@ -370,9 +370,9 @@
 			isa = PBXGroup;
 			children = (
 				E28BBD7C16449F850016B2D2 /* Audio */,
+				E2A1CBA1164351F6009F1CBA /* Images */,
 				5DA8717B164AF8030017B893 /* QCAR stuff */,
 				E2186A56164741EF00FEADC3 /* View Controllers */,
-				E2A1CBA1164351F6009F1CBA /* Images */,
 				E2A1CB751643518F009F1CBA /* AppDelegate.h */,
 				E2A1CB761643518F009F1CBA /* AppDelegate.mm */,
 				E2A1CB7E1643518F009F1CBA /* MainStoryboard.storyboard */,
@@ -579,7 +579,7 @@
 				E2186A591647421400FEADC3 /* CharacterViewController.m in Sources */,
 				5DA8717F164AF81C0017B893 /* EAGLView.mm in Sources */,
 				5DA87195164AF86E0017B893 /* AR_EAGLView.mm in Sources */,
-				5DA87196164AF86E0017B893 /* ARParentViewController.m in Sources */,
+				5DA87196164AF86E0017B893 /* ARParentViewController.mm in Sources */,
 				5DA87197164AF86E0017B893 /* ARViewController.mm in Sources */,
 				5DA87198164AF86E0017B893 /* OverlayView.m in Sources */,
 				5DA87199164AF86E0017B893 /* OverlayViewController.mm in Sources */,
@@ -679,6 +679,8 @@
 		E2A1CB9C16435190009F1CBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joel Glanfield (D3BF96E7YY)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dark Potential/Dark Potential-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/include";
@@ -689,6 +691,7 @@
 					"\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/lib/arm\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CC02FD70-8015-4465-8BA6-051753886B57";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
@@ -697,6 +700,7 @@
 		E2A1CB9D16435190009F1CBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dark Potential/Dark Potential-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/include";

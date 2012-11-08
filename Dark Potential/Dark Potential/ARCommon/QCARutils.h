@@ -50,8 +50,8 @@ enum _errorCode {
     QCAR::DataSet *dataSet;
 }
 
-@property (nonatomic, retain) NSString *name;
-@property (nonatomic, retain) NSString *path;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *path;
 @property (nonatomic) QCAR::DataSet *dataSet;
 
 - (id) initWithName:(NSString *)theName andPath:(NSString *)thePath;
@@ -65,7 +65,7 @@ enum _errorCode {
 {
 @public
     CGSize viewSize;            // set in initialisation
-    id delegate;                // a class that will handle optional callbacks
+    id __weak delegate;                // a class that will handle optional callbacks
     
     CGFloat contentScalingFactor; // 1.0 normal, 2.0 for retina enabled
     NSMutableArray *targetsList;       // Array of DataSetItem - load target from this list of resources
@@ -93,10 +93,10 @@ enum _errorCode {
 }
 
 @property (nonatomic) CGSize viewSize;
-@property (nonatomic, assign) id delegate; 
+@property (nonatomic, weak) id delegate; 
 
 @property (nonatomic) CGFloat contentScalingFactor;
-@property (nonatomic, retain) NSMutableArray *targetsList;
+@property (nonatomic, strong) NSMutableArray *targetsList;
 @property (nonatomic) int QCARFlags;           
 @property (nonatomic) status appStatus;        
 @property (nonatomic) int errorCode;

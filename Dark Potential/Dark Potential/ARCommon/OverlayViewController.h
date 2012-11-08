@@ -33,8 +33,8 @@
 }
 
 - (void) handleViewRotation:(UIInterfaceOrientation)interfaceOrientation;
-- (void) showOverlay;
-+ (BOOL) doesOverlayHaveContent;
-- (void) targetSelectInView:(UIView *)theView;
+//- (void) showOverlay;
+//+ (BOOL) doesOverlayHaveContent;
+//- (void) targetSelectInView:(UIView *)theView;
 
 @end

@@ -10,5 +10,4 @@ Qualcomm Confidential and Proprietary
 
 @implementation OverlayView
 
-
 @end

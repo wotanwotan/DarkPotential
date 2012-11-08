@@ -68,7 +68,6 @@ namespace {
         obj3D.texture = [textures objectAtIndex:i];
 
         [objects3D addObject:obj3D];
-        [obj3D release];
     }
 }
 

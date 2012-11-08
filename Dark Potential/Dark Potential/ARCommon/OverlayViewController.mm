@@ -29,10 +29,6 @@ Qualcomm Confidential and Proprietary
 }
 
 
-- (void)dealloc {
-    [optionsOverlayView release];
-    [super dealloc];
-}
 
 
 - (void) loadView
@@ -43,16 +39,11 @@ Qualcomm Confidential and Proprietary
     
     // We're going to let the parent VC handle all interactions so disable any UI
     // Further on, we'll also implement a touch pass-through
-    self.view.userInteractionEnabled = NO;
-    
-    UIButton* btn = [[UIButton alloc] init];
-    [btn setTitle:@"Beans" forState:UIControlStateNormal];
-    [self.view addSubview:btn];
-    
+//    self.view.userInteractionEnabled = NO;
+
     // Get the camera capabilities
     [OverlayViewController determineCameraCapabilities:&cameraCapabilities];
 }
-
 
 - (void) handleViewRotation:(UIInterfaceOrientation)interfaceOrientation
 {
@@ -71,15 +62,15 @@ Qualcomm Confidential and Proprietary
 
 
 // The user touched the screen - pass through
-- (void) touchesBegan: (NSSet*) touches withEvent: (UIEvent*) event
+/*- (void) touchesBegan: (NSSet*) touches withEvent: (UIEvent*) event
 {
     // pass events down to parent VC
     [super touchesBegan:touches withEvent:event];
-}
+}*/
 
 
 // pop-up is invoked by parent VC
-- (void) showOverlay
+/*- (void) showOverlay
 {
     // Show camera control action sheet
     mainOptionsAS = [[[UIActionSheet alloc] initWithTitle:nil
@@ -237,7 +228,7 @@ Qualcomm Confidential and Proprietary
         [self mainOptionClickedButtonAtIndex:buttonIndex];
     else if (actionSheet == targetOptionsAS)
         [self targetOptionClickedButtonAtIndex:buttonIndex];
-}
+}*/
 
 
 + (void) determineCameraCapabilities:(struct tagCameraCapabilities *) pCapabilities

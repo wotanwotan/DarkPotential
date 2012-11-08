@@ -34,7 +34,6 @@
 - (void)dealloc
 {
     [self unloadViewData];
-    [super dealloc];
 }
 
 
@@ -46,7 +45,6 @@
     // Release the textures array
     if (textures != nil)
     {
-        [textures release];
         textures = nil;
     }
     
@@ -54,13 +52,11 @@
     
     if (arView != nil)
     {
-        [arView release];
         arView = nil;
     }
     
     if (parentView != nil)
     {
-        [parentView release];
         parentView = nil;
     }
 }
@@ -189,11 +185,11 @@
 {
     int nErr = noErr;
     int nTextures = [textureList count];
-    textures = [[NSMutableArray array] retain];
+    textures = [NSMutableArray array];
     
     @try {
         for (int i = 0; i < nTextures; ++i) {
-            Texture* tex = [[[Texture alloc] init] autorelease];
+            Texture* tex = [[Texture alloc] init];
             NSString* file = [textureList objectAtIndex:i];
             
             nErr = [tex loadImage:file] == YES ? noErr : 1;

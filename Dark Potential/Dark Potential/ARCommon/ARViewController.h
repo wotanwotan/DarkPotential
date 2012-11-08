@@ -19,7 +19,7 @@
     BOOL arVisible;             // State of visibility of the view
 }
 
-@property (nonatomic, retain) IBOutlet EAGLView *arView;
+@property (nonatomic, strong) IBOutlet EAGLView *arView;
 @property (nonatomic) CGSize arViewSize;
            
 - (void) handleARViewRotation:(UIInterfaceOrientation)interfaceOrientation;

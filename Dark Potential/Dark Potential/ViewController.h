@@ -17,10 +17,10 @@
     NSArray* animatedButtons;
 }
 
-@property (weak, nonatomic) IBOutlet UIButton *experienceBtn1;
-@property (weak, nonatomic) IBOutlet UIButton *experienceBtn2;
-@property (weak, nonatomic) IBOutlet UIButton *experienceBtn3;
-@property (weak, nonatomic) IBOutlet UIButton *mwgLogo;
+@property (strong, nonatomic) IBOutlet UIButton *experienceBtn1;
+@property (strong, nonatomic) IBOutlet UIButton *experienceBtn2;
+@property (strong, nonatomic) IBOutlet UIButton *experienceBtn3;
+@property (strong, nonatomic) IBOutlet UIButton *mwgLogo;
 
 - (IBAction)launchMWGWebsite:(id)sender;
 - (IBAction)experienceButtonPressed:(id)sender;

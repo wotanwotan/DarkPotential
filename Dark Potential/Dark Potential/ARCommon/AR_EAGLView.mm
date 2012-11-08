@@ -111,8 +111,28 @@
     return self;
 }
 
+- (void)deinitRendering
+{
+    if (!renderingInited)
+        return;
+    
+    NSLog(@"EAGLView: deinitRendering");
+    
+    // Delete textures
+    GLuint *textureIDs = new GLuint [[textures count]];
+    for (int i = 0; i < [textures count]; ++i) {
+        Texture *texture = [textures objectAtIndex:i];
+        textureIDs[i] = texture.textureID;
+    }
+    glDeleteTextures([textures count], textureIDs);
+    delete [] textureIDs;
+    
+    renderingInited = NO;
+}
+
 - (void)dealloc
 {
+    [self deinitRendering];
     [self deleteFramebuffer];
     
     // Tear down context
@@ -120,10 +140,6 @@
         [EAGLContext setCurrentContext:nil];
     }
     
-    [context release];
-    [objects3D release];
-    [textureList release];
-    [super dealloc];
 }
 
 
@@ -319,7 +335,6 @@
         obj3D.texture = [textures objectAtIndex:i];
 
         [objects3D addObject:obj3D];
-        [obj3D release];
     }
 }
 

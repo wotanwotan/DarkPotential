@@ -24,7 +24,7 @@
     unsigned int numIndices;
     const unsigned short *indices;
     
-    Texture *texture;
+    Texture *__weak texture;
 }
 
 @property (nonatomic) unsigned int numVertices;
@@ -35,7 +35,7 @@
 @property (nonatomic) unsigned int numIndices;
 @property (nonatomic) const unsigned short *indices;
 
-@property (nonatomic, assign) Texture *texture;
+@property (nonatomic, weak) Texture *texture;
 
 @end
 
@@ -81,7 +81,7 @@
 #endif
 }
 
-@property (nonatomic, retain) NSMutableArray *textureList;
+@property (nonatomic, strong) NSMutableArray *textureList;
 
 - (void) useTextures:(NSMutableArray *)theTextures;
 
