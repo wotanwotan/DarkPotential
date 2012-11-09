@@ -211,6 +211,7 @@
     [self presentModalViewController:pictureView animated:YES];
 }
 
+//static inline double radians (double degrees) {return degrees * M_PI/180;}
 - (UIImage*) glToUIImage
 {
     CGFloat scale = [[UIScreen mainScreen] scale];
@@ -226,7 +227,8 @@
     
     CGDataProviderRef ref = CGDataProviderCreateWithData(NULL, buffer, s.size.width * s.size.height * 4, NULL);
     
-    CGImageRef iref = CGImageCreate(s.size.width, s.size.height, 8, 32, s.size.width * 4, CGColorSpaceCreateDeviceRGB(), kCGBitmapByteOrderDefault, ref, NULL, true, kCGRenderingIntentDefault);
+    CGImageRef iref = CGImageCreate(s.size.width, s.size.height, 8, 32, s.size.width * 4, CGColorSpaceCreateDeviceRGB(),
+                                    kCGBitmapByteOrderDefault, ref, NULL, true, kCGRenderingIntentDefault);
     
     size_t width = CGImageGetWidth(iref);
     size_t height = CGImageGetHeight(iref);
@@ -235,6 +237,7 @@
     
     CGContextRef context = CGBitmapContextCreate(pixels, width, height, 8, width * 4,
                                                  CGImageGetColorSpace(iref), kCGImageAlphaNoneSkipFirst | kCGBitmapByteOrder32Big);
+//    CGContextRotateCTM (context, radians(90));
     
     CGAffineTransform transform = CGAffineTransformIdentity;
     transform = CGAffineTransformMakeTranslation(0.0f, height);
@@ -243,7 +246,10 @@
     CGContextDrawImage(context, CGRectMake(0.0f, 0.0f, width, height), iref);
     CGImageRef outputRef = CGBitmapContextCreateImage(context);
     
-    UIImage * outputImage = [UIImage imageWithCGImage: outputRef];
+    UIImage* outputImage = [UIImage imageWithCGImage:outputRef];//] scale:1.0f orientation:UIImageOrientationRight];
+//    UIImageWriteToSavedPhotosAlbum(outputImage, self, nil, nil);
+    
+//    [outputImage r]
     
     CGDataProviderRelease(ref);
     CGImageRelease(iref);

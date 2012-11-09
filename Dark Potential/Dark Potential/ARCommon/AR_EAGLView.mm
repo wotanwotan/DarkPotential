@@ -66,7 +66,7 @@
 }
 
 // IMPORTANT: Call this method after you draw and before -presentRenderbuffer:.
-- (UIImage*)snapshot//:(UIView*)eaglview
+/*- (UIImage*)snapshot//:(UIView*)eaglview
 {
     GLint backingWidth, backingHeight;
     
@@ -141,7 +141,7 @@
     NSLog(@"Screenshot size: %d, %d", (int)[image size].width, (int)[image size].height);
     
     return image;
-}
+}*/
 
 
 #pragma mark ---- view lifecycle ---

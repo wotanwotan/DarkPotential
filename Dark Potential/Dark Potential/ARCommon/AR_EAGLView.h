@@ -92,6 +92,6 @@
 - (void)deleteFramebuffer;
 - (void)initRendering;
 - (void)initShaders;
-- (UIImage*)snapshot;//:(UIView*)eaglview
+//- (UIImage*)snapshot;
 
 @end
