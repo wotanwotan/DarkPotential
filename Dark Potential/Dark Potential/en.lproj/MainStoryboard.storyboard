@@ -55,7 +55,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eCk-43-qMJ">
-                                <rect key="frame" x="75" y="234" width="67" height="33"/>
+                                <rect key="frame" x="179" y="261" width="67" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="joel.png">
@@ -70,7 +70,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rxS-zr-u3j">
-                                <rect key="frame" x="179" y="234" width="67" height="33"/>
+                                <rect key="frame" x="75" y="261" width="67" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="steph.png">
@@ -289,11 +289,11 @@
         <image name="experience-banner-empty.png" width="485" height="147"/>
         <image name="experiencebanner-xlanthos-onclick.png" width="273" height="82"/>
         <image name="experiencebanner-xlanthos.png" width="273" height="82"/>
-        <image name="joel.png" width="67" height="33"/>
+        <image name="joel.png" width="94" height="41"/>
         <image name="menu-bg-iphone5.png" width="320" height="568"/>
         <image name="mwglogo.png" width="87" height="32"/>
         <image name="navbar.png" width="320" height="44"/>
-        <image name="steph.png" width="67" height="33"/>
+        <image name="steph.png" width="94" height="41"/>
     </resources>
     <classes>
         <class className="ARParentViewController" superclassName="UIViewController">
