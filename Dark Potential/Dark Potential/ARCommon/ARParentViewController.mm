@@ -217,9 +217,9 @@
     CGFloat scale = [[UIScreen mainScreen] scale];
     CGRect s;
     if ([[[UIDevice currentDevice] model] isEqualToString:@"iPad"])
-        s = CGRectMake(0, 0, 768.0f * scale, (1024.0f) * scale);
+        s = CGRectMake(0, 0, 1024.0f * scale, (768.0f) * scale);
     else
-        s = CGRectMake(0, 0, 320.0f * scale, (480.0f) * scale);
+        s = CGRectMake(0, 0, 480.0f * scale, (320.0f) * scale);
     
     uint8_t *buffer = (uint8_t *) malloc(s.size.width * s.size.height * 4);
     
@@ -239,14 +239,16 @@
                                                  CGImageGetColorSpace(iref), kCGImageAlphaNoneSkipFirst | kCGBitmapByteOrder32Big);
 //    CGContextRotateCTM (context, radians(90));
     
-    CGAffineTransform transform = CGAffineTransformIdentity;
-    transform = CGAffineTransformMakeTranslation(0.0f, height);
-    transform = CGAffineTransformScale(transform, 1.0, -1.0);
-    CGContextConcatCTM(context, transform);
+//    CGAffineTransform transform = CGAffineTransformIdentity;
+//    transform = CGAffineTransformMakeTranslation(0.0f, height);
+//    transform = CGAffineTransformScale(transform, 1.0, -1.0);
+//    CGContextConcatCTM(context, transform);
     CGContextDrawImage(context, CGRectMake(0.0f, 0.0f, width, height), iref);
     CGImageRef outputRef = CGBitmapContextCreateImage(context);
     
-    UIImage* outputImage = [UIImage imageWithCGImage:outputRef];//] scale:1.0f orientation:UIImageOrientationRight];
+//    UIImage* outputImage = [UIImage imageWithCGImage:outputRef];//] scale:1.0f orientation:UIImageOrientationRight];
+    UIImage* outputImage = [[UIImage alloc] initWithCGImage:outputRef scale:(CGFloat)1.0 orientation:UIImageOrientationLeftMirrored];
+                            
 //    UIImageWriteToSavedPhotosAlbum(outputImage, self, nil, nil);
     
 //    [outputImage r]
