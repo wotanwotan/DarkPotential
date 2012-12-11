@@ -162,6 +162,8 @@
     
 //    [self.view addSubview:[self blahButton]];
 //    [arViewController.view addSubview:[self tempButton]];
+    
+    [[arViewController arView] setDelegate:self];
 }
 
 - (IBAction)buttonPressed:(id)sender
@@ -183,7 +185,8 @@
         }
         case 2:
         {
-            [self takeScreenshot];
+            //[self takeScreenshot];
+            [[arViewController arView] setShouldTakeScreenshot:YES];
             break;
         }
     }
@@ -191,8 +194,6 @@
 
 - (void) takeScreenshot
 {
-//    [[arViewController arView] context
-    //UIImage *screenshotImage = [[arViewController arView] snapshot];
     UIImage *screenshotImage = [self glToUIImage];
     
     // now, show the photo-share view
@@ -202,16 +203,19 @@
     else
         pictureView = [[ScreenshotViewController alloc] initWithNibName:@"ScreenshotViewController" bundle:nil];
     
-    //[pictureView setDelegate:self];
     [pictureView setScreenshotImage:screenshotImage];
-    //[pictureView setScreenshotImage:[UIImage imageNamed:@"DarkPotential-AppIcon-114.png"]];
     
-    //[pictureView setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+    QCARutils *qUtils = [QCARutils getInstance];
+    [qUtils pauseAR];
     
     [self presentModalViewController:pictureView animated:YES];
 }
 
-//static inline double radians (double degrees) {return degrees * M_PI/180;}
+- (void) screenshotWasTaken:(UIImage*)theScreenshot
+{    
+    [self takeScreenshot];
+}
+
 - (UIImage*) glToUIImage
 {
     CGFloat scale = [[UIScreen mainScreen] scale];
@@ -237,21 +241,10 @@
     
     CGContextRef context = CGBitmapContextCreate(pixels, width, height, 8, width * 4,
                                                  CGImageGetColorSpace(iref), kCGImageAlphaNoneSkipFirst | kCGBitmapByteOrder32Big);
-//    CGContextRotateCTM (context, radians(90));
-    
-//    CGAffineTransform transform = CGAffineTransformIdentity;
-//    transform = CGAffineTransformMakeTranslation(0.0f, height);
-//    transform = CGAffineTransformScale(transform, 1.0, -1.0);
-//    CGContextConcatCTM(context, transform);
+
     CGContextDrawImage(context, CGRectMake(0.0f, 0.0f, width, height), iref);
     CGImageRef outputRef = CGBitmapContextCreateImage(context);
-    
-//    UIImage* outputImage = [UIImage imageWithCGImage:outputRef];//] scale:1.0f orientation:UIImageOrientationRight];
     UIImage* outputImage = [[UIImage alloc] initWithCGImage:outputRef scale:(CGFloat)1.0 orientation:UIImageOrientationLeftMirrored];
-                            
-//    UIImageWriteToSavedPhotosAlbum(outputImage, self, nil, nil);
-    
-//    [outputImage r]
     
     CGDataProviderRelease(ref);
     CGImageRelease(iref);
@@ -264,6 +257,7 @@
 
     return outputImage;
 }
+
 
 - (void)viewWillAppear:(BOOL)animated
 {

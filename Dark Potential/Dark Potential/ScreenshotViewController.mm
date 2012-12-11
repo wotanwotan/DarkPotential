@@ -26,9 +26,9 @@
     return self;
 }
 
-- (void)viewDidLoad
+- (void) viewWillAppear:(BOOL)animated
 {
-    [super viewDidLoad];
+    [super viewWillAppear:animated];
     // Do any additional setup after loading the view from its nib.
     
     [self.screenshotImageView setImage:screenshotImage];
@@ -44,8 +44,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewDidUnload {
-    [super viewDidUnload];
+- (void) viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    
+    screenshotImage = nil;
 }
 
 - (IBAction)exitButtonPressed:(id)sender

@@ -43,7 +43,7 @@
 
 @implementation AR_EAGLView
 
-@synthesize textureList;
+@synthesize textureList, shouldTakeScreenshot, delegate;
 
 // You must implement this method
 + (Class)layerClass
@@ -66,9 +66,9 @@
 }
 
 // IMPORTANT: Call this method after you draw and before -presentRenderbuffer:.
-/*- (UIImage*)snapshot//:(UIView*)eaglview
+- (UIImage*)snapshot:(UIView*)eaglview
 {
-    GLint backingWidth, backingHeight;
+    /*GLint backingWidth, backingHeight;
     
     // Bind the color renderbuffer used to render the OpenGL ES view
     // If your application only creates a single color renderbuffer which is already bound at this point,
@@ -84,11 +84,8 @@
     NSInteger dataLength = width * height * 4;
     GLubyte *data = (GLubyte*)malloc(dataLength * sizeof(GLubyte));
     
-//    NSLog(@"width = %d, height = %d", width, height);
-    
     // Read pixel data from the framebuffer
     glPixelStorei(GL_PACK_ALIGNMENT, 4);
-    glFlush();
     glReadPixels(x, y, width, height, GL_RGBA, GL_UNSIGNED_BYTE, data);
     
     // Create a CGImage with the pixel data
@@ -103,11 +100,10 @@
     // Create a graphics context with the target size measured in POINTS
     NSInteger widthInPoints, heightInPoints;
     if (NULL != UIGraphicsBeginImageContextWithOptions) {
-        NSLog(@"BLAH");
         // On iOS 4 and later, use UIGraphicsBeginImageContextWithOptions to take the scale into consideration
         // Set the scale parameter to your OpenGL ES view's contentScaleFactor
         // so that you get a high-resolution snapshot when its value is greater than 1.0
-        CGFloat scale = self.contentScaleFactor;// eaglview.contentScaleFactor;
+        CGFloat scale = eaglview.contentScaleFactor;
         widthInPoints = width / scale;
         heightInPoints = height / scale;
         UIGraphicsBeginImageContextWithOptions(CGSizeMake(widthInPoints, heightInPoints), NO, scale);
@@ -136,13 +132,13 @@
     free(data);
     CFRelease(ref);
     CFRelease(colorspace);
-    CGImageRelease(iref);
+    CGImageRelease(iref);*/
     
-    NSLog(@"Screenshot size: %d, %d", (int)[image size].width, (int)[image size].height);
+    if (delegate != nil && [delegate respondsToSelector:@selector(screenshotWasTaken:)])
+        [self.delegate screenshotWasTaken:nil];//image];
     
-    return image;
-}*/
-
+    return nil;//image;
+}
 
 #pragma mark ---- view lifecycle ---
 /////////////////////////////////////////////////////////////////
@@ -185,6 +181,8 @@
             NSLog(@"Failed to create ES context");
         }
     }
+    
+    shouldTakeScreenshot = NO;
     
     return self;
 }
@@ -386,7 +384,17 @@
         glBindRenderbuffer(GL_RENDERBUFFER, colorRenderbuffer);
 #endif
         
+        // done rendering? take screenshot if required
+        if ([self shouldTakeScreenshot])
+        {
+//            NSLog(@"We should take a screenshot here...");
+            [self snapshot:self];
+            [self setShouldTakeScreenshot:NO];
+        }
+        
+  //      NSLog(@"Presenting the render buffer...");
         success = [context presentRenderbuffer:GL_RENDERBUFFER];
+    //    NSLog(@"...done!");
     }
     
     return success;

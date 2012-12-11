@@ -5,10 +5,11 @@
  ==============================================================================*/
 
 #import <UIKit/UIKit.h>
+#import "AR_EAGLView.h"
 
 @class ARViewController, OverlayViewController;
 
-@interface ARParentViewController : UIViewController {
+@interface ARParentViewController : UIViewController<ScreenshotWasTakenDelegate> {
     OverlayViewController* overlayViewController; // for the overlay view (buttons and action sheets)
     ARViewController* arViewController; // for the Augmented Reality view
     UIView *parentView; // a container view to allow use in tabbed views etc.

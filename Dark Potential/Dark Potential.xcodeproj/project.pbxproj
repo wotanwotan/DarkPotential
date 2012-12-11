@@ -690,7 +690,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matt  Fegan (4M2GA573ZB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joel Glanfield (D3BF96E7YY)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dark Potential/Dark Potential-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/include";
@@ -701,7 +701,7 @@
 					"\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/lib/arm\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "08C00970-F1FC-4086-85E5-EC1CAE6ACF81";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CC02FD70-8015-4465-8BA6-051753886B57";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};

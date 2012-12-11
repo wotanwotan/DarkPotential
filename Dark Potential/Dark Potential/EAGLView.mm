@@ -197,7 +197,9 @@ namespace {
 #endif
     
     QCAR::Renderer::getInstance().end();
+    
     [self presentFramebuffer];
+//    NSLog(@"Success: %d", [self presentFramebuffer]);
 }
 
 @end

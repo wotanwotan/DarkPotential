@@ -42,12 +42,17 @@
 
 @class QCARutils;
 
+@protocol ScreenshotWasTakenDelegate <NSObject>
+
+- (void) screenshotWasTaken:(UIImage*)theScreenshot;
+
+@end
+
 // This class wraps the CAEAGLLayer from CoreAnimation into a convenient UIView
 // subclass.  The view content is basically an EAGL surface you render your
 // OpenGL scene into.  Note that setting the view non-opaque will only work if
 // the EAGL surface has an alpha channel.
 @interface AR_EAGLView : UIView <UIGLViewProtocol>
-
 {
 @public
     NSMutableArray *textureList; // list of textures to load
@@ -81,7 +86,9 @@
 #endif
 }
 
+@property (nonatomic, strong) id <ScreenshotWasTakenDelegate> delegate;
 @property (nonatomic, strong) NSMutableArray *textureList;
+@property (atomic) BOOL shouldTakeScreenshot;
 
 - (void) useTextures:(NSMutableArray *)theTextures;
 
@@ -92,6 +99,6 @@
 - (void)deleteFramebuffer;
 - (void)initRendering;
 - (void)initShaders;
-//- (UIImage*)snapshot;
+- (UIImage*)snapshot:(UIView*)eaglview;
 
 @end
