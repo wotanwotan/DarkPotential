@@ -92,6 +92,7 @@
     // load the list of textures requested by the view, and tell it about them
     if (textures == nil)
         [self loadTextures:arView.textureList];
+
     [arView useTextures:textures];
    
     // set the view size for initialisation, and go do it...

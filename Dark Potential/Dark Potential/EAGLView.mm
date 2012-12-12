@@ -27,6 +27,14 @@ namespace {
 
     // Model scale factor
     const float kObjectScale = 3.0f;
+    
+    static const float planeVertices[] = { -0.5, -0.5, 0.0, 0.5, -0.5, 0.0, 0.5, 0.5, 0.0, -0.5, 0.5, 0.0, };
+    
+    static const float planeTexcoords[] = { 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 };
+    
+    static const float planeNormals[] = { 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0 };
+    
+    static const unsigned short planeIndices[] = { 0, 1, 2, 0, 2, 3 };
 }
 
 
@@ -132,7 +140,8 @@ namespace {
         Object3D *obj3D = [objects3D objectAtIndex:targetIndex];
         
         // Render using the appropriate version of OpenGL
-        if (QCAR::GL_11 & qUtils.QCARFlags) {
+        if (QCAR::GL_11 & qUtils.QCARFlags)
+        {
             // Load the projection matrix
             glMatrixMode(GL_PROJECTION);
             glLoadMatrixf(qUtils.projectionMatrix.data);
@@ -151,9 +160,10 @@ namespace {
             glDrawElements(GL_TRIANGLES, obj3D.numIndices, GL_UNSIGNED_SHORT, (const GLvoid*)obj3D.indices);
         }
 #ifndef USE_OPENGL1
-        else {
+        else
+        {
             // OpenGL 2
-            QCAR::Matrix44F modelViewProjection;
+            /*QCAR::Matrix44F modelViewProjection;
             
             ShaderUtils::translatePoseMatrix(0.0f, 0.0f, kObjectScale, &modelViewMatrix.data[0]);
             ShaderUtils::scalePoseMatrix(kObjectScale, kObjectScale, kObjectScale, &modelViewMatrix.data[0]);
@@ -174,7 +184,36 @@ namespace {
             glUniformMatrix4fv(mvpMatrixHandle, 1, GL_FALSE, (const GLfloat*)&modelViewProjection.data[0]);
             glDrawElements(GL_TRIANGLES, obj3D.numIndices, GL_UNSIGNED_SHORT, (const GLvoid*)obj3D.indices);
             
-            ShaderUtils::checkGlError("EAGLView renderFrameQCAR");
+            ShaderUtils::checkGlError("EAGLView renderFrameQCAR");*/
+            
+            QCAR::Vec2F targetSize = ((QCAR::ImageTarget *) trackable)->getSize();
+            
+            QCAR::Matrix44F modelViewProjection;
+            
+            ShaderUtils::translatePoseMatrix(0.0f, 0.0f, kObjectScale, &modelViewMatrix.data[0]);
+
+            ShaderUtils::scalePoseMatrix(targetSize.data[0], targetSize.data[1], 1.0f, &modelViewMatrix.data[0]);
+            ShaderUtils::multiplyMatrix(&qUtils.projectionMatrix.data[0] /*&projectionMatrix.data[0]*/, &modelViewMatrix.data[0] , &modelViewProjection.data[0]);
+            
+            glUseProgram(shaderProgramID);
+            glVertexAttribPointer(vertexHandle, 3, GL_FLOAT, GL_FALSE, 0, (const GLvoid*) &planeVertices[0]);
+            glVertexAttribPointer(normalHandle, 3, GL_FLOAT, GL_FALSE, 0, (const GLvoid*) &planeNormals[0]);
+            
+            glVertexAttribPointer(textureCoordHandle, 2, GL_FLOAT, GL_FALSE, 0, (const GLvoid*) &planeTexcoords[0]);
+            
+            glEnableVertexAttribArray(vertexHandle);
+            
+            glEnableVertexAttribArray(normalHandle);
+            
+            glEnableVertexAttribArray(textureCoordHandle);
+            
+            glActiveTexture(GL_TEXTURE0);
+            
+            Texture* tex = [textures objectAtIndex:0];
+            glBindTexture(GL_TEXTURE_2D, [tex textureID]);
+            
+            glUniformMatrix4fv(mvpMatrixHandle, 1, GL_FALSE, (GLfloat*)&modelViewProjection.data[0]);
+            glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_SHORT, (const GLvoid*) &planeIndices[0]);
         }
 #endif
     }
@@ -199,7 +238,7 @@ namespace {
     QCAR::Renderer::getInstance().end();
     
     [self presentFramebuffer];
-//    NSLog(@"Success: %d", [self presentFramebuffer]);
 }
+
 
 @end
