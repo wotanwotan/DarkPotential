@@ -22,13 +22,15 @@ namespace {
     const char* textureFilenames[] = {
         "TextureTeapotBrass.png",
         "TextureTeapotBlue.png",
-        "TextureTeapotRed.png"
+        "TextureTeapotRed.png",
+        "Xlanthos.png"
+//        "Reclaimer_squad_member.png"
     };
 
     // Model scale factor
     const float kObjectScale = 3.0f;
     
-    static const float planeVertices[] = { -0.5, -0.5, 0.0, 0.5, -0.5, 0.0, 0.5, 0.5, 0.0, -0.5, 0.5, 0.0, };
+    static const float planeVertices[] = { -1.0, -1.5, 1.0, 1.0, -1.5, 1.0, 1.0, 1.5, 1.0, -1.0, 1.5, 1.0 };
     
     static const float planeTexcoords[] = { 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 };
     
@@ -124,6 +126,8 @@ namespace {
     
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_CULL_FACE);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     
     for (int i = 0; i < state.getNumActiveTrackables(); ++i) {
         // Get the trackable
@@ -193,7 +197,7 @@ namespace {
             ShaderUtils::translatePoseMatrix(0.0f, 0.0f, kObjectScale, &modelViewMatrix.data[0]);
 
             ShaderUtils::scalePoseMatrix(targetSize.data[0], targetSize.data[1], 1.0f, &modelViewMatrix.data[0]);
-            ShaderUtils::multiplyMatrix(&qUtils.projectionMatrix.data[0] /*&projectionMatrix.data[0]*/, &modelViewMatrix.data[0] , &modelViewProjection.data[0]);
+            ShaderUtils::multiplyMatrix(&qUtils.projectionMatrix.data[0], &modelViewMatrix.data[0] , &modelViewProjection.data[0]);
             
             glUseProgram(shaderProgramID);
             glVertexAttribPointer(vertexHandle, 3, GL_FLOAT, GL_FALSE, 0, (const GLvoid*) &planeVertices[0]);
@@ -209,7 +213,7 @@ namespace {
             
             glActiveTexture(GL_TEXTURE0);
             
-            Texture* tex = [textures objectAtIndex:0];
+            Texture* tex = [textures objectAtIndex:3];
             glBindTexture(GL_TEXTURE_2D, [tex textureID]);
             
             glUniformMatrix4fv(mvpMatrixHandle, 1, GL_FALSE, (GLfloat*)&modelViewProjection.data[0]);
@@ -220,6 +224,7 @@ namespace {
     
     glDisable(GL_DEPTH_TEST);
     glDisable(GL_CULL_FACE);
+    glDisable(GL_BLEND);
     
     if (QCAR::GL_11 & qUtils.QCARFlags) {
         glDisable(GL_TEXTURE_2D);

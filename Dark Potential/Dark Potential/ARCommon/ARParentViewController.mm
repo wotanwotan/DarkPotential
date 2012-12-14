@@ -220,6 +220,8 @@
 {
     CGFloat scale = [[UIScreen mainScreen] scale];
     CGRect s;
+    
+    // need to swap width/height because Vuforia assumes landscape but the app is portrait
     if ([[[UIDevice currentDevice] model] isEqualToString:@"iPad"])
         s = CGRectMake(0, 0, 1024.0f * scale, (768.0f) * scale);
     else
@@ -244,7 +246,14 @@
 
     CGContextDrawImage(context, CGRectMake(0.0f, 0.0f, width, height), iref);
     CGImageRef outputRef = CGBitmapContextCreateImage(context);
-    UIImage* outputImage = [[UIImage alloc] initWithCGImage:outputRef scale:(CGFloat)1.0 orientation:UIImageOrientationLeftMirrored];
+    UIImage* tempImage = [[UIImage alloc] initWithCGImage:outputRef scale:(CGFloat)1.0 orientation:UIImageOrientationLeftMirrored];
+  
+    // need to redraw in context so that the thumbnail in the photo album is correct
+    CGRect rect = CGRectMake(0,0,height,width);
+    UIGraphicsBeginImageContext(rect.size);
+    [tempImage drawInRect:rect];
+    UIImage* outputImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
     
     CGDataProviderRelease(ref);
     CGImageRelease(iref);
@@ -257,7 +266,6 @@
 
     return outputImage;
 }
-
 
 - (void)viewWillAppear:(BOOL)animated
 {

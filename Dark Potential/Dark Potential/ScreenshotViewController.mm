@@ -10,7 +10,9 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface ScreenshotViewController ()
-
+{
+    UIActivityIndicatorView* activityView;
+}
 @end
 
 @implementation ScreenshotViewController
@@ -36,6 +38,10 @@
     [self.screenshotImageView.layer setBorderColor:[[UIColor blackColor] CGColor]];
     [self.screenshotImageView.layer setBorderWidth: 3.0];
     [self.screenshotImageView.layer setMasksToBounds:YES];
+    
+    activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    [activityView setCenter:CGPointMake(320.0/2.0, 480.0/2.0)]; // I do this because I'm in landscape mode
+    [self.view addSubview:activityView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,5 +60,22 @@
 - (IBAction)exitButtonPressed:(id)sender
 {
     [self dismissModalViewControllerAnimated:YES];
+}
+
+- (IBAction)saveButtonPressed:(id)sender
+{
+    [activityView startAnimating];
+    
+    UIImageWriteToSavedPhotosAlbum(screenshotImage, self, @selector(photo:didFinishSavingWithError:contextInfo:), nil);
+}
+
+- (void)photo:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo: (void *) contextInfo;
+{
+    if (error)
+        NSLog(@"Error saving to photo album.");
+    else
+        NSLog(@"Success!");
+    
+    [activityView stopAnimating];
 }
 @end

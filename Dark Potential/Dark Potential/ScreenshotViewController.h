@@ -9,10 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface ScreenshotViewController : UIViewController
+{
+
+}
 
 @property (strong, nonatomic) IBOutlet UIImageView *screenshotImageView;
 @property (strong, nonatomic) UIImage* screenshotImage;
 
 - (IBAction)exitButtonPressed:(id)sender;
+- (IBAction)saveButtonPressed:(id)sender;
 
 @end
