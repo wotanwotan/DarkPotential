@@ -30,9 +30,9 @@ namespace {
     };
 
     // Model scale factor
-    const float kObjectScale = 3.0f;
+    const float kObjectScale = 10.0f;
     
-    static const float planeVertices[] = { -1.0, -1.5, 1.0, 1.0, -1.5, 1.0, 1.0, 1.5, 1.0, -1.0, 1.5, 1.0 };
+    static const float planeVertices[] = { -6.0, -9, 1.0, 6.0, -9, 1.0, 6.0, 9, 1.0, -6.0, 9, 1.0 };
     
     static const float planeTexcoords[] = { 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 };
     
@@ -143,16 +143,27 @@ namespace {
         AppDelegate* appDel = (AppDelegate*) [[UIApplication sharedApplication] delegate];
         
         // Choose the texture based on the target name
-        int targetIndex = 0; // "stones"
-        if (!strcmp(trackable->getName(), "chips"))
+        int targetIndex = 0; // "stones"/"XLanthos"
+        if (!strcmp(trackable->getName(), "ReclaimerSSTop"))
+        {
+            NSLog(@"Tracking the reclaimer...");
             targetIndex = 1;
+        }
+        else
+            NSLog(@"Tracking Xlanthos...");
 //        else if (!strcmp(trackable->getName(), "tarmac"))
 //            targetIndex = 2;
         
         if (targetIndex == 0 && appDel.currentCharacter != DP_XLANTHOS)
+        {
+            NSLog(@"Skip Xlanthos...");
             continue;
+        }
         else if (targetIndex == 1 && appDel.currentCharacter != DP_RECLAIMER)
+        {
+            NSLog(@"Skip Reclaimer...");
             continue;
+        }
         
         Object3D *obj3D = [objects3D objectAtIndex:targetIndex];
         

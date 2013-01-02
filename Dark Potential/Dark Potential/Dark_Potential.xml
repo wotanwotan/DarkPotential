@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+    <Tracking>
+        <ImageTarget size="100 66.633064" name="XlanthosSSTop"/>
+        <ImageTarget size="100 66.633759" name="ReclaimerSSTop"/>
+    </Tracking>
+</QCARConfig>

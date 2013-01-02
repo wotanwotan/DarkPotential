@@ -36,6 +36,10 @@
 		5DCC62F5167A5E5D0069DE40 /* Xlanthos.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCC62F4167A5E5D0069DE40 /* Xlanthos.png */; };
 		5DF97EC4169480CB00046053 /* Bios.h in Sources */ = {isa = PBXBuildFile; fileRef = 5DF97EC3169480CB00046053 /* Bios.h */; };
 		5DF97EC7169483F300046053 /* Bios.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF97EC6169483F300046053 /* Bios.m */; };
+		5DF97ECE16948BCF00046053 /* Dark_Potential.dat in Resources */ = {isa = PBXBuildFile; fileRef = 5DF97ECC16948BCF00046053 /* Dark_Potential.dat */; };
+		5DF97ECF16948BCF00046053 /* Dark_Potential.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5DF97ECD16948BCF00046053 /* Dark_Potential.xml */; };
+		5DF97ED116948CC100046053 /* Dark_Potential.dat in Resources */ = {isa = PBXBuildFile; fileRef = 5DF97ECC16948BCF00046053 /* Dark_Potential.dat */; };
+		5DF97ED216948CC100046053 /* Dark_Potential.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5DF97ECD16948BCF00046053 /* Dark_Potential.xml */; };
 		E2186A4416473A2200FEADC3 /* experiencebanner-xlanthos-onclick.png in Resources */ = {isa = PBXBuildFile; fileRef = E2186A4016473A2200FEADC3 /* experiencebanner-xlanthos-onclick.png */; };
 		E2186A4516473A2200FEADC3 /* experiencebanner-xlanthos-onclick@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2186A4116473A2200FEADC3 /* experiencebanner-xlanthos-onclick@2x.png */; };
 		E2186A4616473A2200FEADC3 /* experiencebanner-xlanthos.png in Resources */ = {isa = PBXBuildFile; fileRef = E2186A4216473A2200FEADC3 /* experiencebanner-xlanthos.png */; };
@@ -138,6 +142,8 @@
 		5DCC62F4167A5E5D0069DE40 /* Xlanthos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Xlanthos.png; sourceTree = "<group>"; };
 		5DF97EC3169480CB00046053 /* Bios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bios.h; sourceTree = "<group>"; };
 		5DF97EC6169483F300046053 /* Bios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bios.m; sourceTree = "<group>"; };
+		5DF97ECC16948BCF00046053 /* Dark_Potential.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dark_Potential.dat; sourceTree = "<group>"; };
+		5DF97ECD16948BCF00046053 /* Dark_Potential.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Dark_Potential.xml; sourceTree = "<group>"; };
 		E2186A4016473A2200FEADC3 /* experiencebanner-xlanthos-onclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "experiencebanner-xlanthos-onclick.png"; sourceTree = "<group>"; };
 		E2186A4116473A2200FEADC3 /* experiencebanner-xlanthos-onclick@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "experiencebanner-xlanthos-onclick@2x.png"; sourceTree = "<group>"; };
 		E2186A4216473A2200FEADC3 /* experiencebanner-xlanthos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "experiencebanner-xlanthos.png"; sourceTree = "<group>"; };
@@ -229,6 +235,8 @@
 		5D5B77DC164AFDD500C330CE /* Image targets */ = {
 			isa = PBXGroup;
 			children = (
+				5DF97ECC16948BCF00046053 /* Dark_Potential.dat */,
+				5DF97ECD16948BCF00046053 /* Dark_Potential.xml */,
 				5DCC62F4167A5E5D0069DE40 /* Xlanthos.png */,
 				5DCC62F1167A44320069DE40 /* Reclaimer_squad_member.png */,
 				5D5B77DD164AFDFF00C330CE /* StonesAndChips.dat */,
@@ -518,6 +526,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DF97ED116948CC100046053 /* Dark_Potential.dat in Resources */,
+				5DF97ED216948CC100046053 /* Dark_Potential.xml in Resources */,
 				E2A1CB711643518F009F1CBA /* InfoPlist.strings in Resources */,
 				E2A1CB801643518F009F1CBA /* MainStoryboard.storyboard in Resources */,
 				E2A1CBA31643521A009F1CBA /* DarkPotential-AppIcon-57.png in Resources */,
@@ -569,6 +579,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DF97ECE16948BCF00046053 /* Dark_Potential.dat in Resources */,
+				5DF97ECF16948BCF00046053 /* Dark_Potential.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
