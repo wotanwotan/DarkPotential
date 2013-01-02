@@ -17,14 +17,16 @@
 #import "ShaderUtils.h"
 #endif
 
+#import "AppDelegate.h"
+
 namespace {
     // Teapot texture filenames
     const char* textureFilenames[] = {
-        "TextureTeapotBrass.png",
-        "TextureTeapotBlue.png",
-        "TextureTeapotRed.png",
-        "Xlanthos.png"
-//        "Reclaimer_squad_member.png"
+//        "TextureTeapotBrass.png",
+//        "TextureTeapotBlue.png",
+//        "TextureTeapotRed.png",
+        "Xlanthos.png",
+        "Reclaimer_squad_member.png"
     };
 
     // Model scale factor
@@ -134,12 +136,23 @@ namespace {
         const QCAR::Trackable* trackable = state.getActiveTrackable(i);
         QCAR::Matrix44F modelViewMatrix = QCAR::Tool::convertPose2GLMatrix(trackable->getPose());
         
+        // for now:
+        // stones -> xlanthos
+        // chips -> reclaimer
+        
+        AppDelegate* appDel = (AppDelegate*) [[UIApplication sharedApplication] delegate];
+        
         // Choose the texture based on the target name
         int targetIndex = 0; // "stones"
         if (!strcmp(trackable->getName(), "chips"))
             targetIndex = 1;
-        else if (!strcmp(trackable->getName(), "tarmac"))
-            targetIndex = 2;
+//        else if (!strcmp(trackable->getName(), "tarmac"))
+//            targetIndex = 2;
+        
+        if (targetIndex == 0 && appDel.currentCharacter != DP_XLANTHOS)
+            continue;
+        else if (targetIndex == 1 && appDel.currentCharacter != DP_RECLAIMER)
+            continue;
         
         Object3D *obj3D = [objects3D objectAtIndex:targetIndex];
         
@@ -213,7 +226,7 @@ namespace {
             
             glActiveTexture(GL_TEXTURE0);
             
-            Texture* tex = [textures objectAtIndex:3];
+            Texture* tex = [textures objectAtIndex:targetIndex];
             glBindTexture(GL_TEXTURE_2D, [tex textureID]);
             
             glUniformMatrix4fv(mvpMatrixHandle, 1, GL_FALSE, (GLfloat*)&modelViewProjection.data[0]);

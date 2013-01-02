@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D0D7AE1167A122A00EA6DE1 /* Reclaimers_Spotter.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D7AE0167A122A00EA6DE1 /* Reclaimers_Spotter.png */; };
 		5D5B77D2164AFACF00C330CE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5B77D0164AFACF00C330CE /* OpenGLES.framework */; };
 		5D5B77D3164AFACF00C330CE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5B77D1164AFACF00C330CE /* QuartzCore.framework */; };
 		5D5B77D5164AFAF100C330CE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5B77D4164AFAF100C330CE /* CoreMedia.framework */; };
@@ -35,6 +34,8 @@
 		5DA8719E164AF86E0017B893 /* Texture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87194164AF86E0017B893 /* Texture.mm */; };
 		5DCC62F2167A44320069DE40 /* Reclaimer_squad_member.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCC62F1167A44320069DE40 /* Reclaimer_squad_member.png */; };
 		5DCC62F5167A5E5D0069DE40 /* Xlanthos.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCC62F4167A5E5D0069DE40 /* Xlanthos.png */; };
+		5DF97EC4169480CB00046053 /* Bios.h in Sources */ = {isa = PBXBuildFile; fileRef = 5DF97EC3169480CB00046053 /* Bios.h */; };
+		5DF97EC7169483F300046053 /* Bios.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF97EC6169483F300046053 /* Bios.m */; };
 		E2186A4416473A2200FEADC3 /* experiencebanner-xlanthos-onclick.png in Resources */ = {isa = PBXBuildFile; fileRef = E2186A4016473A2200FEADC3 /* experiencebanner-xlanthos-onclick.png */; };
 		E2186A4516473A2200FEADC3 /* experiencebanner-xlanthos-onclick@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2186A4116473A2200FEADC3 /* experiencebanner-xlanthos-onclick@2x.png */; };
 		E2186A4616473A2200FEADC3 /* experiencebanner-xlanthos.png in Resources */ = {isa = PBXBuildFile; fileRef = E2186A4216473A2200FEADC3 /* experiencebanner-xlanthos.png */; };
@@ -95,7 +96,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5D0D7AE0167A122A00EA6DE1 /* Reclaimers_Spotter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reclaimers_Spotter.png; sourceTree = "<group>"; };
 		5D5B77D0164AFACF00C330CE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		5D5B77D1164AFACF00C330CE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5D5B77D4164AFAF100C330CE /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -136,6 +136,8 @@
 		5DA87194164AF86E0017B893 /* Texture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Texture.mm; sourceTree = "<group>"; };
 		5DCC62F1167A44320069DE40 /* Reclaimer_squad_member.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reclaimer_squad_member.png; sourceTree = "<group>"; };
 		5DCC62F4167A5E5D0069DE40 /* Xlanthos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Xlanthos.png; sourceTree = "<group>"; };
+		5DF97EC3169480CB00046053 /* Bios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bios.h; sourceTree = "<group>"; };
+		5DF97EC6169483F300046053 /* Bios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bios.m; sourceTree = "<group>"; };
 		E2186A4016473A2200FEADC3 /* experiencebanner-xlanthos-onclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "experiencebanner-xlanthos-onclick.png"; sourceTree = "<group>"; };
 		E2186A4116473A2200FEADC3 /* experiencebanner-xlanthos-onclick@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "experiencebanner-xlanthos-onclick@2x.png"; sourceTree = "<group>"; };
 		E2186A4216473A2200FEADC3 /* experiencebanner-xlanthos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "experiencebanner-xlanthos.png"; sourceTree = "<group>"; };
@@ -229,7 +231,6 @@
 			children = (
 				5DCC62F4167A5E5D0069DE40 /* Xlanthos.png */,
 				5DCC62F1167A44320069DE40 /* Reclaimer_squad_member.png */,
-				5D0D7AE0167A122A00EA6DE1 /* Reclaimers_Spotter.png */,
 				5D5B77DD164AFDFF00C330CE /* StonesAndChips.dat */,
 				5D5B77DE164AFDFF00C330CE /* StonesAndChips.xml */,
 				5D5B77DF164AFDFF00C330CE /* Tarmac.dat */,
@@ -393,6 +394,8 @@
 				E2A1CB751643518F009F1CBA /* AppDelegate.h */,
 				E2A1CB761643518F009F1CBA /* AppDelegate.mm */,
 				E2A1CB7E1643518F009F1CBA /* MainStoryboard.storyboard */,
+				5DF97EC3169480CB00046053 /* Bios.h */,
+				5DF97EC6169483F300046053 /* Bios.m */,
 				E2A1CB6D1643518F009F1CBA /* Supporting Files */,
 			);
 			path = "Dark Potential";
@@ -557,7 +560,6 @@
 				5D5B77E9164AFDFF00C330CE /* TextureTeapotBrass.png in Resources */,
 				5D5B77EA164AFDFF00C330CE /* TextureTeapotRed.png in Resources */,
 				5DA3CFA7164C201600260F49 /* ScreenshotViewController.xib in Resources */,
-				5D0D7AE1167A122A00EA6DE1 /* Reclaimers_Spotter.png in Resources */,
 				5DCC62F2167A44320069DE40 /* Reclaimer_squad_member.png in Resources */,
 				5DCC62F5167A5E5D0069DE40 /* Xlanthos.png in Resources */,
 			);
@@ -608,6 +610,8 @@
 				5DA8719D164AF86E0017B893 /* ShaderUtils.cpp in Sources */,
 				5DA8719E164AF86E0017B893 /* Texture.mm in Sources */,
 				5DA3CFA6164C201600260F49 /* ScreenshotViewController.mm in Sources */,
+				5DF97EC4169480CB00046053 /* Bios.h in Sources */,
+				5DF97EC7169483F300046053 /* Bios.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

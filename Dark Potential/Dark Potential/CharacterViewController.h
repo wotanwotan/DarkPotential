@@ -26,4 +26,7 @@
 
 - (IBAction)exitButtonPressed:(id)sender;
 
+
+@property (strong, nonatomic) IBOutlet UITextView *bioView;
+
 @end

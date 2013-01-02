@@ -108,10 +108,10 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" id="4nz-7a-JSs">
                                 <rect key="frame" x="0.0" y="30" width="320" height="357"/>
                                 <subviews>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pVO-lq-XuJ">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" restorationIdentifier="" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pVO-lq-XuJ">
                                         <rect key="frame" x="38" y="52" width="244" height="74"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Button" image="experiencebanner-xlanthos.png">
+                                        <state key="normal" title="Xlanthos" image="experiencebanner-xlanthos.png">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -123,10 +123,10 @@
                                             <segue destination="gPb-Sc-TVT" kind="modal" identifier="ShowCharacterPageSegue1" modalTransitionStyle="flipHorizontal" id="LxC-wS-TPI"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pgX-JP-VPt">
+                                    <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" restorationIdentifier="" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pgX-JP-VPt">
                                         <rect key="frame" x="38" y="134" width="244" height="74"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Button" image="experience-banner-empty.png">
+                                        <state key="normal" title="Reclaimer" image="experience-banner-empty.png">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -135,10 +135,10 @@
                                         </state>
                                         <connections>
                                             <action selector="experienceButtonPressed:" destination="2" eventType="touchUpInside" id="BX5-GC-xkW"/>
-                                            <segue destination="gPb-Sc-TVT" kind="modal" identifier="ShowCharacterPageSegue2" modalTransitionStyle="crossDissolve" id="Vpf-vQ-Zly"/>
+                                            <segue destination="gPb-Sc-TVT" kind="modal" identifier="ShowCharacterPageSegue2" modalTransitionStyle="flipHorizontal" id="Vpf-vQ-Zly"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tnp-ga-Xmy">
+                                    <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" restorationIdentifier="" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tnp-ga-Xmy">
                                         <rect key="frame" x="38" y="216" width="244" height="74"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Button" image="experiencebanner-xlanthos.png">
@@ -150,7 +150,7 @@
                                         </state>
                                         <connections>
                                             <action selector="experienceButtonPressed:" destination="2" eventType="touchUpInside" id="ksC-dm-jT0"/>
-                                            <segue destination="gPb-Sc-TVT" kind="modal" identifier="ShowCharacterPageSegue3" modalTransitionStyle="partialCurl" id="rof-Im-paD"/>
+                                            <segue destination="gPb-Sc-TVT" kind="modal" identifier="ShowCharacterPageSegue3" modalTransitionStyle="flipHorizontal" id="rof-Im-paD"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -234,15 +234,8 @@
                                     <action selector="exitButtonPressed:" destination="gPb-Sc-TVT" eventType="touchUpInside" id="Ddb-j9-z3a"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="X'Lanthos info (or &quot;bio&quot;) page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ujm-ll-VE2">
-                                <rect key="frame" x="27" y="137" width="273" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ttc-Gi-1Gh">
-                                <rect key="frame" x="27" y="208" width="273" height="44"/>
+                                <rect key="frame" x="20" y="349" width="280" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button to Launch Experience">
@@ -256,14 +249,33 @@
                                     <segue destination="cSR-6o-nnF" kind="modal" modalTransitionStyle="crossDissolve" id="MMU-HJ-COD"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="navbar.png" id="D9m-nR-Y1P">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="dp-logo.png" id="Hcl-Mq-qeb">
+                                <rect key="frame" x="27" y="-2" width="266" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="El1-42-OWK">
+                                <rect key="frame" x="20" y="106" width="273" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="bioView" destination="El1-42-OWK" id="zVw-si-7Vw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AC1-ZT-tEx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="474" y="22"/>
+            <point key="canvasLocation" x="516" y="22"/>
         </scene>
         <!--Parent View Controller-->
         <scene sceneID="B5d-Dc-pi7">
@@ -278,7 +290,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wmP-mr-ZB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="974" y="22"/>
+            <point key="canvasLocation" x="1118" y="22"/>
         </scene>
     </scenes>
     <resources>
@@ -301,6 +313,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Vpf-vQ-Zly"/>
+        <segue reference="LxC-wS-TPI"/>
     </inferredMetricsTieBreakers>
 </document>

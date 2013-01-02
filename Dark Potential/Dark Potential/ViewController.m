@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 
@@ -138,7 +139,7 @@
 
 - (IBAction)launchMWGWebsite:(id)sender
 {
-    NSURL *url = [ [ NSURL alloc ] initWithString: @"http://miniwargaming.com" ];
+    NSURL *url = [[NSURL alloc] initWithString: @"http://miniwargaming.com"];
     
     [[UIApplication sharedApplication] openURL:url];
 }
@@ -146,6 +147,22 @@
 - (IBAction)experienceButtonPressed:(id)sender
 {
     [self playAudioWithName:@"menu_whoosh_in.mp3"];
+    
+    AppDelegate* appDel = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+
+    switch ([sender tag])
+    {
+        case 0:
+            [appDel setCurrentCharacter:DP_XLANTHOS];
+            break;
+        case 1:
+            [appDel setCurrentCharacter:DP_RECLAIMER];
+            break;
+        case 2:
+            // TBD
+            [appDel setCurrentCharacter:DP_NONE];
+            break;
+    }
 }
 
 - (void) characterViewDidClose:(CharacterViewController*)controller

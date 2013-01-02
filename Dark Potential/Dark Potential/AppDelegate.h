@@ -9,7 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    enum DPCharacter {
+        DP_NONE,
+        DP_XLANTHOS,
+        DP_RECLAIMER
+    };
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic) enum DPCharacter currentCharacter;
 
 @end
