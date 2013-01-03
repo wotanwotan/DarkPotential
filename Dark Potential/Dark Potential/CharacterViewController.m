@@ -16,7 +16,7 @@
 
 @implementation CharacterViewController
 
-@synthesize delegate, bioView;
+@synthesize delegate, bioView, bioTextView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,6 +31,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    [bioTextView setFont:[UIFont fontWithName:@"bebas" size:14]];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -61,8 +63,10 @@
     if (delegate != nil && [delegate respondsToSelector:@selector(characterViewDidClose:)])
         [self.delegate characterViewDidClose:self];
 }
+
 - (void)viewDidUnload {
     [self setBioView:nil];
+    [self setBioTextView:nil];
     [super viewDidUnload];
 }
 @end

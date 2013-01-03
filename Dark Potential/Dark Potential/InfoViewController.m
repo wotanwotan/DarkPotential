@@ -7,6 +7,7 @@
 //
 
 #import "InfoViewController.h"
+#import "WebViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
 
 @interface InfoViewController ()
@@ -51,20 +52,39 @@
 
 - (IBAction)exitButtonPressed:(id)sender
 {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)launchJGWebsite:(id)sender
+- (IBAction)launchWebView:(id)sender
 {
-    NSURL *url = [ [ NSURL alloc ] initWithString: @"http://www.joelglanfield.com" ];
+    WebViewController *webView;
+    if ([[[UIDevice currentDevice] model] isEqualToString:@"iPad"])
+        webView = [[WebViewController alloc] initWithNibName:@"WebViewController-iPad" bundle:nil];
+    else
+        webView = [[WebViewController alloc] initWithNibName:@"WebViewController" bundle:nil];
     
-    [[UIApplication sharedApplication] openURL:url];
-}
-
-- (IBAction)launchSMWebsite:(id)sender
-{
-    NSURL *url = [ [ NSURL alloc ] initWithString: @"http://www.stephaniemunn.com" ];
+    switch ([sender tag])
+    {
+        case 0:
+            [webView setWebPageURL:@"http://www.darkpotential.com"];
+            break;
+        case 1:
+            [webView setWebPageURL:@"https://www.facebook.com/DarkPotential"];
+            break;
+        case 2:
+            [webView setWebPageURL:@"https://twitter.com/miniwargaming"];
+            break;
+        case 3:
+            [webView setWebPageURL:@"http://www.youtube.com/miniwargaming"];
+            break;
+        case 4:
+            [webView setWebPageURL:@"http://www.stephaniemunn.com"];
+            break;
+        case 5:
+            [webView setWebPageURL:@"http://www.joelglanfield.com"];
+            break;
+    }
     
-    [[UIApplication sharedApplication] openURL:url];
+    [self presentViewController:webView animated:YES completion:nil];
 }
 @end

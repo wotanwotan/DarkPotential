@@ -43,7 +43,7 @@
                                 <rect key="frame" x="9" y="4" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                                <state key="normal" image="button-back.png">
+                                <state key="normal" title="Back" image="button-back.png">
                                     <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -54,7 +54,7 @@
                                     <action selector="exitButtonPressed:" destination="F4P-Jp-SKP" eventType="touchUpInside" id="3j8-4j-zV9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eCk-43-qMJ">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eCk-43-qMJ">
                                 <rect key="frame" x="179" y="261" width="67" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -66,10 +66,10 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="launchJGWebsite:" destination="F4P-Jp-SKP" eventType="touchUpInside" id="jtp-gq-DCb"/>
+                                    <action selector="launchWebView:" destination="F4P-Jp-SKP" eventType="touchUpInside" id="Hig-gS-be2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rxS-zr-u3j">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rxS-zr-u3j">
                                 <rect key="frame" x="75" y="261" width="67" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -81,7 +81,67 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="launchSMWebsite:" destination="F4P-Jp-SKP" eventType="touchUpInside" id="aXN-Yh-43w"/>
+                                    <action selector="launchWebView:" destination="F4P-Jp-SKP" eventType="touchUpInside" id="5Kc-jd-Ow0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hnL-af-roJ">
+                                <rect key="frame" x="27" y="92" width="134" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="info-web.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="info-web-onclick.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="launchWebView:" destination="F4P-Jp-SKP" eventType="touchUpInside" id="FNk-IT-zZs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cud-9Q-Bcx">
+                                <rect key="frame" x="159" y="141" width="134" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="info-youtube.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="info-youtube-onclick.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="launchWebView:" destination="F4P-Jp-SKP" eventType="touchUpInside" id="Fdc-Jl-x9j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tVf-Vi-WbY">
+                                <rect key="frame" x="159" y="92" width="134" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="info-fb.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="info-fb-onclick.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="launchWebView:" destination="F4P-Jp-SKP" eventType="touchUpInside" id="ddS-XD-WH7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xFH-mY-ds1">
+                                <rect key="frame" x="27" y="141" width="134" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="info-twitter.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="info-twitter-onclick.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="launchWebView:" destination="F4P-Jp-SKP" eventType="touchUpInside" id="BBr-Bo-R4U"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -108,7 +168,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" id="4nz-7a-JSs">
                                 <rect key="frame" x="0.0" y="30" width="320" height="357"/>
                                 <subviews>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" restorationIdentifier="" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pVO-lq-XuJ">
+                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pVO-lq-XuJ">
                                         <rect key="frame" x="38" y="52" width="244" height="74"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Xlanthos" image="experiencebanner-xlanthos.png">
@@ -123,7 +183,7 @@
                                             <segue destination="gPb-Sc-TVT" kind="modal" identifier="ShowCharacterPageSegue1" modalTransitionStyle="flipHorizontal" id="LxC-wS-TPI"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" restorationIdentifier="" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pgX-JP-VPt">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" restorationIdentifier="" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pgX-JP-VPt">
                                         <rect key="frame" x="38" y="134" width="244" height="74"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Reclaimer" image="experience-banner-empty.png">
@@ -138,7 +198,7 @@
                                             <segue destination="gPb-Sc-TVT" kind="modal" identifier="ShowCharacterPageSegue2" modalTransitionStyle="flipHorizontal" id="Vpf-vQ-Zly"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" restorationIdentifier="" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tnp-ga-Xmy">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" restorationIdentifier="" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tnp-ga-Xmy">
                                         <rect key="frame" x="38" y="216" width="244" height="74"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Button" image="experiencebanner-xlanthos.png">
@@ -177,7 +237,7 @@
                                     <segue destination="F4P-Jp-SKP" kind="modal" identifier="" id="GR0-jG-rzl"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lV5-GA-I3d">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lV5-GA-I3d">
                                 <rect key="frame" x="20" y="428" width="87" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -219,26 +279,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TYK-Yk-iJG">
-                                <rect key="frame" x="20" y="417" width="82" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ttc-Gi-1Gh">
+                                <rect key="frame" x="20" y="417" width="280" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="&lt;&lt; Back">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="exitButtonPressed:" destination="gPb-Sc-TVT" eventType="touchUpInside" id="Ddb-j9-z3a"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ttc-Gi-1Gh">
-                                <rect key="frame" x="20" y="349" width="280" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button to Launch Experience">
+                                <state key="normal" title="Launch Augmented Reality ...">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -257,19 +302,45 @@
                                 <rect key="frame" x="27" y="-2" width="266" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="El1-42-OWK">
-                                <rect key="frame" x="20" y="106" width="273" height="207"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Qm-Cy-OdM">
+                                <rect key="frame" x="9" y="4" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" image="button-back.png">
+                                    <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="exitButtonPressed:" destination="gPb-Sc-TVT" eventType="touchUpInside" id="7LB-Nc-Hrc"/>
+                                    <action selector="exitButtonPressed:" destination="F4P-Jp-SKP" eventType="touchUpInside" id="ssu-lb-xwh"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" id="El1-42-OWK">
+                                <rect key="frame" x="20" y="77" width="280" height="332"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99607849120000003" green="0.99215692280000001" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="bioTextView" destination="El1-42-OWK" id="N8R-76-ALo"/>
                         <outlet property="bioView" destination="El1-42-OWK" id="zVw-si-7Vw"/>
                     </connections>
                 </viewController>
@@ -301,44 +372,20 @@
         <image name="experience-banner-empty.png" width="485" height="147"/>
         <image name="experiencebanner-xlanthos-onclick.png" width="273" height="82"/>
         <image name="experiencebanner-xlanthos.png" width="273" height="82"/>
+        <image name="info-fb-onclick.png" width="333" height="109"/>
+        <image name="info-fb.png" width="333" height="109"/>
+        <image name="info-twitter-onclick.png" width="333" height="109"/>
+        <image name="info-twitter.png" width="333" height="109"/>
+        <image name="info-web-onclick.png" width="333" height="109"/>
+        <image name="info-web.png" width="333" height="109"/>
+        <image name="info-youtube-onclick.png" width="333" height="109"/>
+        <image name="info-youtube.png" width="333" height="109"/>
         <image name="joel.png" width="94" height="41"/>
         <image name="menu-bg-iphone5.png" width="320" height="568"/>
         <image name="mwglogo.png" width="87" height="32"/>
         <image name="navbar.png" width="320" height="44"/>
         <image name="steph.png" width="94" height="41"/>
     </resources>
-    <classes>
-        <class className="ARParentViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ARParentViewController.h"/>
-        </class>
-        <class className="CharacterViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CharacterViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="exitButtonPressed:"/>
-                <relationship kind="outlet" name="bioView" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="InfoViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/InfoViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="exitButtonPressed:"/>
-                <relationship kind="action" name="launchJGWebsite:"/>
-                <relationship kind="action" name="launchSMWebsite:"/>
-                <relationship kind="action" name="playVideoButtonPressed:"/>
-            </relationships>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="experienceButtonPressed:"/>
-                <relationship kind="action" name="launchMWGWebsite:"/>
-                <relationship kind="outlet" name="experienceBtn1" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="experienceBtn2" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="experienceBtn3" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="mwgLogo" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

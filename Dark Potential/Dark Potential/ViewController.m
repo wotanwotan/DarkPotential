@@ -47,10 +47,10 @@
     animatedButtons = [NSArray arrayWithObjects:experienceBtn1, experienceBtn2, experienceBtn3, nil];
     
     // play audio
-    [self playMWGAudio];
+//    [self playMWGAudio];
 
     // first button
-    [self animateButton:[animatedButtons objectAtIndex:currentButtonToAnimate] animateFromLeft:YES];
+//    [self animateButton:[animatedButtons objectAtIndex:currentButtonToAnimate] animateFromLeft:YES];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

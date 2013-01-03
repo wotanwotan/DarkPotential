@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D15DDEB1694B74200C942C6 /* bebas.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D15DDEA1694B74200C942C6 /* bebas.ttf */; };
+		5D5A108E1695C7F000B9CB17 /* info-fb-onclick.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5A10861695C7F000B9CB17 /* info-fb-onclick.png */; };
+		5D5A108F1695C7F000B9CB17 /* info-fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5A10871695C7F000B9CB17 /* info-fb.png */; };
+		5D5A10901695C7F000B9CB17 /* info-twitter-onclick.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5A10881695C7F000B9CB17 /* info-twitter-onclick.png */; };
+		5D5A10911695C7F000B9CB17 /* info-twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5A10891695C7F000B9CB17 /* info-twitter.png */; };
+		5D5A10921695C7F000B9CB17 /* info-web-onclick.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5A108A1695C7F000B9CB17 /* info-web-onclick.png */; };
+		5D5A10931695C7F000B9CB17 /* info-web.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5A108B1695C7F000B9CB17 /* info-web.png */; };
+		5D5A10941695C7F000B9CB17 /* info-youtube-onclick.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5A108C1695C7F000B9CB17 /* info-youtube-onclick.png */; };
+		5D5A10951695C7F000B9CB17 /* info-youtube.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5A108D1695C7F000B9CB17 /* info-youtube.png */; };
+		5D5A10991695CB4B00B9CB17 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A10971695CB4B00B9CB17 /* WebViewController.m */; };
+		5D5A109A1695CB4B00B9CB17 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D5A10981695CB4B00B9CB17 /* WebViewController.xib */; };
+		5D5A109C1695D39700B9CB17 /* MWGIntro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5D5A109B1695D39600B9CB17 /* MWGIntro.mp4 */; };
 		5D5B77D2164AFACF00C330CE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5B77D0164AFACF00C330CE /* OpenGLES.framework */; };
 		5D5B77D3164AFACF00C330CE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5B77D1164AFACF00C330CE /* QuartzCore.framework */; };
 		5D5B77D5164AFAF100C330CE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5B77D4164AFAF100C330CE /* CoreMedia.framework */; };
@@ -20,6 +32,7 @@
 		5D5B77E8164AFDFF00C330CE /* TextureTeapotBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B77E1164AFDFF00C330CE /* TextureTeapotBlue.png */; };
 		5D5B77E9164AFDFF00C330CE /* TextureTeapotBrass.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B77E2164AFDFF00C330CE /* TextureTeapotBrass.png */; };
 		5D5B77EA164AFDFF00C330CE /* TextureTeapotRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B77E3164AFDFF00C330CE /* TextureTeapotRed.png */; };
+		5D96EAB51694B85C008345DB /* bebas.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D15DDEA1694B74200C942C6 /* bebas.ttf */; };
 		5DA3CFA6164C201600260F49 /* ScreenshotViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3CFA4164C201600260F49 /* ScreenshotViewController.mm */; };
 		5DA3CFA7164C201600260F49 /* ScreenshotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA3CFA5164C201600260F49 /* ScreenshotViewController.xib */; };
 		5DA87179164AF5FA0017B893 /* libQCAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA87178164AF5FA0017B893 /* libQCAR.a */; };
@@ -100,6 +113,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D15DDEA1694B74200C942C6 /* bebas.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bebas.ttf; sourceTree = "<group>"; };
+		5D5A10861695C7F000B9CB17 /* info-fb-onclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-fb-onclick.png"; sourceTree = "<group>"; };
+		5D5A10871695C7F000B9CB17 /* info-fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-fb.png"; sourceTree = "<group>"; };
+		5D5A10881695C7F000B9CB17 /* info-twitter-onclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-twitter-onclick.png"; sourceTree = "<group>"; };
+		5D5A10891695C7F000B9CB17 /* info-twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-twitter.png"; sourceTree = "<group>"; };
+		5D5A108A1695C7F000B9CB17 /* info-web-onclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-web-onclick.png"; sourceTree = "<group>"; };
+		5D5A108B1695C7F000B9CB17 /* info-web.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-web.png"; sourceTree = "<group>"; };
+		5D5A108C1695C7F000B9CB17 /* info-youtube-onclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-youtube-onclick.png"; sourceTree = "<group>"; };
+		5D5A108D1695C7F000B9CB17 /* info-youtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-youtube.png"; sourceTree = "<group>"; };
+		5D5A10961695CB4A00B9CB17 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		5D5A10971695CB4B00B9CB17 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		5D5A10981695CB4B00B9CB17 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		5D5A109B1695D39600B9CB17 /* MWGIntro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MWGIntro.mp4; sourceTree = "<group>"; };
 		5D5B77D0164AFACF00C330CE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		5D5B77D1164AFACF00C330CE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5D5B77D4164AFAF100C330CE /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -328,6 +354,9 @@
 				5DA3CFA3164C201600260F49 /* ScreenshotViewController.h */,
 				5DA3CFA4164C201600260F49 /* ScreenshotViewController.mm */,
 				5DA3CFA5164C201600260F49 /* ScreenshotViewController.xib */,
+				5D5A10961695CB4A00B9CB17 /* WebViewController.h */,
+				5D5A10971695CB4B00B9CB17 /* WebViewController.m */,
+				5D5A10981695CB4B00B9CB17 /* WebViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -335,6 +364,14 @@
 		E270AC171649FF44003E6A1F /* Info */ = {
 			isa = PBXGroup;
 			children = (
+				5D5A10861695C7F000B9CB17 /* info-fb-onclick.png */,
+				5D5A10871695C7F000B9CB17 /* info-fb.png */,
+				5D5A10881695C7F000B9CB17 /* info-twitter-onclick.png */,
+				5D5A10891695C7F000B9CB17 /* info-twitter.png */,
+				5D5A108A1695C7F000B9CB17 /* info-web-onclick.png */,
+				5D5A108B1695C7F000B9CB17 /* info-web.png */,
+				5D5A108C1695C7F000B9CB17 /* info-youtube-onclick.png */,
+				5D5A108D1695C7F000B9CB17 /* info-youtube.png */,
 				E270AC30164A06F5003E6A1F /* background-iphone5.jpg */,
 				E270AC31164A06F5003E6A1F /* background-iphone5@2x.jpg */,
 				E270AC26164A0155003E6A1F /* joel.png */,
@@ -395,6 +432,8 @@
 		E2A1CB6C1643518F009F1CBA /* Dark Potential */ = {
 			isa = PBXGroup;
 			children = (
+				5D5A109B1695D39600B9CB17 /* MWGIntro.mp4 */,
+				5D15DDEA1694B74200C942C6 /* bebas.ttf */,
 				E28BBD7C16449F850016B2D2 /* Audio */,
 				E2A1CBA1164351F6009F1CBA /* Images */,
 				5DA8717B164AF8030017B893 /* QCAR stuff */,
@@ -572,6 +611,17 @@
 				5DA3CFA7164C201600260F49 /* ScreenshotViewController.xib in Resources */,
 				5DCC62F2167A44320069DE40 /* Reclaimer_squad_member.png in Resources */,
 				5DCC62F5167A5E5D0069DE40 /* Xlanthos.png in Resources */,
+				5D96EAB51694B85C008345DB /* bebas.ttf in Resources */,
+				5D5A108E1695C7F000B9CB17 /* info-fb-onclick.png in Resources */,
+				5D5A108F1695C7F000B9CB17 /* info-fb.png in Resources */,
+				5D5A10901695C7F000B9CB17 /* info-twitter-onclick.png in Resources */,
+				5D5A10911695C7F000B9CB17 /* info-twitter.png in Resources */,
+				5D5A10921695C7F000B9CB17 /* info-web-onclick.png in Resources */,
+				5D5A10931695C7F000B9CB17 /* info-web.png in Resources */,
+				5D5A10941695C7F000B9CB17 /* info-youtube-onclick.png in Resources */,
+				5D5A10951695C7F000B9CB17 /* info-youtube.png in Resources */,
+				5D5A109A1695CB4B00B9CB17 /* WebViewController.xib in Resources */,
+				5D5A109C1695D39700B9CB17 /* MWGIntro.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +631,7 @@
 			files = (
 				5DF97ECE16948BCF00046053 /* Dark_Potential.dat in Resources */,
 				5DF97ECF16948BCF00046053 /* Dark_Potential.xml in Resources */,
+				5D15DDEB1694B74200C942C6 /* bebas.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +675,7 @@
 				5DA3CFA6164C201600260F49 /* ScreenshotViewController.mm in Sources */,
 				5DF97EC4169480CB00046053 /* Bios.h in Sources */,
 				5DF97EC7169483F300046053 /* Bios.m in Sources */,
+				5D5A10991695CB4B00B9CB17 /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,7 +770,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Spider Man (DR4DUVEJ63)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joe Simms (DM5PZCT3ZC)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dark Potential/Dark Potential-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/include";
@@ -729,7 +781,7 @@
 					"\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/lib/arm\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EFCD0EEE-4C5D-49DE-9868-77F32EC5D06A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0662C3AF-8307-4558-BC8D-A844026B97E5";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
@@ -739,6 +791,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joel Glanfield (D3BF96E7YY)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dark Potential/Dark Potential-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/include";
@@ -749,6 +802,7 @@
 					"\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/lib/arm\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CC02FD70-8015-4465-8BA6-051753886B57";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};

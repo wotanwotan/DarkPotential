@@ -11,7 +11,6 @@
 @interface InfoViewController : UIViewController
 - (IBAction)playVideoButtonPressed:(id)sender;
 - (IBAction)exitButtonPressed:(id)sender;
-- (IBAction)launchJGWebsite:(id)sender;
-- (IBAction)launchSMWebsite:(id)sender;
+- (IBAction)launchWebView:(id)sender;
 
 @end
