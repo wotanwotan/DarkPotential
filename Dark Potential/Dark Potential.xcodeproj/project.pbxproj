@@ -32,6 +32,8 @@
 		5D5B77E8164AFDFF00C330CE /* TextureTeapotBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B77E1164AFDFF00C330CE /* TextureTeapotBlue.png */; };
 		5D5B77E9164AFDFF00C330CE /* TextureTeapotBrass.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B77E2164AFDFF00C330CE /* TextureTeapotBrass.png */; };
 		5D5B77EA164AFDFF00C330CE /* TextureTeapotRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B77E3164AFDFF00C330CE /* TextureTeapotRed.png */; };
+		5D691C381695EA7B0072E2A7 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D691C371695EA7B0072E2A7 /* MessageUI.framework */; };
+		5D691C3B1695EE930072E2A7 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D691C3A1695EE930072E2A7 /* Twitter.framework */; };
 		5D96EAB51694B85C008345DB /* bebas.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D15DDEA1694B74200C942C6 /* bebas.ttf */; };
 		5DA3CFA6164C201600260F49 /* ScreenshotViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3CFA4164C201600260F49 /* ScreenshotViewController.mm */; };
 		5DA3CFA7164C201600260F49 /* ScreenshotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA3CFA5164C201600260F49 /* ScreenshotViewController.xib */; };
@@ -138,6 +140,8 @@
 		5D5B77E1164AFDFF00C330CE /* TextureTeapotBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureTeapotBlue.png; sourceTree = "<group>"; };
 		5D5B77E2164AFDFF00C330CE /* TextureTeapotBrass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureTeapotBrass.png; sourceTree = "<group>"; };
 		5D5B77E3164AFDFF00C330CE /* TextureTeapotRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureTeapotRed.png; sourceTree = "<group>"; };
+		5D691C371695EA7B0072E2A7 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		5D691C3A1695EE930072E2A7 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		5DA3CFA3164C201600260F49 /* ScreenshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenshotViewController.h; sourceTree = "<group>"; };
 		5DA3CFA4164C201600260F49 /* ScreenshotViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ScreenshotViewController.mm; sourceTree = "<group>"; };
 		5DA3CFA5164C201600260F49 /* ScreenshotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreenshotViewController.xib; sourceTree = "<group>"; };
@@ -229,6 +233,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D691C3B1695EE930072E2A7 /* Twitter.framework in Frameworks */,
+				5D691C381695EA7B0072E2A7 /* MessageUI.framework in Frameworks */,
 				5D5B77DB164AFB1A00C330CE /* Security.framework in Frameworks */,
 				5D5B77D9164AFB0E00C330CE /* CoreVideo.framework in Frameworks */,
 				5D5B77D7164AFAFF00C330CE /* SystemConfiguration.framework in Frameworks */,
@@ -393,6 +399,7 @@
 		E2A1CB571643518F009F1CBA = {
 			isa = PBXGroup;
 			children = (
+				5D691C3A1695EE930072E2A7 /* Twitter.framework */,
 				E2A1CB6C1643518F009F1CBA /* Dark Potential */,
 				E2A1CB651643518F009F1CBA /* Frameworks */,
 				E2A1CB631643518F009F1CBA /* Products */,
@@ -411,6 +418,7 @@
 		E2A1CB651643518F009F1CBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D691C371695EA7B0072E2A7 /* MessageUI.framework */,
 				5DA87178164AF5FA0017B893 /* libQCAR.a */,
 				5D5B77DA164AFB1A00C330CE /* Security.framework */,
 				5D5B77D8164AFB0E00C330CE /* CoreVideo.framework */,

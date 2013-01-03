@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
-@interface ScreenshotViewController : UIViewController
+@interface ScreenshotViewController : UIViewController<MFMailComposeViewControllerDelegate>
 {
 
 }
@@ -18,5 +20,7 @@
 
 - (IBAction)exitButtonPressed:(id)sender;
 - (IBAction)saveButtonPressed:(id)sender;
+- (IBAction)mailButtonPressed:(id)sender;
+- (IBAction)twitterButtonPressed:(id)sender;
 
 @end
