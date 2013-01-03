@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5D15DDEB1694B74200C942C6 /* bebas.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D15DDEA1694B74200C942C6 /* bebas.ttf */; };
+		5D381C771696184500C505F5 /* social-fb-onclick.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D381C6F1696184500C505F5 /* social-fb-onclick.png */; };
+		5D381C781696184500C505F5 /* social-fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D381C701696184500C505F5 /* social-fb.png */; };
+		5D381C791696184500C505F5 /* social-mail-onclick.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D381C711696184500C505F5 /* social-mail-onclick.png */; };
+		5D381C7A1696184500C505F5 /* social-mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D381C721696184500C505F5 /* social-mail.png */; };
+		5D381C7B1696184500C505F5 /* social-save-onclick.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D381C731696184500C505F5 /* social-save-onclick.png */; };
+		5D381C7C1696184500C505F5 /* social-save.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D381C741696184500C505F5 /* social-save.png */; };
+		5D381C7D1696184500C505F5 /* social-twitter-onclick.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D381C751696184500C505F5 /* social-twitter-onclick.png */; };
+		5D381C7E1696184500C505F5 /* social-twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D381C761696184500C505F5 /* social-twitter.png */; };
 		5D5A108E1695C7F000B9CB17 /* info-fb-onclick.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5A10861695C7F000B9CB17 /* info-fb-onclick.png */; };
 		5D5A108F1695C7F000B9CB17 /* info-fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5A10871695C7F000B9CB17 /* info-fb.png */; };
 		5D5A10901695C7F000B9CB17 /* info-twitter-onclick.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5A10881695C7F000B9CB17 /* info-twitter-onclick.png */; };
@@ -121,6 +129,14 @@
 
 /* Begin PBXFileReference section */
 		5D15DDEA1694B74200C942C6 /* bebas.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bebas.ttf; sourceTree = "<group>"; };
+		5D381C6F1696184500C505F5 /* social-fb-onclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "social-fb-onclick.png"; path = "../../../../Dropbox/DP App Stuff/UI/Social Icons/social-fb-onclick.png"; sourceTree = "<group>"; };
+		5D381C701696184500C505F5 /* social-fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "social-fb.png"; path = "../../../../Dropbox/DP App Stuff/UI/Social Icons/social-fb.png"; sourceTree = "<group>"; };
+		5D381C711696184500C505F5 /* social-mail-onclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "social-mail-onclick.png"; path = "../../../../Dropbox/DP App Stuff/UI/Social Icons/social-mail-onclick.png"; sourceTree = "<group>"; };
+		5D381C721696184500C505F5 /* social-mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "social-mail.png"; path = "../../../../Dropbox/DP App Stuff/UI/Social Icons/social-mail.png"; sourceTree = "<group>"; };
+		5D381C731696184500C505F5 /* social-save-onclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "social-save-onclick.png"; path = "../../../../Dropbox/DP App Stuff/UI/Social Icons/social-save-onclick.png"; sourceTree = "<group>"; };
+		5D381C741696184500C505F5 /* social-save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "social-save.png"; path = "../../../../Dropbox/DP App Stuff/UI/Social Icons/social-save.png"; sourceTree = "<group>"; };
+		5D381C751696184500C505F5 /* social-twitter-onclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "social-twitter-onclick.png"; path = "../../../../Dropbox/DP App Stuff/UI/Social Icons/social-twitter-onclick.png"; sourceTree = "<group>"; };
+		5D381C761696184500C505F5 /* social-twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "social-twitter.png"; path = "../../../../Dropbox/DP App Stuff/UI/Social Icons/social-twitter.png"; sourceTree = "<group>"; };
 		5D5A10861695C7F000B9CB17 /* info-fb-onclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-fb-onclick.png"; sourceTree = "<group>"; };
 		5D5A10871695C7F000B9CB17 /* info-fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-fb.png"; sourceTree = "<group>"; };
 		5D5A10881695C7F000B9CB17 /* info-twitter-onclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-twitter-onclick.png"; sourceTree = "<group>"; };
@@ -279,6 +295,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D381C6D1696183900C505F5 /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				5D381C6F1696184500C505F5 /* social-fb-onclick.png */,
+				5D381C701696184500C505F5 /* social-fb.png */,
+				5D381C711696184500C505F5 /* social-mail-onclick.png */,
+				5D381C721696184500C505F5 /* social-mail.png */,
+				5D381C731696184500C505F5 /* social-save-onclick.png */,
+				5D381C741696184500C505F5 /* social-save.png */,
+				5D381C751696184500C505F5 /* social-twitter-onclick.png */,
+				5D381C761696184500C505F5 /* social-twitter.png */,
+			);
+			name = Social;
+			sourceTree = "<group>";
+		};
 		5D5B77DC164AFDD500C330CE /* Image targets */ = {
 			isa = PBXGroup;
 			children = (
@@ -494,6 +525,7 @@
 		E2A1CBA1164351F6009F1CBA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5D381C6D1696183900C505F5 /* Social */,
 				E270AC171649FF44003E6A1F /* Info */,
 				5D74774A1643F0E7003C576B /* App icons */,
 				E2A1CBB4164354C9009F1CBA /* Menu */,
@@ -652,6 +684,14 @@
 				5D5A109C1695D39700B9CB17 /* MWGIntro.mp4 in Resources */,
 				5DCA8905169604BC00725CEF /* FacebookSDKResources.bundle in Resources */,
 				5DCA8907169604CF00725CEF /* FBUserSettingsViewResources.bundle in Resources */,
+				5D381C771696184500C505F5 /* social-fb-onclick.png in Resources */,
+				5D381C781696184500C505F5 /* social-fb.png in Resources */,
+				5D381C791696184500C505F5 /* social-mail-onclick.png in Resources */,
+				5D381C7A1696184500C505F5 /* social-mail.png in Resources */,
+				5D381C7B1696184500C505F5 /* social-save-onclick.png in Resources */,
+				5D381C7C1696184500C505F5 /* social-save.png in Resources */,
+				5D381C7D1696184500C505F5 /* social-twitter-onclick.png in Resources */,
+				5D381C7E1696184500C505F5 /* social-twitter.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
