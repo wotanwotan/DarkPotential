@@ -386,6 +386,38 @@
         <image name="navbar.png" width="320" height="44"/>
         <image name="steph.png" width="94" height="41"/>
     </resources>
+    <classes>
+        <class className="ARParentViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ARParentViewController.h"/>
+        </class>
+        <class className="CharacterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CharacterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="exitButtonPressed:"/>
+                <relationship kind="outlet" name="bioTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="bioView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="InfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InfoViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="exitButtonPressed:"/>
+                <relationship kind="action" name="launchWebView:"/>
+                <relationship kind="action" name="playVideoButtonPressed:"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="experienceButtonPressed:"/>
+                <relationship kind="action" name="launchMWGWebsite:"/>
+                <relationship kind="outlet" name="experienceBtn1" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="experienceBtn2" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="experienceBtn3" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="mwgLogo" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
