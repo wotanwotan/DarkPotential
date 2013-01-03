@@ -9,6 +9,7 @@
 #import "ScreenshotViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import <Twitter/Twitter.h>
+#import "AppDelegate.h"
 
 
 @interface ScreenshotViewController ()
@@ -41,6 +42,12 @@
     activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     [activityView setCenter:CGPointMake(320.0/2.0, 480.0/2.0)]; // I do this because I'm in landscape mode
     [self.view addSubview:activityView];
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(sessionStateChanged:)
+     name:FBSessionStateChangedNotification
+     object:nil];
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -55,6 +62,8 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void) viewDidDisappear:(BOOL)animated
@@ -196,6 +205,118 @@
     
     // Present the tweet composition view controller modally.
     [self presentViewController:tweetViewController animated:YES completion:nil];
+}
+
+#pragma mark Facebook
+
+- (IBAction)facebookButtonPressed:(id)sender
+{
+    // open a session if we don't have one already
+    if (!FBSession.activeSession.isOpen)
+    {
+        AppDelegate* appDel = [[UIApplication sharedApplication] delegate];
+        [appDel openSessionWithAllowLoginUI:YES];
+    }
+    
+    // otherwise, check if we have publish permissions
+    else if (![FBSession.activeSession.permissions containsObject:@"publish_actions"])
+    {
+        // get publishing permissions
+        NSArray* permissions = [[NSArray alloc] initWithObjects:@"publish_actions", nil];
+        [FBSession.activeSession reauthorizeWithPublishPermissions:permissions
+                                                   defaultAudience:FBSessionDefaultAudienceFriends
+                                                 completionHandler:^(FBSession *session,
+                                                                     NSError *error) {
+                                                     NSLog(@"done getting publish permissions");
+                                                 }];
+    }
+    
+    // otherwise, just post the photo
+    else
+    {
+        [self postPhotoToFacebook];
+    }
+
+}
+
+- (void)sessionStateChanged:(NSNotification*)notification
+{
+    // if we have an open session, then ask for publish permissions
+    if (FBSession.activeSession.isOpen)
+    {
+        NSLog(@"Do we have publish permissions?");
+        NSArray* permissions = FBSession.activeSession.permissions;
+        bool canPublish = [permissions containsObject:@"publish_actions"];
+        
+        if (!canPublish)
+        {
+            NSLog(@"No. Get PUBLISHING permissions!!");
+
+            permissions = [[NSArray alloc] initWithObjects:@"publish_actions", nil];
+            [FBSession.activeSession reauthorizeWithPublishPermissions:permissions
+                                                       defaultAudience:FBSessionDefaultAudienceFriends
+                                                     completionHandler:^(FBSession *session,
+                                                                         NSError *error) {
+                                                     NSLog(@"DONE getting publish permissions");
+
+                                                 }];
+        }
+        else
+        {
+            NSLog(@"Yes. Post the photo.");
+            // try to publish the photo
+            [self postPhotoToFacebook];
+        }
+    }
+}
+
+- (void) postPhotoToFacebook
+{
+    UIImage *img = [screenshotImageView image];
+    
+    // if it is available to us, we will post using the native dialog
+    BOOL displayedNativeDialog =
+        [FBNativeDialogs presentShareDialogModallyFrom:self initialText:@"Check out my Dark Potential AR pic!" image:img url:nil handler:nil];
+    
+    if (!displayedNativeDialog)
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Posting photo..." message:@"" delegate:nil
+                                                  cancelButtonTitle:nil otherButtonTitles:nil];
+        UIActivityIndicatorView *progress= [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(125, 50, 30, 30)];
+        progress.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
+        
+        [alertView addSubview:progress];
+        [progress startAnimating];
+        [alertView show];
+        
+        NSLog(@"No access to native dialog, so we just post...");
+        
+        FBRequestConnection *connection = [[FBRequestConnection alloc] init];
+        FBRequest *request = [FBRequest requestForUploadPhoto:img];
+        
+        [connection addRequest:request completionHandler:
+         ^(FBRequestConnection *connection, id result, NSError *error) {
+             if (!error) {
+                 NSLog(@"Photo posted successfully!");
+                 UIAlertView *alertView = [[UIAlertView alloc]
+                                           initWithTitle:@"Facebook"
+                                           message:@"Photo posted successfully!"
+                                           delegate:nil
+                                           cancelButtonTitle:@"OK"
+                                           otherButtonTitles:nil];
+                 [alertView show];
+             }
+             else
+                 NSLog(@"Error: %@", [error localizedDescription]);
+             
+             [progress stopAnimating];
+             [alertView dismissWithClickedButtonIndex:0 animated:YES];
+         }
+                batchEntryName:@"photopost"
+         ];
+        
+        [connection start];
+    }
 }
 
 @end

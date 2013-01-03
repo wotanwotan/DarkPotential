@@ -22,5 +22,6 @@
 - (IBAction)saveButtonPressed:(id)sender;
 - (IBAction)mailButtonPressed:(id)sender;
 - (IBAction)twitterButtonPressed:(id)sender;
+- (IBAction)facebookButtonPressed:(id)sender;
 
 @end
