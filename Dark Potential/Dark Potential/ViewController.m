@@ -44,7 +44,8 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-	if ([segue.identifier rangeOfString:@"ShowCharacterPageSegue"].location != NSNotFound)
+    //NSLog(@"%@", segue.identifier);
+	if (segue.identifier != NULL && [segue.identifier rangeOfString:@"ShowCharacterPageSegue"].location != NSNotFound)
 	{
         CharacterViewController* controller = segue.destinationViewController;
 		controller.delegate = self;

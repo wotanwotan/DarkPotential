@@ -63,8 +63,7 @@ NSString* const FBSessionStateChangedNotification = @"com.miniwargaming.darkpote
 }
 
 - (void)playIntroVideo
-{    
-    //    NSLog( [NSString stringWithFormat:@"**** Video Path: %@", [[NSBundle mainBundle] idomaticPathForResource:@"SeedIntro" ofType:@"mp4"]]);
+{
     NSURL *movieUrl = [[NSURL alloc] initFileURLWithPath: [[NSBundle mainBundle] pathForResource:@"MWGIntro" ofType:@"mp4"]];
 
     MPMoviePlayerViewController *moviePlayerViewController = [[MPMoviePlayerViewController alloc]initWithContentURL:movieUrl];

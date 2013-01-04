@@ -64,7 +64,7 @@
 
 - (IBAction)backButtonPressed:(id)sender
 {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)viewDidUnload

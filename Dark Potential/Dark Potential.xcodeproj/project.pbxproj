@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D019A271697527A00150A39 /* DarkPotential-AppIcon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D019A261697527A00150A39 /* DarkPotential-AppIcon-72.png */; };
+		5D019A291697527E00150A39 /* DarkPotential-AppIcon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D019A281697527E00150A39 /* DarkPotential-AppIcon-144.png */; };
+		5D019A2B169752AA00150A39 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D019A2A169752AA00150A39 /* Default-Portrait~ipad.png */; };
+		5D019A2D169752C700150A39 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D019A2C169752C700150A39 /* Default-Portrait@2x~ipad.png */; };
+		5D019A2F169752E700150A39 /* MainStoryboard-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D019A2E169752E700150A39 /* MainStoryboard-iPad.storyboard */; };
+		5D019A311697536F00150A39 /* menu-bg~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D019A301697536F00150A39 /* menu-bg~ipad.png */; };
+		5D019A341697543500150A39 /* experiencebanner-xlanthos-onclick~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D019A321697543500150A39 /* experiencebanner-xlanthos-onclick~ipad.png */; };
+		5D019A351697543500150A39 /* experiencebanner-xlanthos~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D019A331697543500150A39 /* experiencebanner-xlanthos~ipad.png */; };
+		5D019A381697544200150A39 /* dp-logo~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D019A361697544200150A39 /* dp-logo~ipad.png */; };
+		5D019A391697544200150A39 /* mwglogo~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D019A371697544200150A39 /* mwglogo~ipad.png */; };
+		5D019A3B1697582B00150A39 /* experiencebanner-xlanthos@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D019A3A1697582B00150A39 /* experiencebanner-xlanthos@2x~ipad.png */; };
+		5D019A3D1697586400150A39 /* experiencebanner-xlanthos-onclick@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D019A3C1697586400150A39 /* experiencebanner-xlanthos-onclick@2x~ipad.png */; };
+		5D019A3F169759A200150A39 /* background~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D019A3E169759A200150A39 /* background~ipad.jpg */; };
+		5D019A4216975A3000150A39 /* joel~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D019A4016975A3000150A39 /* joel~ipad.png */; };
+		5D019A4316975A3000150A39 /* steph~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D019A4116975A3000150A39 /* steph~ipad.png */; };
+		5D019A461697624A00150A39 /* joel@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D019A441697624A00150A39 /* joel@2x~ipad.png */; };
+		5D019A471697624A00150A39 /* steph@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D019A451697624A00150A39 /* steph@2x~ipad.png */; };
+		5D019A491697696100150A39 /* WebViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D019A481697696100150A39 /* WebViewController-iPad.xib */; };
 		5D15DDEB1694B74200C942C6 /* bebas.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D15DDEA1694B74200C942C6 /* bebas.ttf */; };
 		5D381C771696184500C505F5 /* social-fb-onclick.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D381C6F1696184500C505F5 /* social-fb-onclick.png */; };
 		5D381C781696184500C505F5 /* social-fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D381C701696184500C505F5 /* social-fb.png */; };
@@ -128,6 +146,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D019A261697527A00150A39 /* DarkPotential-AppIcon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DarkPotential-AppIcon-72.png"; path = "../DarkPotential-AppIcon-72.png"; sourceTree = "<group>"; };
+		5D019A281697527E00150A39 /* DarkPotential-AppIcon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DarkPotential-AppIcon-144.png"; path = "../DarkPotential-AppIcon-144.png"; sourceTree = "<group>"; };
+		5D019A2A169752AA00150A39 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~ipad.png"; path = "../Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		5D019A2C169752C700150A39 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x~ipad.png"; path = "../Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		5D019A2E169752E700150A39 /* MainStoryboard-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "MainStoryboard-iPad.storyboard"; sourceTree = "<group>"; };
+		5D019A301697536F00150A39 /* menu-bg~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bg~ipad.png"; sourceTree = "<group>"; };
+		5D019A321697543500150A39 /* experiencebanner-xlanthos-onclick~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "experiencebanner-xlanthos-onclick~ipad.png"; sourceTree = "<group>"; };
+		5D019A331697543500150A39 /* experiencebanner-xlanthos~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "experiencebanner-xlanthos~ipad.png"; sourceTree = "<group>"; };
+		5D019A361697544200150A39 /* dp-logo~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dp-logo~ipad.png"; sourceTree = "<group>"; };
+		5D019A371697544200150A39 /* mwglogo~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mwglogo~ipad.png"; sourceTree = "<group>"; };
+		5D019A3A1697582B00150A39 /* experiencebanner-xlanthos@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "experiencebanner-xlanthos@2x~ipad.png"; sourceTree = "<group>"; };
+		5D019A3C1697586400150A39 /* experiencebanner-xlanthos-onclick@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "experiencebanner-xlanthos-onclick@2x~ipad.png"; sourceTree = "<group>"; };
+		5D019A3E169759A200150A39 /* background~ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background~ipad.jpg"; sourceTree = "<group>"; };
+		5D019A4016975A3000150A39 /* joel~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "joel~ipad.png"; sourceTree = "<group>"; };
+		5D019A4116975A3000150A39 /* steph~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "steph~ipad.png"; sourceTree = "<group>"; };
+		5D019A441697624A00150A39 /* joel@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "joel@2x~ipad.png"; sourceTree = "<group>"; };
+		5D019A451697624A00150A39 /* steph@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "steph@2x~ipad.png"; sourceTree = "<group>"; };
+		5D019A481697696100150A39 /* WebViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "WebViewController-iPad.xib"; sourceTree = "<group>"; };
 		5D15DDEA1694B74200C942C6 /* bebas.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bebas.ttf; sourceTree = "<group>"; };
 		5D381C6F1696184500C505F5 /* social-fb-onclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "social-fb-onclick.png"; path = "../../../../Dropbox/DP App Stuff/UI/Social Icons/social-fb-onclick.png"; sourceTree = "<group>"; };
 		5D381C701696184500C505F5 /* social-fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "social-fb.png"; path = "../../../../Dropbox/DP App Stuff/UI/Social Icons/social-fb.png"; sourceTree = "<group>"; };
@@ -331,6 +367,8 @@
 		5D74774A1643F0E7003C576B /* App icons */ = {
 			isa = PBXGroup;
 			children = (
+				5D019A281697527E00150A39 /* DarkPotential-AppIcon-144.png */,
+				5D019A261697527A00150A39 /* DarkPotential-AppIcon-72.png */,
 				E2A1CBA41643521E009F1CBA /* DarkPotential-AppIcon-114.png */,
 				E2A1CBA21643521A009F1CBA /* DarkPotential-AppIcon-57.png */,
 			);
@@ -385,6 +423,10 @@
 		E2186A3E164739DA00FEADC3 /* Experience buttons */ = {
 			isa = PBXGroup;
 			children = (
+				5D019A3A1697582B00150A39 /* experiencebanner-xlanthos@2x~ipad.png */,
+				5D019A3C1697586400150A39 /* experiencebanner-xlanthos-onclick@2x~ipad.png */,
+				5D019A321697543500150A39 /* experiencebanner-xlanthos-onclick~ipad.png */,
+				5D019A331697543500150A39 /* experiencebanner-xlanthos~ipad.png */,
 				E2186A4016473A2200FEADC3 /* experiencebanner-xlanthos-onclick.png */,
 				E2186A4116473A2200FEADC3 /* experiencebanner-xlanthos-onclick@2x.png */,
 				E2186A4216473A2200FEADC3 /* experiencebanner-xlanthos.png */,
@@ -409,6 +451,7 @@
 				5D5A10961695CB4A00B9CB17 /* WebViewController.h */,
 				5D5A10971695CB4B00B9CB17 /* WebViewController.m */,
 				5D5A10981695CB4B00B9CB17 /* WebViewController.xib */,
+				5D019A481697696100150A39 /* WebViewController-iPad.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -426,10 +469,15 @@
 				5D5A108D1695C7F000B9CB17 /* info-youtube.png */,
 				E270AC30164A06F5003E6A1F /* background-iphone5.jpg */,
 				E270AC31164A06F5003E6A1F /* background-iphone5@2x.jpg */,
+				5D019A3E169759A200150A39 /* background~ipad.jpg */,
 				E270AC26164A0155003E6A1F /* joel.png */,
 				E270AC27164A0155003E6A1F /* joel@2x.png */,
+				5D019A4016975A3000150A39 /* joel~ipad.png */,
+				5D019A441697624A00150A39 /* joel@2x~ipad.png */,
 				E270AC2A164A015E003E6A1F /* steph.png */,
 				E270AC2B164A015E003E6A1F /* steph@2x.png */,
+				5D019A4116975A3000150A39 /* steph~ipad.png */,
+				5D019A451697624A00150A39 /* steph@2x~ipad.png */,
 			);
 			name = Info;
 			sourceTree = "<group>";
@@ -501,6 +549,7 @@
 				E2A1CB751643518F009F1CBA /* AppDelegate.h */,
 				E2A1CB761643518F009F1CBA /* AppDelegate.mm */,
 				E2A1CB7E1643518F009F1CBA /* MainStoryboard.storyboard */,
+				5D019A2E169752E700150A39 /* MainStoryboard-iPad.storyboard */,
 				5DF97EC3169480CB00046053 /* Bios.h */,
 				5DF97EC6169483F300046053 /* Bios.m */,
 				E2A1CB6D1643518F009F1CBA /* Supporting Files */,
@@ -511,6 +560,8 @@
 		E2A1CB6D1643518F009F1CBA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5D019A2A169752AA00150A39 /* Default-Portrait~ipad.png */,
+				5D019A2C169752C700150A39 /* Default-Portrait@2x~ipad.png */,
 				E270AC0D1649F856003E6A1F /* Default-568h@2x.png */,
 				E270AC0B1649F853003E6A1F /* Default@2x.png */,
 				E270AC091649F84F003E6A1F /* Default.png */,
@@ -541,14 +592,17 @@
 				E270AC1F164A0070003E6A1F /* button-back@2x.png */,
 				E270AC1A1649FF82003E6A1F /* button-info.png */,
 				E270AC1B1649FF82003E6A1F /* button-info@2x.png */,
+				E2A1CBA6164354C5009F1CBA /* dp-logo.png */,
+				E2DABFE1164362B200C0D750 /* dp-logo@2x.png */,
+				5D019A361697544200150A39 /* dp-logo~ipad.png */,
 				E2186A4E16473EDD00FEADC3 /* menu-bg.png */,
 				E2186A4F16473EDD00FEADC3 /* menu-bg@2x.png */,
 				E2186A5216473FF200FEADC3 /* menu-bg-iphone5.png */,
+				5D019A301697536F00150A39 /* menu-bg~ipad.png */,
 				E2186A5316473FF200FEADC3 /* menu-bg-iphone5@2x.png */,
 				E2186A4A16473E1B00FEADC3 /* mwglogo.png */,
 				E2186A4B16473E1B00FEADC3 /* mwglogo@2x.png */,
-				E2A1CBA6164354C5009F1CBA /* dp-logo.png */,
-				E2DABFE1164362B200C0D750 /* dp-logo@2x.png */,
+				5D019A371697544200150A39 /* mwglogo~ipad.png */,
 				E2A1CBAB164354C5009F1CBA /* navbar.png */,
 				E2A1CBAC164354C5009F1CBA /* navbar@2x.png */,
 			);
@@ -692,6 +746,24 @@
 				5D381C7C1696184500C505F5 /* social-save.png in Resources */,
 				5D381C7D1696184500C505F5 /* social-twitter-onclick.png in Resources */,
 				5D381C7E1696184500C505F5 /* social-twitter.png in Resources */,
+				5D019A271697527A00150A39 /* DarkPotential-AppIcon-72.png in Resources */,
+				5D019A291697527E00150A39 /* DarkPotential-AppIcon-144.png in Resources */,
+				5D019A2B169752AA00150A39 /* Default-Portrait~ipad.png in Resources */,
+				5D019A2D169752C700150A39 /* Default-Portrait@2x~ipad.png in Resources */,
+				5D019A2F169752E700150A39 /* MainStoryboard-iPad.storyboard in Resources */,
+				5D019A311697536F00150A39 /* menu-bg~ipad.png in Resources */,
+				5D019A341697543500150A39 /* experiencebanner-xlanthos-onclick~ipad.png in Resources */,
+				5D019A351697543500150A39 /* experiencebanner-xlanthos~ipad.png in Resources */,
+				5D019A381697544200150A39 /* dp-logo~ipad.png in Resources */,
+				5D019A391697544200150A39 /* mwglogo~ipad.png in Resources */,
+				5D019A3B1697582B00150A39 /* experiencebanner-xlanthos@2x~ipad.png in Resources */,
+				5D019A3D1697586400150A39 /* experiencebanner-xlanthos-onclick@2x~ipad.png in Resources */,
+				5D019A3F169759A200150A39 /* background~ipad.jpg in Resources */,
+				5D019A4216975A3000150A39 /* joel~ipad.png in Resources */,
+				5D019A4316975A3000150A39 /* steph~ipad.png in Resources */,
+				5D019A461697624A00150A39 /* joel@2x~ipad.png in Resources */,
+				5D019A471697624A00150A39 /* steph@2x~ipad.png in Resources */,
+				5D019A491697696100150A39 /* WebViewController-iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,7 +921,7 @@
 				GCC_PREFIX_HEADER = "Dark Potential/Dark Potential-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/include";
 				INFOPLIST_FILE = "Dark Potential/Dark Potential-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/lib/arm\"",
@@ -857,6 +929,7 @@
 				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "Dark Potential";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0662C3AF-8307-4558-BC8D-A844026B97E5";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
@@ -875,7 +948,7 @@
 				GCC_PREFIX_HEADER = "Dark Potential/Dark Potential-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/include";
 				INFOPLIST_FILE = "Dark Potential/Dark Potential-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/lib/arm\"",
@@ -883,6 +956,7 @@
 				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "Dark Potential";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CC02FD70-8015-4465-8BA6-051753886B57";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};

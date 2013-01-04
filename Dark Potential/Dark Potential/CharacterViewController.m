@@ -16,7 +16,7 @@
 
 @implementation CharacterViewController
 
-@synthesize delegate, bioView, bioTextView;
+@synthesize delegate, bioTextView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,7 +32,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [bioTextView setFont:[UIFont fontWithName:@"bebas" size:12]];
+    if ([[[UIDevice currentDevice] model] isEqualToString:@"iPad"])
+        [bioTextView setFont:[UIFont fontWithName:@"bebas" size:18]];
+    else
+        [bioTextView setFont:[UIFont fontWithName:@"bebas" size:12]];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -41,13 +44,13 @@
     switch ([appDel currentCharacter])
     {
         case DP_NONE:
-            [bioView setText:@"ERROR: no character selected"];
+            [bioTextView setText:@"ERROR: no character selected"];
             break;
         case DP_XLANTHOS:
-            [bioView setText:DP_XLANTHOS_BIO];
+            [bioTextView setText:DP_XLANTHOS_BIO];
             break;
         case DP_RECLAIMER:
-            [bioView setText:DP_RECLAIMERS_BIO];
+            [bioTextView setText:DP_RECLAIMERS_BIO];
             break;
     }
 }
@@ -64,8 +67,8 @@
         [self.delegate characterViewDidClose:self];
 }
 
-- (void)viewDidUnload {
-    [self setBioView:nil];
+- (void)viewDidUnload
+{
     [self setBioTextView:nil];
     [super viewDidUnload];
 }
