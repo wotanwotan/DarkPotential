@@ -17,15 +17,11 @@
     NSArray* animatedButtons;
 }
 
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 @property (strong, nonatomic) IBOutlet UIButton *experienceBtn1;
 @property (strong, nonatomic) IBOutlet UIButton *experienceBtn2;
 @property (strong, nonatomic) IBOutlet UIButton *experienceBtn3;
-@property (strong, nonatomic) IBOutlet UIButton *mwgLogo;
 
-- (IBAction)launchMWGWebsite:(id)sender;
 - (IBAction)experienceButtonPressed:(id)sender;
-
-
-@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 
 @end

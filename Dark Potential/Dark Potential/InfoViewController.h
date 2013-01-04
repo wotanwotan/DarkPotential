@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
-@interface InfoViewController : UIViewController
+@interface InfoViewController : UIViewController<MFMailComposeViewControllerDelegate>
+
+
 - (IBAction)playVideoButtonPressed:(id)sender;
 - (IBAction)exitButtonPressed:(id)sender;
 - (IBAction)launchWebView:(id)sender;
+- (IBAction)emailSupportButtonPressed:(id)sender;
 
 @end

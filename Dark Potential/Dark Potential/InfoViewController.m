@@ -87,4 +87,45 @@
     
     [self presentViewController:webView animated:YES completion:nil];
 }
+
+- (IBAction)emailSupportButtonPressed:(id)sender
+{
+    if (![MFMailComposeViewController canSendMail])
+    {
+        UIAlertView *alertView = [[UIAlertView alloc]
+                                  initWithTitle:@"Email"
+                                  message:@"No email accounts are set up on this device!"
+                                  delegate:nil
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil];
+        [alertView show];
+        
+        return;
+    }
+    
+    MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
+    picker.mailComposeDelegate = self;
+    
+    [picker setToRecipients:[NSArray arrayWithObjects:@"apps@miniwargaming.com", nil]];
+    [picker setSubject:@"Dark Potential AR Support"];
+    
+    [self presentViewController:picker animated:YES completion:nil];
+}
+
+- (void) mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
+{
+    UIAlertView *alertView = [UIAlertView alloc];
+    
+    if (error)
+    {
+        alertView = [[UIAlertView alloc]
+                     initWithTitle:@"Error" message:error.localizedDescription
+                     delegate:nil
+                     cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

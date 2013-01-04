@@ -446,10 +446,6 @@
 		E2A1CB571643518F009F1CBA = {
 			isa = PBXGroup;
 			children = (
-				5DCA8908169604FA00725CEF /* Accounts.framework */,
-				5DCA8909169604FA00725CEF /* AdSupport.framework */,
-				5DCA890A169604FA00725CEF /* Social.framework */,
-				5D691C3A1695EE930072E2A7 /* Twitter.framework */,
 				E2A1CB6C1643518F009F1CBA /* Dark Potential */,
 				E2A1CB651643518F009F1CBA /* Frameworks */,
 				E2A1CB631643518F009F1CBA /* Products */,
@@ -468,6 +464,10 @@
 		E2A1CB651643518F009F1CBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5DCA8908169604FA00725CEF /* Accounts.framework */,
+				5DCA8909169604FA00725CEF /* AdSupport.framework */,
+				5DCA890A169604FA00725CEF /* Social.framework */,
+				5D691C3A1695EE930072E2A7 /* Twitter.framework */,
 				5DCA8906169604CF00725CEF /* FBUserSettingsViewResources.bundle */,
 				5DCA8904169604BC00725CEF /* FacebookSDKResources.bundle */,
 				5DCA8901169604A100725CEF /* FacebookSDK.framework */,

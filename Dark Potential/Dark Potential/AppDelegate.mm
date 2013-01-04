@@ -66,21 +66,7 @@ NSString* const FBSessionStateChangedNotification = @"com.miniwargaming.darkpote
 {    
     //    NSLog( [NSString stringWithFormat:@"**** Video Path: %@", [[NSBundle mainBundle] idomaticPathForResource:@"SeedIntro" ofType:@"mp4"]]);
     NSURL *movieUrl = [[NSURL alloc] initFileURLWithPath: [[NSBundle mainBundle] pathForResource:@"MWGIntro" ofType:@"mp4"]];
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        CGSize screenSize = [[UIScreen mainScreen] bounds].size;
-        if (screenSize.height > 480.0f) {
-            movieUrl = nil;
-            movieUrl = [[NSURL alloc] initFileURLWithPath: [[NSBundle mainBundle] pathForResource:@"MWGIntro"/*SeedIntro-568h@2x"*/ ofType:@"mp4"]];
-        }
-    }
-    
-    //    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-    //        CGSize screenSize = [[UIScreen mainScreen] bounds].size;
-    //        if (screenSize.height > 768.0f) {
-    //            movieUrl = nil;
-    //            movieUrl = [[NSURL alloc] initFileURLWithPath: [[NSBundle mainBundle] pathForResource:@"SeedIntro@2x~ipad" ofType:@"mp4"]];
-    //        }
-    //    }
+
     MPMoviePlayerViewController *moviePlayerViewController = [[MPMoviePlayerViewController alloc]initWithContentURL:movieUrl];
 
     // Hide the video controls
@@ -89,27 +75,19 @@ NSString* const FBSessionStateChangedNotification = @"com.miniwargaming.darkpote
     // black background
     moviePlayerViewController.moviePlayer.backgroundView.backgroundColor = [UIColor blackColor];
     
-/*    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
-        CGSize screenSize = [[UIScreen mainScreen] bounds].size;
-        if (screenSize.height > 480.0f) {
-            moviePlayerViewController.moviePlayer.backgroundView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Default-568h@2x" ofType:@"png"]]];
-            
-        }
-    }*/
-    
     // Cross-dissolve transition.
     moviePlayerViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(introVideoDidFinish) name:MPMoviePlayerPlaybackDidFinishNotification object:nil];
-    
-    [self.window.rootViewController presentModalViewController:moviePlayerViewController animated:NO];
+        
+    [self.window.rootViewController presentViewController:moviePlayerViewController animated:NO completion:nil];
 }
 
 - (void)introVideoDidFinish
 {    
     [[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:nil];
     
-//    [self.window.rootViewController dismissModalViewControllerAnimated:YES];
+    [self.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

@@ -32,7 +32,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [bioTextView setFont:[UIFont fontWithName:@"bebas" size:14]];
+    [bioTextView setFont:[UIFont fontWithName:@"bebas" size:12]];
 }
 
 - (void)viewWillAppear:(BOOL)animated

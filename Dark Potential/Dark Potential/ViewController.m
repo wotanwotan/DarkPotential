@@ -11,25 +11,20 @@
 
 @interface ViewController ()
 
-- (void) animateButton:(UIButton*)theButton animateFromLeft:(BOOL)fromLeft;
-- (void) animateMWGLogo;
 - (void) playMWGAudio;
 - (void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag;
 - (void) playAudioWithName:(NSString*)audioFileName;
-//- (void) characterViewDidClose:(CharacterViewController*)controller;
 
 @end
 
 @implementation ViewController
 
-@synthesize audioPlayer, experienceBtn1, experienceBtn2, experienceBtn3, mwgLogo;
+@synthesize audioPlayer, experienceBtn1, experienceBtn2, experienceBtn3;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
-//    [[UINavigationBar appearance] setTitleView:logoView];
     
     UIButton *logoView = [[UIButton alloc] initWithFrame:CGRectMake(0,0,85,40)];
     [logoView setBackgroundImage:[UIImage imageNamed:@"dp-logo.png"] forState:UIControlStateNormal];
@@ -45,12 +40,6 @@
     currentButtonToAnimate = 0;
     numButtonsToAnimate = 3;
     animatedButtons = [NSArray arrayWithObjects:experienceBtn1, experienceBtn2, experienceBtn3, nil];
-    
-    // play audio
-//    [self playMWGAudio];
-
-    // first button
-//    [self animateButton:[animatedButtons objectAtIndex:currentButtonToAnimate] animateFromLeft:YES];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -62,7 +51,7 @@
 	}
 }
 
-- (void) animateButton:(UIButton*)theButton animateFromLeft:(BOOL)fromLeft
+/*- (void) animateButton:(UIButton*)theButton animateFromLeft:(BOOL)fromLeft
 {    
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     CGRect btnFrame = theButton.frame;
@@ -98,18 +87,7 @@
             }
         }
     }];
-}
-
-- (void) animateMWGLogo
-{
-    [mwgLogo setAlpha:0.0];
-    [mwgLogo setHidden:NO];
-    
-    [UIView animateWithDuration:0.2 delay:0.25 options:UIViewAnimationOptionAllowUserInteraction animations:^{
-        [mwgLogo setAlpha:1.0];
-    } completion:^(BOOL finished){
-    }];
-}
+}*/
 
 - (void) playAudioWithName:(NSString*)audioFileName
 {
@@ -181,7 +159,6 @@
     [self setExperienceBtn1:nil];
     [self setExperienceBtn2:nil];
     [self setExperienceBtn3:nil];
-    [self setMwgLogo:nil];
     [super viewDidUnload];
 }
 
