@@ -21,9 +21,9 @@
     QCARutils *qUtils = [QCARutils getInstance];
     
     // Provide a list of targets we're expecting - the first in the list is the default
-//    [qUtils addTargetName:@"Stones & Chips" atPath:@"StonesAndChips.xml"];
+    [qUtils addTargetName:@"Stones & Chips" atPath:@"StonesAndChips.xml"];
 //    [qUtils addTargetName:@"Tarmac" atPath:@"Tarmac.xml"];
-    [qUtils addTargetName:@"XlanthosSSTop" atPath:@"Dark_Potential.xml"];
+//    [qUtils addTargetName:@"XlanthosSSTop" atPath:@"Dark_Potential.xml"];
     [qUtils addTargetName:@"ReclaimerSSTop" atPath:@"Dark_Potential.xml"];
     
     arViewRect.size = [[UIScreen mainScreen] bounds].size;

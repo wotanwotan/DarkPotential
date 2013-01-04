@@ -58,6 +58,7 @@
 		5D5B77E8164AFDFF00C330CE /* TextureTeapotBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B77E1164AFDFF00C330CE /* TextureTeapotBlue.png */; };
 		5D5B77E9164AFDFF00C330CE /* TextureTeapotBrass.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B77E2164AFDFF00C330CE /* TextureTeapotBrass.png */; };
 		5D5B77EA164AFDFF00C330CE /* TextureTeapotRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B77E3164AFDFF00C330CE /* TextureTeapotRed.png */; };
+		5D6049551697764F00EA814C /* ScreenshotViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D6049541697764F00EA814C /* ScreenshotViewController-iPad.xib */; };
 		5D691C381695EA7B0072E2A7 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D691C371695EA7B0072E2A7 /* MessageUI.framework */; };
 		5D691C3B1695EE930072E2A7 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D691C3A1695EE930072E2A7 /* Twitter.framework */; };
 		5D96EAB51694B85C008345DB /* bebas.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D15DDEA1694B74200C942C6 /* bebas.ttf */; };
@@ -198,6 +199,7 @@
 		5D5B77E1164AFDFF00C330CE /* TextureTeapotBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureTeapotBlue.png; sourceTree = "<group>"; };
 		5D5B77E2164AFDFF00C330CE /* TextureTeapotBrass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureTeapotBrass.png; sourceTree = "<group>"; };
 		5D5B77E3164AFDFF00C330CE /* TextureTeapotRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureTeapotRed.png; sourceTree = "<group>"; };
+		5D6049541697764F00EA814C /* ScreenshotViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ScreenshotViewController-iPad.xib"; sourceTree = "<group>"; };
 		5D691C371695EA7B0072E2A7 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		5D691C3A1695EE930072E2A7 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		5DA3CFA3164C201600260F49 /* ScreenshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenshotViewController.h; sourceTree = "<group>"; };
@@ -448,6 +450,7 @@
 				5DA3CFA3164C201600260F49 /* ScreenshotViewController.h */,
 				5DA3CFA4164C201600260F49 /* ScreenshotViewController.mm */,
 				5DA3CFA5164C201600260F49 /* ScreenshotViewController.xib */,
+				5D6049541697764F00EA814C /* ScreenshotViewController-iPad.xib */,
 				5D5A10961695CB4A00B9CB17 /* WebViewController.h */,
 				5D5A10971695CB4B00B9CB17 /* WebViewController.m */,
 				5D5A10981695CB4B00B9CB17 /* WebViewController.xib */,
@@ -764,6 +767,7 @@
 				5D019A461697624A00150A39 /* joel@2x~ipad.png in Resources */,
 				5D019A471697624A00150A39 /* steph@2x~ipad.png in Resources */,
 				5D019A491697696100150A39 /* WebViewController-iPad.xib in Resources */,
+				5D6049551697764F00EA814C /* ScreenshotViewController-iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
