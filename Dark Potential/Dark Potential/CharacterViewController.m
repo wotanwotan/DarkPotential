@@ -16,7 +16,7 @@
 
 @implementation CharacterViewController
 
-@synthesize delegate, bioTextView;
+@synthesize delegate, bioTextView, bgImageView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,10 +32,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    if ([[[UIDevice currentDevice] model] isEqualToString:@"iPad"])
+    /*if ([[[UIDevice currentDevice] model] isEqualToString:@"iPad"])
         [bioTextView setFont:[UIFont fontWithName:@"bebas" size:18]];
     else
-        [bioTextView setFont:[UIFont fontWithName:@"bebas" size:12]];
+        [bioTextView setFont:[UIFont fontWithName:@"bebas" size:12]];*/
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -48,9 +48,15 @@
             break;
         case DP_XLANTHOS:
             [bioTextView setText:DP_XLANTHOS_BIO];
+            [bgImageView setImage:[UIImage imageNamed:@"info-xlanthos.png"]];
             break;
         case DP_RECLAIMER:
             [bioTextView setText:DP_RECLAIMERS_BIO];
+            [bgImageView setImage:[UIImage imageNamed:@"info-reclaimers.png"]];
+            break;
+        case DP_CORPORATION:
+            [bioTextView setText:DP_CORPORATION_BIO];
+            [bgImageView setImage:[UIImage imageNamed:@"info-pmc.png"]];
             break;
     }
 }

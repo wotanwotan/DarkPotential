@@ -16,7 +16,8 @@ extern NSString* const FBSessionStateChangedNotification;
     enum DPCharacter {
         DP_NONE,
         DP_XLANTHOS,
-        DP_RECLAIMER
+        DP_RECLAIMER,
+        DP_CORPORATION
     };
 }
 

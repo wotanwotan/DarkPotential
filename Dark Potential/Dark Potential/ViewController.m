@@ -139,7 +139,7 @@
             break;
         case 2:
             // TBD
-            [appDel setCurrentCharacter:DP_NONE];
+            [appDel setCurrentCharacter:DP_CORPORATION];
             break;
     }
 }
