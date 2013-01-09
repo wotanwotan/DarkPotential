@@ -19,7 +19,26 @@
 
 @implementation ViewController
 
-@synthesize audioPlayer, experienceBtn1, experienceBtn2, experienceBtn3;
++(void)initialize
+{
+    UILabel *proxyLabel = [UILabel appearance];
+    
+    [proxyLabel setFont:[UIFont fontWithName:@"bebas" size:18]];
+    
+    /*if ([[[UIDevice currentDevice] model] isEqualToString:@"iPad"])
+     [bioTextView setFont:[UIFont fontWithName:@"bebas" size:18]];
+     else
+     [bioTextView setFont:[UIFont fontWithName:@"bebas" size:12]];*/
+    
+    
+    /*UISwitch *proxySwitch = [UISwitch appearance];
+     
+     if ([proxySwitch respondsToSelector:@selector(setTintColor:)])
+     [proxySwitch setTintColor:[UIColor orangeColor]];
+     
+     if ([proxySwitch respondsToSelector:@selector(setOnTintColor:)])
+     [proxySwitch setOnTintColor:[UIColor blackColor]];*/
+}
 
 - (void)viewDidLoad
 {
@@ -39,7 +58,7 @@
     
     currentButtonToAnimate = 0;
     numButtonsToAnimate = 3;
-    animatedButtons = [NSArray arrayWithObjects:experienceBtn1, experienceBtn2, experienceBtn3, nil];
+    animatedButtons = [NSArray arrayWithObjects:self.experienceBtn1, self.experienceBtn2, self.experienceBtn3, nil];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

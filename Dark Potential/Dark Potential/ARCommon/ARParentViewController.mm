@@ -175,7 +175,7 @@
     {
         case 0:
         {
-            [self dismissModalViewControllerAnimated:YES];
+            [self dismissViewControllerAnimated:YES completion:nil];
             break;
         }
         case 1:
@@ -200,7 +200,9 @@
     
     // now, show the photo-share view
     ScreenshotViewController *pictureView;
-    if ([[[UIDevice currentDevice] model] isEqualToString:@"iPad"])
+    
+//    if ([[[UIDevice currentDevice] model] isEqualToString:@"iPad"])
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
         pictureView = [[ScreenshotViewController alloc] initWithNibName:@"ScreenshotViewController-iPad" bundle:nil];
     else
         pictureView = [[ScreenshotViewController alloc] initWithNibName:@"ScreenshotViewController" bundle:nil];
@@ -210,7 +212,7 @@
     QCARutils *qUtils = [QCARutils getInstance];
     [qUtils pauseAR];
     
-    [self presentModalViewController:pictureView animated:YES];
+    [self presentViewController:pictureView animated:YES completion:nil];
 }
 
 - (void) screenshotWasTaken:(UIImage*)theScreenshot

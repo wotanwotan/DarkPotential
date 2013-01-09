@@ -9,6 +9,7 @@
 #import "InfoViewController.h"
 #import "WebViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface InfoViewController ()
 
@@ -29,6 +30,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+/*    CALayer *layer = self.supportButton.layer;
+    layer.backgroundColor = [[UIColor clearColor] CGColor];
+    layer.borderColor = [[UIColor darkGrayColor] CGColor];
+    layer.borderWidth = 1.0f;*/
+    
+    CALayer *layer = self.playVideoButton.layer;
+//    layer.backgroundColor = [[UIColor clearColor] CGColor];
+    layer.borderColor = [[UIColor darkGrayColor] CGColor];
+    layer.cornerRadius = 8.0f;
+    layer.borderWidth = 2.0f;
+
 }
 
 - (void)didReceiveMemoryWarning

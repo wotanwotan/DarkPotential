@@ -75,7 +75,7 @@
 
 - (IBAction)exitButtonPressed:(id)sender
 {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark Save
@@ -174,33 +174,31 @@
 - (IBAction)twitterButtonPressed:(id)sender
 {
     // Set up the built-in twitter composition view controller.
-    TWTweetComposeViewController *tweetViewController = [[TWTweetComposeViewController alloc] init];
+    SLComposeViewController *tweetViewController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
     
     // Set the initial tweet text. See the framework for additional properties that can be set.
     [tweetViewController setInitialText:@"Check out my #DarkPotential AR app picture!"];
     [tweetViewController addImage:self.screenshotImage];
     
     // Create the completion handler block.
-    [tweetViewController setCompletionHandler:^(TWTweetComposeViewControllerResult result) {
-        NSString *output;
+    [tweetViewController setCompletionHandler:^(SLComposeViewControllerResult result) {
+/*        NSString *output;
         
         switch (result) {
-            case TWTweetComposeViewControllerResultCancelled:
+            case SLComposeViewControllerResultCancelled:
                 // The cancel button was tapped.
                 output = @"Tweet cancelled.";
                 break;
-            case TWTweetComposeViewControllerResultDone:
+            case SLComposeViewControllerResultDone:
                 // The tweet was sent.
                 output = @"Tweet done.";
                 break;
             default:
                 break;
         }
-        
-        //        [self performSelectorOnMainThread:@selector(displayText:) withObject:output waitUntilDone:NO];
-        
+*/        
         // Dismiss the tweet composition view controller.
-        [self dismissModalViewControllerAnimated:YES];
+        [self dismissViewControllerAnimated:YES completion:nil];
     }];
     
     // Present the tweet composition view controller modally.
@@ -211,30 +209,71 @@
 
 - (IBAction)facebookButtonPressed:(id)sender
 {
-    // open a session if we don't have one already
-    if (!FBSession.activeSession.isOpen)
+    // if iOS6, then just use the composer (if the user set up FB in the settings)
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook])
+//    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0)
     {
-        AppDelegate* appDel = [[UIApplication sharedApplication] delegate];
-        [appDel openSessionWithAllowLoginUI:YES];
+        NSLog(@"iOS6");
+        // Set up the built-in twitter composition view controller.
+        SLComposeViewController *fbViewController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        
+        // Set the initial tweet text. See the framework for additional properties that can be set.
+        [fbViewController setInitialText:@"Check out my #DarkPotential AR app picture!"];
+        [fbViewController addImage:self.screenshotImage];
+        
+        // Create the completion handler block.
+        [fbViewController setCompletionHandler:^(SLComposeViewControllerResult result) {
+/*            NSString *output;
+            
+            switch (result) {
+                case SLComposeViewControllerResultCancelled:
+                    // The cancel button was tapped.
+                    output = @"FB cancelled.";
+                    break;
+                case SLComposeViewControllerResultDone:
+                    // The tweet was sent.
+                    output = @"FB done.";
+                    break;
+                default:
+                    break;
+            }
+*/
+            // Dismiss the tweet composition view controller.
+//            [self dismissViewControllerAnimated:YES completion:nil];
+        }];
+        
+        // Present the tweet composition view controller modally.
+        [self presentViewController:fbViewController animated:YES completion:nil];
     }
     
-    // otherwise, check if we have publish permissions
-    else if (![FBSession.activeSession.permissions containsObject:@"publish_actions"])
-    {
-        // get publishing permissions
-        NSArray* permissions = [[NSArray alloc] initWithObjects:@"publish_actions", nil];
-        [FBSession.activeSession reauthorizeWithPublishPermissions:permissions
-                                                   defaultAudience:FBSessionDefaultAudienceFriends
-                                                 completionHandler:^(FBSession *session,
-                                                                     NSError *error) {
-                                                     NSLog(@"done getting publish permissions");
-                                                 }];
-    }
-    
-    // otherwise, just post the photo
+    // otherwise, resort to using the app (or browser) ...
     else
-    {
-        [self postPhotoToFacebook];
+    {    
+        // open a session if we don't have one already
+        if (!FBSession.activeSession.isOpen)
+        {
+            AppDelegate* appDel = [[UIApplication sharedApplication] delegate];
+            [appDel openSessionWithAllowLoginUI:YES];
+        }
+        
+        // otherwise, check if we have publish permissions
+        else if (![FBSession.activeSession.permissions containsObject:@"publish_actions"])
+        {
+            // get publishing permissions
+            NSArray* permissions = [[NSArray alloc] initWithObjects:@"publish_actions", nil];
+            [FBSession.activeSession reauthorizeWithPublishPermissions:permissions
+                                                       defaultAudience:FBSessionDefaultAudienceFriends
+                                                     completionHandler:^(FBSession *session,
+                                                                         NSError *error) {
+                                                         NSLog(@"done getting publish permissions");
+                                                     }];
+        }
+        
+        // otherwise, just post the photo
+        else
+        {
+            [self postPhotoToFacebook];
+        }
     }
 
 }
@@ -274,11 +313,11 @@
 {
     UIImage *img = [screenshotImageView image];
     
-    // if it is available to us, we will post using the native dialog
+/*    // if it is available to us, we will post using the native dialog
     BOOL displayedNativeDialog =
         [FBNativeDialogs presentShareDialogModallyFrom:self initialText:@"Check out my Dark Potential AR pic!" image:img url:nil handler:nil];
     
-    if (!displayedNativeDialog)
+    if (!displayedNativeDialog)*/
     {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Posting photo..." message:@"" delegate:nil
                                                   cancelButtonTitle:nil otherButtonTitles:nil];

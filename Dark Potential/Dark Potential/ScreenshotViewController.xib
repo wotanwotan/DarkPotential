@@ -40,7 +40,7 @@
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">1280</int>
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrameSize">{320, 568}</string>
+						<string key="NSFrame">{{0, 2}, {320, 568}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSNextKeyView" ref="593621154"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
@@ -53,7 +53,7 @@
 					<object class="IBUIImageView" id="23048269">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">304</int>
-						<string key="NSFrame">{{20, 77}, {160, 240}}</string>
+						<string key="NSFrame">{{20, 79}, {160, 240}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSNextKeyView" ref="754488584"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -63,8 +63,9 @@
 					<object class="IBUIButton" id="757739968">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">260</int>
-						<string key="NSFrame">{{188, 263}, {54, 54}}</string>
+						<string key="NSFrame">{{188, 265}, {54, 54}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -104,7 +105,7 @@
 					<object class="IBUIButton" id="754488584">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{188, 77}, {54, 54}}</string>
+						<string key="NSFrame">{{188, 79}, {54, 54}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSNextKeyView" ref="956997671"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -133,7 +134,7 @@
 					<object class="IBUIButton" id="956997671">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{188, 139}, {54, 54}}</string>
+						<string key="NSFrame">{{188, 141}, {54, 54}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSNextKeyView" ref="407411390"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -162,7 +163,7 @@
 					<object class="IBUIButton" id="407411390">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">260</int>
-						<string key="NSFrame">{{188, 201}, {54, 54}}</string>
+						<string key="NSFrame">{{188, 203}, {54, 54}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSNextKeyView" ref="757739968"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -192,7 +193,7 @@
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">1316</int>
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrameSize">{320, 44}</string>
+						<string key="NSFrame">{{0, 2}, {320, 44}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSNextKeyView" ref="532909172"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
@@ -206,7 +207,7 @@
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">1316</int>
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{9, 4}, {20, 20}}</string>
+						<string key="NSFrame">{{9, 6}, {20, 20}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSNextKeyView" ref="221610796"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -238,7 +239,7 @@
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">1316</int>
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{27, -2}, {266, 71}}</string>
+						<string key="NSFrame">{{27, 0}, {266, 71}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSNextKeyView" ref="23048269"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
@@ -355,15 +356,15 @@
 						<int key="objectID">1</int>
 						<reference key="object" ref="191373211"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="532909172"/>
-							<reference ref="593621154"/>
-							<reference ref="221610796"/>
 							<reference ref="803207503"/>
 							<reference ref="23048269"/>
-							<reference ref="754488584"/>
 							<reference ref="757739968"/>
+							<reference ref="754488584"/>
 							<reference ref="956997671"/>
 							<reference ref="407411390"/>
+							<reference ref="593621154"/>
+							<reference ref="532909172"/>
+							<reference ref="221610796"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
