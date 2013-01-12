@@ -6,10 +6,11 @@
 //  Copyright (c) 2012 Joel Glanfield. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainMenuViewController.h"
 #import "AppDelegate.h"
+#import <QuartzCore/QuartzCore.h>
 
-@interface ViewController ()
+@interface MainMenuViewController ()
 
 - (void) playMWGAudio;
 - (void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag;
@@ -17,13 +18,13 @@
 
 @end
 
-@implementation ViewController
+@implementation MainMenuViewController
 
 +(void)initialize
 {
     UILabel *proxyLabel = [UILabel appearance];
     
-    [proxyLabel setFont:[UIFont fontWithName:@"bebas" size:18]];
+    [proxyLabel setFont:[UIFont fontWithName:@"bebas" size:16]];
     
     /*if ([[[UIDevice currentDevice] model] isEqualToString:@"iPad"])
      [bioTextView setFont:[UIFont fontWithName:@"bebas" size:18]];
@@ -45,20 +46,16 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    UIButton *logoView = [[UIButton alloc] initWithFrame:CGRectMake(0,0,85,40)];
-    [logoView setBackgroundImage:[UIImage imageNamed:@"dp-logo.png"] forState:UIControlStateNormal];
-    [logoView setUserInteractionEnabled:NO];
-    
-    self.navigationItem.titleView = logoView;
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navbar"]
+                                                  forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setTintColor:[UIColor darkGrayColor]];
+}
 
-    if ([self.navigationController.navigationBar
-         respondsToSelector:@selector(shadowImage)]) {
-        self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
-    }
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     
-    currentButtonToAnimate = 0;
-    numButtonsToAnimate = 3;
-    animatedButtons = [NSArray arrayWithObjects:self.experienceBtn1, self.experienceBtn2, self.experienceBtn3, nil];
+
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -147,6 +144,19 @@
     [self playAudioWithName:@"menu_whoosh_in.mp3"];
     
     AppDelegate* appDel = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+    [UIView animateWithDuration:0.15 delay:0.0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+        self.experienceBtn1.transform = CGAffineTransformMakeScale(0.8, 0.8);
+
+    } completion:^(BOOL finished){
+        if (finished)
+        {
+            [UIView animateWithDuration:0.15 delay:0.0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+                self.experienceBtn1.transform = CGAffineTransformMakeScale(1,1);
+            } completion:nil
+            ];
+        }
+    }];
 
     switch ([sender tag])
     {

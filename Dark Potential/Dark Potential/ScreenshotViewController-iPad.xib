@@ -457,7 +457,7 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="button-back.png">{30, 30}</string>
+			<string key="button-back.png">{22, 22}</string>
 			<string key="dp-logo~ipad.png">{501, 143}</string>
 			<string key="menu-bg~ipad.png">{768, 1024}</string>
 			<string key="navbar.png">{320, 44}</string>

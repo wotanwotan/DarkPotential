@@ -13,14 +13,15 @@ NSString* const FBSessionStateChangedNotification = @"com.miniwargaming.darkpote
 
 @implementation AppDelegate
 
-@synthesize currentCharacter;
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {    
     // Override point for customization after application launch.
-//    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navbar.png"] forBarMetrics:UIBarMetricsDefault];
+//    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navbar"]
+//                                       forBarMetrics:UIBarMetricsDefault];
     
-    currentCharacter = DP_NONE;
+//    [[UINavigationBar appearance] setShadowImage:<#(UIImage *)#>]
+    
+    self.currentCharacter = DP_NONE;
     
 //    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2]];
     
@@ -64,7 +65,9 @@ NSString* const FBSessionStateChangedNotification = @"com.miniwargaming.darkpote
 
 - (void)playIntroVideo
 {
+//    NSURL *movieUrl = [[NSBundle mainBundle] URLForResource:@"MWGIntro" withExtension:@"m4v"];
     NSURL *movieUrl = [[NSURL alloc] initFileURLWithPath: [[NSBundle mainBundle] pathForResource:@"MWGIntro" ofType:@"mp4"]];
+
 
     MPMoviePlayerViewController *moviePlayerViewController = [[MPMoviePlayerViewController alloc]initWithContentURL:movieUrl];
 

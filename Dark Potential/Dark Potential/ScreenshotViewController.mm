@@ -20,8 +20,6 @@
 
 @implementation ScreenshotViewController
 
-@synthesize screenshotImage, screenshotImageView;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -33,7 +31,7 @@
 
 - (void) viewDidLoad
 {
-    [self.screenshotImageView setImage:screenshotImage];
+    [self.screenshotImageView setImage:self.screenshotImage];
     [self.screenshotImageView.layer setCornerRadius:10.0];
     [self.screenshotImageView.layer setBorderColor:[[UIColor blackColor] CGColor]];
     [self.screenshotImageView.layer setBorderWidth: 3.0];
@@ -55,7 +53,7 @@
     [super viewWillAppear:animated];
     // Do any additional setup after loading the view from its nib.
     
-    [self setScreenshotImage:[screenshotImageView image]];
+    [self setScreenshotImage:[self.screenshotImageView image]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -70,7 +68,7 @@
 {
     [super viewDidDisappear:animated];
     
-    screenshotImage = nil;
+    self.screenshotImage = nil;
 }
 
 - (IBAction)exitButtonPressed:(id)sender
@@ -84,7 +82,7 @@
 {
     [activityView startAnimating];
     
-    UIImageWriteToSavedPhotosAlbum(screenshotImage, self, @selector(photo:didFinishSavingWithError:contextInfo:), nil);
+    UIImageWriteToSavedPhotosAlbum(self.screenshotImage, self, @selector(photo:didFinishSavingWithError:contextInfo:), nil);
 }
 
 - (void)photo:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo: (void *) contextInfo;
@@ -133,7 +131,7 @@
     picker.mailComposeDelegate = self;
     
     [picker setSubject:@"Dark Potential AR picture"];
-    [picker addAttachmentData:UIImagePNGRepresentation(screenshotImage) mimeType:@"image/png" fileName:@"image.png"];
+    [picker addAttachmentData:UIImagePNGRepresentation(self.screenshotImage) mimeType:@"image/png" fileName:@"image.png"];
     
     // Fill out the email body text
     NSString *emailBody = @"Check out my Dark Potential AR picture!";
@@ -311,7 +309,7 @@
 
 - (void) postPhotoToFacebook
 {
-    UIImage *img = [screenshotImageView image];
+    UIImage *img = [self.screenshotImageView image];
     
 /*    // if it is available to us, we will post using the native dialog
     BOOL displayedNativeDialog =

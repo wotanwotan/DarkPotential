@@ -16,8 +16,6 @@
 
 @implementation CharacterViewController
 
-@synthesize delegate, bioTextView, bgImageView;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -44,19 +42,19 @@
     switch ([appDel currentCharacter])
     {
         case DP_NONE:
-            [bioTextView setText:@"ERROR: no character selected"];
+            [self.bioTextView setText:@"ERROR: no character selected"];
             break;
         case DP_XLANTHOS:
-            [bioTextView setText:DP_XLANTHOS_BIO];
-            [bgImageView setImage:[UIImage imageNamed:@"info-xlanthos.png"]];
+            [self.bioTextView setText:DP_XLANTHOS_BIO];
+            [self.bgImageView setImage:[UIImage imageNamed:@"info-xlanthos.png"]];
             break;
         case DP_RECLAIMER:
-            [bioTextView setText:DP_RECLAIMERS_BIO];
-            [bgImageView setImage:[UIImage imageNamed:@"info-reclaimers.png"]];
+            [self.bioTextView setText:DP_RECLAIMERS_BIO];
+            [self.bgImageView setImage:[UIImage imageNamed:@"info-reclaimers.png"]];
             break;
         case DP_CORPORATION:
-            [bioTextView setText:DP_CORPORATION_BIO];
-            [bgImageView setImage:[UIImage imageNamed:@"info-pmc.png"]];
+            [self.bioTextView setText:DP_CORPORATION_BIO];
+            [self.bgImageView setImage:[UIImage imageNamed:@"info-pmc.png"]];
             break;
     }
 }
@@ -69,7 +67,7 @@
 
 - (IBAction)exitButtonPressed:(id)sender
 {
-    if (delegate != nil && [delegate respondsToSelector:@selector(characterViewDidClose:)])
+    if (self.delegate != nil && [self.delegate respondsToSelector:@selector(characterViewDidClose:)])
         [self.delegate characterViewDidClose:self];
 }
 

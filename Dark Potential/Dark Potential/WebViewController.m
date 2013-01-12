@@ -14,8 +14,6 @@
 
 @implementation WebViewController
 
-@synthesize webPageURL, webView, activity;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -36,19 +34,19 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    webView.delegate = self;
-    webView.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1.0];
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.webPageURL]]];
+    self.webView.delegate = self;
+    self.webView.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1.0];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.webPageURL]]];
 }
 
 - (void) webViewDidStartLoad:(UIWebView *)webView
 {
-    [activity startAnimating];
+    [self.activity startAnimating];
 }
 
 -(void) webViewDidFinishLoad:(UIWebView *)webView
 {
-    [activity stopAnimating];
+    [self.activity stopAnimating];
 }
 
 -(void) viewDidDisappear:(BOOL)animated

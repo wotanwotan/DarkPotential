@@ -36,11 +36,11 @@
     layer.borderColor = [[UIColor darkGrayColor] CGColor];
     layer.borderWidth = 1.0f;*/
     
-    CALayer *layer = self.playVideoButton.layer;
+/*    CALayer *layer = self.playVideoButton.layer;
 //    layer.backgroundColor = [[UIColor clearColor] CGColor];
     layer.borderColor = [[UIColor darkGrayColor] CGColor];
     layer.cornerRadius = 8.0f;
-    layer.borderWidth = 2.0f;
+    layer.borderWidth = 2.0f;*/
 
 }
 
@@ -102,7 +102,7 @@
 }
 
 - (IBAction)emailSupportButtonPressed:(id)sender
-{
+{    
     if (![MFMailComposeViewController canSendMail])
     {
         UIAlertView *alertView = [[UIAlertView alloc]
@@ -141,4 +141,8 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+}
 @end

@@ -10,11 +10,11 @@
 #import <AVFoundation/AVFoundation.h>
 #import "CharacterViewController.h"
 
-@interface ViewController : UIViewController<AVAudioPlayerDelegate,CharacterViewClosedDelegate>
+@interface MainMenuViewController : UIViewController<AVAudioPlayerDelegate,CharacterViewClosedDelegate>
 {
-    int currentButtonToAnimate;
-    int numButtonsToAnimate;
-    NSArray* animatedButtons;
+//    int currentButtonToAnimate;
+//    int numButtonsToAnimate;
+//    NSArray* animatedButtons;
 }
 
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer;
