@@ -17,6 +17,9 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *screenshotImageView;
 @property (strong, nonatomic) UIImage* screenshotImage;
+@property (strong, nonatomic) IBOutlet UINavigationBar *navBar;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *backButton;
+
 
 - (IBAction)exitButtonPressed:(id)sender;
 - (IBAction)saveButtonPressed:(id)sender;

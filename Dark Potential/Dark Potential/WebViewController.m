@@ -29,7 +29,24 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    // custom back button
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0, 30, 30);
+    [btn setImage:[UIImage imageNamed:@"button-back"]
+         forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(backButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.backButton setCustomView:btn];
+}
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    // customize navigation bar
+    [self.navBar setBackgroundImage:[UIImage imageNamed:@"navbar"]
+                      forBarMetrics:UIBarMetricsDefault];
+    [self.navBar setTintColor:[UIColor darkGrayColor]];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -69,6 +86,8 @@
 {
     [self setWebView:nil];
     [self setActivity:nil];
+    [self setNavBar:nil];
+    [self setBackButton:nil];
     [super viewDidUnload];
 }
 

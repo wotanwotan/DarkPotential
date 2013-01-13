@@ -17,7 +17,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FXS-bI-9ch">
-                                <rect key="frame" x="170" y="324" width="117" height="61"/>
+                                <rect key="frame" x="170" y="325" width="117" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" image="button-support.png">
@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rTx-ru-bMG">
-                                <rect key="frame" x="30" y="324" width="117" height="61"/>
+                                <rect key="frame" x="30" y="325" width="117" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" image="button-video.png">
@@ -47,7 +47,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eCk-43-qMJ">
-                                <rect key="frame" x="179" y="261" width="67" height="33"/>
+                                <rect key="frame" x="179" y="262" width="67" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="joel.png">
@@ -62,7 +62,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rxS-zr-u3j">
-                                <rect key="frame" x="75" y="261" width="67" height="33"/>
+                                <rect key="frame" x="75" y="262" width="67" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="steph.png">
@@ -77,7 +77,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hnL-af-roJ">
-                                <rect key="frame" x="27" y="92" width="134" height="43"/>
+                                <rect key="frame" x="27" y="93" width="134" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button" image="info-web.png">
@@ -92,7 +92,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cud-9Q-Bcx">
-                                <rect key="frame" x="159" y="141" width="134" height="43"/>
+                                <rect key="frame" x="159" y="142" width="134" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button" image="info-youtube.png">
@@ -107,7 +107,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tVf-Vi-WbY">
-                                <rect key="frame" x="159" y="92" width="134" height="43"/>
+                                <rect key="frame" x="159" y="93" width="134" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button" image="info-fb.png">
@@ -122,7 +122,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xFH-mY-ds1">
-                                <rect key="frame" x="27" y="141" width="134" height="43"/>
+                                <rect key="frame" x="27" y="142" width="134" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button" image="info-twitter.png">
@@ -136,29 +136,24 @@
                                     <action selector="launchWebView:" destination="F4P-Jp-SKP" eventType="touchUpInside" id="BBr-Bo-R4U"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="navbar.png" id="L9I-dE-r5J">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="e8c-vL-rzc">
-                                <rect key="frame" x="10" y="8" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-back.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="exitButtonPressed:" destination="F4P-Jp-SKP" eventType="touchUpInside" id="z6E-iP-omU"/>
-                                </connections>
-                            </button>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="52E-WY-irj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="qLp-7Q-4Gf">
+                                        <barButtonItem key="leftBarButtonItem" image="button-back.png" id="Aoi-XK-L3O"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="backButton" destination="Aoi-XK-L3O" id="mcJ-sm-SXh"/>
+                        <outlet property="navBar" destination="52E-WY-irj" id="hjp-Yf-dMZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ksv-An-hOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -192,6 +187,7 @@
                                         </state>
                                         <connections>
                                             <action selector="experienceButtonPressed:" destination="2" eventType="touchUpInside" id="HeL-4N-UNu"/>
+                                            <segue destination="gPb-Sc-TVT" kind="push" identifier="ShowCharacterPageSegue1" id="hXT-5J-hGd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" restorationIdentifier="" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pgX-JP-VPt">
@@ -237,7 +233,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="F4P-Jp-SKP" kind="modal" modalTransitionStyle="coverVertical" id="x6z-gz-Wjo"/>
+                                    <segue destination="F4P-Jp-SKP" kind="modal" modalTransitionStyle="flipHorizontal" id="x6z-gz-Wjo"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="mwglogo.png" id="sUT-op-A0Q">
@@ -301,6 +297,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="5Sq-46-hI0"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="bgImageView" destination="2SH-Ge-tNv" id="Nkn-W6-QTa"/>
@@ -368,15 +365,48 @@
         <image name="joel.png" width="94" height="41"/>
         <image name="menu-bg-iphone5.png" width="320" height="568"/>
         <image name="mwglogo.png" width="87" height="32"/>
-        <image name="navbar.png" width="320" height="44"/>
         <image name="steph.png" width="94" height="41"/>
     </resources>
+    <classes>
+        <class className="ARParentViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ARParentViewController.h"/>
+        </class>
+        <class className="CharacterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CharacterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="exitButtonPressed:"/>
+                <relationship kind="outlet" name="bgImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bioTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="InfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InfoViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="emailSupportButtonPressed:"/>
+                <relationship kind="action" name="exitButtonPressed:"/>
+                <relationship kind="action" name="launchWebView:"/>
+                <relationship kind="action" name="playVideoButtonPressed:"/>
+                <relationship kind="outlet" name="backButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
+            </relationships>
+        </class>
+        <class className="MainMenuViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainMenuViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="experienceButtonPressed:"/>
+                <relationship kind="action" name="launchMWGWebsite:"/>
+                <relationship kind="outlet" name="experienceBtn1" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="experienceBtn2" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="experienceBtn3" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Vpf-vQ-Zly"/>
+        <segue reference="hXT-5J-hGd"/>
     </inferredMetricsTieBreakers>
 </document>

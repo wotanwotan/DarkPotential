@@ -27,7 +27,7 @@ NSString* const FBSessionStateChangedNotification = @"com.miniwargaming.darkpote
     
     [self.window makeKeyAndVisible];
     
-    [self playIntroVideo];
+//    [self playIntroVideo];
     
     return YES;
 }

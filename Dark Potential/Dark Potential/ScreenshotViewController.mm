@@ -46,6 +46,15 @@
      selector:@selector(sessionStateChanged:)
      name:FBSessionStateChangedNotification
      object:nil];
+    
+    // custom back button
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0, 30, 30);
+    [btn setImage:[UIImage imageNamed:@"button-back"]
+         forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(exitButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.backButton setCustomView:btn];
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -54,6 +63,11 @@
     // Do any additional setup after loading the view from its nib.
     
     [self setScreenshotImage:[self.screenshotImageView image]];
+    
+    // customize navigation bar
+    [self.navBar setBackgroundImage:[UIImage imageNamed:@"navbar"]
+                      forBarMetrics:UIBarMetricsDefault];
+    [self.navBar setTintColor:[UIColor darkGrayColor]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -356,4 +370,9 @@
     }
 }
 
+- (void)viewDidUnload {
+    [self setNavBar:nil];
+    [self setBackButton:nil];
+    [super viewDidUnload];
+}
 @end

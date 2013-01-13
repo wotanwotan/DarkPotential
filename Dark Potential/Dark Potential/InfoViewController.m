@@ -41,7 +41,25 @@
     layer.borderColor = [[UIColor darkGrayColor] CGColor];
     layer.cornerRadius = 8.0f;
     layer.borderWidth = 2.0f;*/
+    
+    // custom back button
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0, 30, 30);
+    [btn setImage:[UIImage imageNamed:@"button-back"]
+         forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(exitButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.backButton setCustomView:btn];
+}
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    // customize navigation bar
+    [self.navBar setBackgroundImage:[UIImage imageNamed:@"navbar"]
+                      forBarMetrics:UIBarMetricsDefault];
+    [self.navBar setTintColor:[UIColor darkGrayColor]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -143,6 +161,9 @@
 
 - (void)viewDidUnload
 {
+    [self setBackButton:nil];
+    [self setBackButton:nil];
+    [self setNavBar:nil];
     [super viewDidUnload];
 }
 @end

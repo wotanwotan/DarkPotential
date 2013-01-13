@@ -13,6 +13,8 @@
 @property (strong, nonatomic) NSString *webPageURL;
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activity;
+@property (strong, nonatomic) IBOutlet UINavigationBar *navBar;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *backButton;
 
 - (IBAction)backButtonPressed:(id)sender;
 

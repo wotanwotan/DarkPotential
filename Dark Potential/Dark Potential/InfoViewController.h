@@ -11,9 +11,11 @@
 
 @interface InfoViewController : UIViewController<MFMailComposeViewControllerDelegate>
 
-
 //@property (strong, nonatomic) IBOutlet UIButton *playVideoButton;
 
+
+@property (strong, nonatomic) IBOutlet UINavigationBar *navBar;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *backButton;
 
 - (IBAction)playVideoButtonPressed:(id)sender;
 - (IBAction)exitButtonPressed:(id)sender;

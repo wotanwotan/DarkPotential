@@ -247,7 +247,7 @@
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="button-back.png">{30, 30}</string>
-			<string key="navbar.png">{320, 44}</string>
+			<string key="navbar.png">{320, 64}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">1930</string>
 	</data>

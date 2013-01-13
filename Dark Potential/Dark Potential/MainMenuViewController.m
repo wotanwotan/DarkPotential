@@ -45,17 +45,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navbar"]
-                                                  forBarMetrics:UIBarMetricsDefault];
-    [self.navigationController.navigationBar setTintColor:[UIColor darkGrayColor]];
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
-
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navbar"]
+                                                  forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setTintColor:[UIColor darkGrayColor]];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -145,7 +143,7 @@
     
     AppDelegate* appDel = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
-    [UIView animateWithDuration:0.15 delay:0.0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+/*    [UIView animateWithDuration:0.15 delay:0.0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
         self.experienceBtn1.transform = CGAffineTransformMakeScale(0.8, 0.8);
 
     } completion:^(BOOL finished){
@@ -157,6 +155,7 @@
             ];
         }
     }];
+*/
 
     switch ([sender tag])
     {
