@@ -73,7 +73,7 @@
     GLuint depthRenderbuffer;
     
     NSMutableArray* textures;   // loaded textures
-    NSMutableArray *objects3D;  // objects to draw
+//    NSMutableArray *objects3D;  // objects to draw
     BOOL renderingInited;
     
 #ifndef USE_OPENGL1

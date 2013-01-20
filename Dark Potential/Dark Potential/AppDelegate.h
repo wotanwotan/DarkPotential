@@ -12,17 +12,8 @@
 extern NSString* const FBSessionStateChangedNotification;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-{
-    enum DPCharacter {
-        DP_NONE,
-        DP_XLANTHOS,
-        DP_RECLAIMER,
-        DP_CORPORATION
-    };
-}
 
 @property (strong, nonatomic) UIWindow *window;
-@property (nonatomic) enum DPCharacter currentCharacter;
 
 - (BOOL)openSessionWithAllowLoginUI:(BOOL)allowLoginUI;
 

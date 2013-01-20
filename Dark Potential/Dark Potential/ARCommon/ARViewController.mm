@@ -104,6 +104,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     NSLog(@"ARVC: viewWillAppear");
+    
+    arView.currentCharacter = self.currentCharacter;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -165,7 +167,7 @@
         pos.y = centre.x;
         rot = 180;
     }
-    else if (interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+    else// if (interfaceOrientation == UIInterfaceOrientationLandscapeRight)
     {
         NSLog(@"ARParent: Rotating to Landscape Right");
         pos.x = centre.y;

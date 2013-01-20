@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DPConstants.h"
 //#import <AVFoundation/AVFoundation.h>
 
 @class CharacterViewController;
@@ -22,12 +23,13 @@
 //    AVAudioPlayer* audioPlayer;
 }
 
-@property (nonatomic, strong) id <CharacterViewClosedDelegate> delegate;
-
 - (IBAction)exitButtonPressed:(id)sender;
 
+@property (nonatomic, strong) id <CharacterViewClosedDelegate> delegate;
+@property (nonatomic) enum DPCharacter currentCharacter;
 @property (strong, nonatomic) IBOutlet UITextView *bioTextView;
 @property (strong, nonatomic) IBOutlet UIImageView *bgImageView;
+@property (strong, nonatomic) IBOutlet UIButton *launchARButton;
 
 
 @end

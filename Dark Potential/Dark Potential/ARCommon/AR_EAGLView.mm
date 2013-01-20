@@ -149,7 +149,7 @@
     
 	if (self) {
         qUtils = [QCARutils getInstance];
-        objects3D = [[NSMutableArray alloc] initWithCapacity:2];
+//        objects3D = [[NSMutableArray alloc] initWithCapacity:2];
         textureList = [[NSMutableArray alloc] initWithCapacity:2];
         
         // switch on hi-res mode if available
@@ -404,7 +404,7 @@
 /////////////////////////////////////////////////////////////////
 // TEMPLATE - this is app specific and
 // expected to be overridden in EAGLView.mm
-- (void) setup3dObjects
+/*- (void) setup3dObjects
 {
     for (int i=0; i < [textures count]; i++)
     {
@@ -422,7 +422,7 @@
 
         [objects3D addObject:obj3D];
     }
-}
+}*/
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -469,7 +469,7 @@
     }
     
     // set up objects using the above textures.
-    [self setup3dObjects];
+//    [self setup3dObjects];
     
     if (QCAR::GL_20 & qUtils.QCARFlags) {
         [self initShaders];

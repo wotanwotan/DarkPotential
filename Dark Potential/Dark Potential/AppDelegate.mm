@@ -21,8 +21,6 @@ NSString* const FBSessionStateChangedNotification = @"com.miniwargaming.darkpote
     
 //    [[UINavigationBar appearance] setShadowImage:<#(UIImage *)#>]
     
-    self.currentCharacter = DP_NONE;
-    
 //    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2]];
     
     [self.window makeKeyAndVisible];

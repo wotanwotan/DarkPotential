@@ -6,6 +6,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AR_EAGLView.h"
+#import "DPConstants.h"
 
 @class ARViewController, OverlayViewController;
 
@@ -18,5 +19,6 @@
 }
 
 @property (nonatomic) CGRect arViewRect;
+@property (nonatomic) enum DPCharacter currentCharacter;
 
 @end

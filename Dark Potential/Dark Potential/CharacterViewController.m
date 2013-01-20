@@ -7,7 +7,7 @@
 //
 
 #import "CharacterViewController.h"
-#import "AppDelegate.h"
+#import "ARParentViewController.h"
 #import "Bios.h"
 
 @interface CharacterViewController ()
@@ -38,8 +38,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    AppDelegate* appDel = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    switch ([appDel currentCharacter])
+    switch (self.currentCharacter)
     {
         case DP_NONE:
             [self.bioTextView setText:@"ERROR: no character selected"];
@@ -47,15 +46,28 @@
         case DP_XLANTHOS:
             [self.bioTextView setText:DP_XLANTHOS_BIO];
             [self.bgImageView setImage:[UIImage imageNamed:@"info-xlanthos.png"]];
+            [self.launchARButton setImage:[UIImage imageNamed:@"button-launch-xlanthos"] forState:UIControlStateNormal];
             break;
         case DP_RECLAIMER:
             [self.bioTextView setText:DP_RECLAIMERS_BIO];
             [self.bgImageView setImage:[UIImage imageNamed:@"info-reclaimers.png"]];
+            [self.launchARButton setImage:[UIImage imageNamed:@"button-launch-reclaimers"] forState:UIControlStateNormal];
             break;
         case DP_CORPORATION:
             [self.bioTextView setText:DP_CORPORATION_BIO];
             [self.bgImageView setImage:[UIImage imageNamed:@"info-pmc.png"]];
+            [self.launchARButton setImage:[UIImage imageNamed:@"button-launch-pmc"] forState:UIControlStateNormal];
             break;
+    }
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"SegueToAR"])
+    {
+        NSLog(@"SegueToAR");
+        ARParentViewController *arVC = segue.destinationViewController;
+        arVC.currentCharacter = self.currentCharacter;
     }
 }
 
@@ -74,6 +86,7 @@
 - (void)viewDidUnload
 {
     [self setBioTextView:nil];
+    [self setLaunchARButton:nil];
     [super viewDidUnload];
 }
 @end

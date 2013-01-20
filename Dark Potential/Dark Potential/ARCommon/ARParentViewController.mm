@@ -296,6 +296,9 @@
     }*/
     
     NSLog(@"ARParentVC: appearing");
+    
+    arViewController.currentCharacter = self.currentCharacter;
+    
     // make sure we're oriented/sized properly before reappearing/restarting
     [arViewController handleARViewRotation:self.interfaceOrientation];
     [overlayViewController handleViewRotation:self.interfaceOrientation];

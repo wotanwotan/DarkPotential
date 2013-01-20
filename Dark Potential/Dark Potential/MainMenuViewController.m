@@ -7,7 +7,6 @@
 //
 
 #import "MainMenuViewController.h"
-#import "AppDelegate.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface MainMenuViewController ()
@@ -45,6 +44,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.currentCharacter = DP_NONE;
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -63,6 +64,7 @@
 	{
         CharacterViewController* controller = segue.destinationViewController;
 		controller.delegate = self;
+        controller.currentCharacter = self.currentCharacter;
 	}
 }
 
@@ -141,8 +143,6 @@
 {
     [self playAudioWithName:@"menu_whoosh_in.mp3"];
     
-    AppDelegate* appDel = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    
 /*    [UIView animateWithDuration:0.15 delay:0.0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
         self.experienceBtn1.transform = CGAffineTransformMakeScale(0.8, 0.8);
 
@@ -160,14 +160,14 @@
     switch ([sender tag])
     {
         case 0:
-            [appDel setCurrentCharacter:DP_XLANTHOS];
+            self.currentCharacter = DP_XLANTHOS;
             break;
         case 1:
-            [appDel setCurrentCharacter:DP_RECLAIMER];
+            self.currentCharacter = DP_RECLAIMER;
             break;
         case 2:
             // TBD
-            [appDel setCurrentCharacter:DP_CORPORATION];
+            self.currentCharacter = DP_CORPORATION;
             break;
     }
 }

@@ -5,6 +5,8 @@
  ==============================================================================*/
 
 #import <UIKit/UIKit.h>
+#import "DPConstants.h"
+
 @class EAGLView, QCARutils;
 
 @interface ARViewController : UIViewController {
@@ -15,12 +17,13 @@
 @private
     QCARutils *qUtils;          // QCAR utils singleton class
     UIView *parentView;         // Avoids unwanted interactions between UIViewController and EAGLView
-    NSMutableArray* textures;   // Teapot textures
+    NSMutableArray* textures;   // DP-model 2D textures
     BOOL arVisible;             // State of visibility of the view
 }
 
 @property (nonatomic, strong) IBOutlet EAGLView *arView;
 @property (nonatomic) CGSize arViewSize;
+@property (nonatomic) enum DPCharacter currentCharacter;
            
 - (void) handleARViewRotation:(UIInterfaceOrientation)interfaceOrientation;
 

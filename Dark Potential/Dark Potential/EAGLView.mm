@@ -6,7 +6,6 @@
 
 // Subclassed from AR_EAGLView
 #import "EAGLView.h"
-#import "Teapot.h"
 #import "Texture.h"
 
 #import <QCAR/Renderer.h>
@@ -22,11 +21,9 @@
 namespace {
     // Teapot texture filenames
     const char* textureFilenames[] = {
-//        "TextureTeapotBrass.png",
-//        "TextureTeapotBlue.png",
-//        "TextureTeapotRed.png",
         "Xlanthos.png",
-        "Reclaimer_squad_member.png"
+        "Reclaimer_squad_member.png",
+        "PMCSniper.png"
     };
 
     // Model scale factor
@@ -58,7 +55,7 @@ namespace {
     return self;
 }
 
-- (void) setup3dObjects
+/*- (void) setup3dObjects
 {
     // build the array of objects we want drawn and their texture
     // in this example we have 3 targets and require 3 models
@@ -81,7 +78,7 @@ namespace {
 
         [objects3D addObject:obj3D];
     }
-}
+}*/
 
 
 // called after QCAR is initialised but before the camera starts
@@ -140,10 +137,10 @@ namespace {
         // stones -> xlanthos
         // chips -> reclaimer
         
-        AppDelegate* appDel = (AppDelegate*) [[UIApplication sharedApplication] delegate];
+//        AppDelegate* appDel = (AppDelegate*) [[UIApplication sharedApplication] delegate];
         
-        // Choose the texture based on the target name
-        int targetIndex = 0; // "stones"/"XLanthos"
+        // OPTION 1: Choose the texture based on the target name
+        /*int targetIndex = 0; // "stones"/"XLanthos"
         if (!strcmp(trackable->getName(), "ReclaimerSSTop"))
         {
             NSLog(@"Tracking the reclaimer...");
@@ -154,21 +151,32 @@ namespace {
 //        else if (!strcmp(trackable->getName(), "tarmac"))
 //            targetIndex = 2;
         
-        if (targetIndex == 0 && appDel.currentCharacter != DP_XLANTHOS)
+        if (targetIndex == 0 && self.currentCharacter != DP_XLANTHOS)
         {
             NSLog(@"Skip Xlanthos...");
             continue;
         }
-        else if (targetIndex == 1 && appDel.currentCharacter != DP_RECLAIMER)
+        else if (targetIndex == 1 && self.currentCharacter != DP_RECLAIMER)
         {
             NSLog(@"Skip Reclaimer...");
             continue;
         }
-        
+
+        NSInteger objectIndex = targetIndex;
         Object3D *obj3D = [objects3D objectAtIndex:targetIndex];
+        */
+        
+        // OPTION 2: same trackable for all characters
+//        int targetIndex = 0;
+        NSInteger objectIndex = (self.currentCharacter == DP_XLANTHOS) ? 0 : ((self.currentCharacter == DP_RECLAIMER) ? 1 : 2);
+        
+//        Object3D *obj3D = [objects3D objectAtIndex:objectIndex];
+         
+        
+
         
         // Render using the appropriate version of OpenGL
-        if (QCAR::GL_11 & qUtils.QCARFlags)
+        /*if (QCAR::GL_11 & qUtils.QCARFlags)
         {
             // Load the projection matrix
             glMatrixMode(GL_PROJECTION);
@@ -188,7 +196,7 @@ namespace {
             glDrawElements(GL_TRIANGLES, obj3D.numIndices, GL_UNSIGNED_SHORT, (const GLvoid*)obj3D.indices);
         }
 #ifndef USE_OPENGL1
-        else
+        else*/
         {
             // OpenGL 2
             /*QCAR::Matrix44F modelViewProjection;
@@ -237,13 +245,13 @@ namespace {
             
             glActiveTexture(GL_TEXTURE0);
             
-            Texture* tex = [textures objectAtIndex:targetIndex];
+            Texture* tex = [textures objectAtIndex:objectIndex];
             glBindTexture(GL_TEXTURE_2D, [tex textureID]);
             
             glUniformMatrix4fv(mvpMatrixHandle, 1, GL_FALSE, (GLfloat*)&modelViewProjection.data[0]);
             glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_SHORT, (const GLvoid*) &planeIndices[0]);
         }
-#endif
+//#endif
     }
     
     glDisable(GL_DEPTH_TEST);
