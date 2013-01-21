@@ -16,8 +16,6 @@
 #import "ShaderUtils.h"
 #endif
 
-#import "AppDelegate.h"
-
 namespace {
     // Teapot texture filenames
     const char* textureFilenames[] = {

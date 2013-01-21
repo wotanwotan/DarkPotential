@@ -7,10 +7,13 @@
 #import "ARParentViewController.h"
 #import "ARViewController.h"
 #import "OverlayViewController.h"
-#import "ScreenshotViewController.h"
+#import "DPScreenshotViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "QCARutils.h"
 #import "EAGLView.h"
+#import "DPARViewCameraButtonCustomizer.h"
+#import "DPARViewTorchButtonCustomizer.h"
+#import <AVFoundation/AVFoundation.h>
 
 
 @implementation ARParentViewController
@@ -60,31 +63,6 @@
     return self;
 }
 
-
-/*- (void) loadView
-{
-    NSLog(@"ARParentVC: creating");
-    parentView = [[UIView alloc] initWithFrame:arViewRect];
-    
-    // Add the EAGLView and the overlay view to the window
-    arViewController = [[ARViewController alloc] init];
-    
-    // need to set size here to setup camera image size for AR
-    arViewController.arViewSize = arViewRect.size;
-    [parentView addSubview:arViewController.view];
-    
-    // Create an auto-rotating overlay view and its view controller (used for
-    // displaying UI objects, such as the camera control menu)
-    overlayViewController = [[OverlayViewController alloc] init];
-    [parentView addSubview: overlayViewController.view];
-    
-    UIButton* btn = [[UIButton alloc] init];
-    [btn setTitle:@"Beans" forState:UIControlStateNormal];
-    [parentView addSubview:btn];
-    
-    self.view = parentView;
-}*/
-
 - (void)viewDidLoad
 {
     NSLog(@"ARParentVC: viewDidLoad");
@@ -106,45 +84,34 @@
     // back button
     UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [backButton setFrame:CGRectMake (10, 10, 30, 30)];
-    [backButton setTitle:@"X" forState:UIControlStateNormal];
+    [backButton setBackgroundImage:[UIImage imageNamed:@"button-back"] forState:UIControlStateNormal];
     [backButton setTag:0];
-//    [backButton setImage:[UIImage imageNamed:@"button-info.png"] forState:UIControlStateNormal];
     [backButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    CALayer *btnLayer = [backButton layer];
-    [btnLayer setCornerRadius:15.0f];
-    [btnLayer setBorderWidth:1.0f];
-    [btnLayer setBorderColor:[[UIColor whiteColor] CGColor]];
 
-    // torch button
-    //if (YES == cameraCapabilities.torch)
-    //{
-        UIButton *torchButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [torchButton setFrame:CGRectMake (50, 10, 30, 30)];
-        [torchButton setTitle:@"T" forState:UIControlStateNormal];
+    
+    // torch button - if available
+    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    UIButton *torchButton = nil;
+    if ([device hasTorch])
+    {
+        torchButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [torchButton setFrame:CGRectMake (200, 10, 36, 36)];
         [torchButton setTag:1];
-        //    [torchButton setImage:[UIImage imageNamed:@"button-info.png"] forState:UIControlStateNormal];
         [torchButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-        btnLayer = [torchButton layer];
-        [btnLayer setCornerRadius:15.0f];
-        [btnLayer setBorderWidth:1.0f];
-        [btnLayer setBorderColor:[[UIColor whiteColor] CGColor]];
-    //}
+        [[DPARViewTorchButtonCustomizer alloc] initWithButton:torchButton];
+    }
     
     // camera button
     UIButton *camButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [camButton setFrame:CGRectMake (200, 10, 30, 30)];
-    [camButton setTitle:@"O" forState:UIControlStateNormal];
+    [camButton setFrame:CGRectMake (270, 10, 36, 36)];
     [camButton setTag:2];
-    //    [backButton setImage:[UIImage imageNamed:@"button-info.png"] forState:UIControlStateNormal];
     [camButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    btnLayer = [camButton layer];
-    [btnLayer setCornerRadius:15.0f];
-    [btnLayer setBorderWidth:1.0f];
-    [btnLayer setBorderColor:[[UIColor whiteColor] CGColor]];
-
+    [[DPARViewCameraButtonCustomizer alloc] initWithButton:camButton];
     
     [overlayViewController.view addSubview:backButton];
-    [overlayViewController.view addSubview:torchButton];
+    if (torchButton)
+        [overlayViewController.view addSubview:torchButton];
+    
     [overlayViewController.view addSubview:camButton];
     // END: custom UI stuff
     
@@ -156,14 +123,10 @@
     
     self.view = parentView;
     
-    NSLog(@"ARParentVC: loading");
     // it's important to do this from here as arViewController has the wrong idea of orientation
     [arViewController handleARViewRotation:self.interfaceOrientation];
     // we also have to set the overlay view to the correct width/height for the orientation
     [overlayViewController handleViewRotation:self.interfaceOrientation];
-    
-//    [self.view addSubview:[self blahButton]];
-//    [arViewController.view addSubview:[self tempButton]];
     
     [[arViewController arView] setDelegate:self];
 }
@@ -187,7 +150,6 @@
         }
         case 2:
         {
-            //[self takeScreenshot];
             [[arViewController arView] setShouldTakeScreenshot:YES];
             break;
         }
@@ -199,13 +161,13 @@
     UIImage *screenshotImage = [self glToUIImage];
     
     // now, show the photo-share view
-    ScreenshotViewController *pictureView;
+    DPScreenshotViewController *pictureView;
     
 //    if ([[[UIDevice currentDevice] model] isEqualToString:@"iPad"])
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
-        pictureView = [[ScreenshotViewController alloc] initWithNibName:@"ScreenshotViewController-iPad" bundle:nil];
+        pictureView = [[DPScreenshotViewController alloc] initWithNibName:@"DPScreenshotViewController-iPad" bundle:nil];
     else
-        pictureView = [[ScreenshotViewController alloc] initWithNibName:@"ScreenshotViewController" bundle:nil];
+        pictureView = [[DPScreenshotViewController alloc] initWithNibName:@"DPScreenshotViewController" bundle:nil];
     
     [pictureView setScreenshotImage:screenshotImage];
     

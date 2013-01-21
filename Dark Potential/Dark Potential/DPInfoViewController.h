@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MFMailComposeViewController.h>
 
-@interface InfoViewController : UIViewController<MFMailComposeViewControllerDelegate>
+@interface DPInfoViewController : UIViewController<MFMailComposeViewControllerDelegate>
 
 //@property (strong, nonatomic) IBOutlet UIButton *playVideoButton;
 

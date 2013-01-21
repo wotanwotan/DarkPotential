@@ -6,16 +6,16 @@
 //  Copyright (c) 2012 Joel Glanfield. All rights reserved.
 //
 
-#import "InfoViewController.h"
-#import "WebViewController.h"
+#import "DPInfoViewController.h"
+#import "DPWebViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface InfoViewController ()
+@interface DPInfoViewController ()
 
 @end
 
-@implementation InfoViewController
+@implementation DPInfoViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -88,11 +88,11 @@
 
 - (IBAction)launchWebView:(id)sender
 {
-    WebViewController *webView;
+    DPWebViewController *webView;
     if ([[[UIDevice currentDevice] model] isEqualToString:@"iPad"])
-        webView = [[WebViewController alloc] initWithNibName:@"WebViewController-iPad" bundle:nil];
+        webView = [[DPWebViewController alloc] initWithNibName:@"WebViewController-iPad" bundle:nil];
     else
-        webView = [[WebViewController alloc] initWithNibName:@"WebViewController" bundle:nil];
+        webView = [[DPWebViewController alloc] initWithNibName:@"WebViewController" bundle:nil];
     
     switch ([sender tag])
     {

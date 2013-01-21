@@ -6,12 +6,12 @@
 //  Copyright (c) 2012 Joel Glanfield. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "DPAppDelegate.h"
 #import <MediaPlayer/MediaPlayer.h>
 
 NSString* const FBSessionStateChangedNotification = @"com.miniwargaming.darkpotentialar:FBSessionStateChangedNotification";
 
-@implementation AppDelegate
+@implementation DPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {    

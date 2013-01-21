@@ -10,22 +10,22 @@
 #import "DPConstants.h"
 //#import <AVFoundation/AVFoundation.h>
 
-@class CharacterViewController;
+@class DPCharacterViewController;
 
-@protocol CharacterViewClosedDelegate <NSObject>
+@protocol DPCharacterViewClosedDelegate <NSObject>
 
-- (void) characterViewDidClose:(CharacterViewController*)controller;
+- (void) characterViewDidClose:(DPCharacterViewController*)controller;
 
 @end
 
-@interface CharacterViewController : UIViewController
+@interface DPCharacterViewController : UIViewController
 {
 //    AVAudioPlayer* audioPlayer;
 }
 
 - (IBAction)exitButtonPressed:(id)sender;
 
-@property (nonatomic, strong) id <CharacterViewClosedDelegate> delegate;
+@property (nonatomic, strong) id <DPCharacterViewClosedDelegate> delegate;
 @property (nonatomic) enum DPCharacter currentCharacter;
 @property (strong, nonatomic) IBOutlet UITextView *bioTextView;
 @property (strong, nonatomic) IBOutlet UIImageView *bgImageView;

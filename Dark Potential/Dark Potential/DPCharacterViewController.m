@@ -6,15 +6,15 @@
 //  Copyright (c) 2012 Joel Glanfield. All rights reserved.
 //
 
-#import "CharacterViewController.h"
+#import "DPCharacterViewController.h"
 #import "ARParentViewController.h"
-#import "Bios.h"
+#import "DPBios.h"
 
-@interface CharacterViewController ()
+@interface DPCharacterViewController ()
 
 @end
 
-@implementation CharacterViewController
+@implementation DPCharacterViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

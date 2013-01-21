@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Joel Glanfield. All rights reserved.
 //
 
-#import "WebViewController.h"
+#import "DPWebViewController.h"
 
-@interface WebViewController ()
+@interface DPWebViewController ()
 
 @end
 
-@implementation WebViewController
+@implementation DPWebViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

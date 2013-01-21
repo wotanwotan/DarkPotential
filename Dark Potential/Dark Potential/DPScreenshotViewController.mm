@@ -6,19 +6,19 @@
 //  Copyright (c) 2012 Joel Glanfield. All rights reserved.
 //
 
-#import "ScreenshotViewController.h"
+#import "DPScreenshotViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import <Twitter/Twitter.h>
-#import "AppDelegate.h"
+#import "DPAppDelegate.h"
 
 
-@interface ScreenshotViewController ()
+@interface DPScreenshotViewController ()
 {
     UIActivityIndicatorView* activityView;
 }
 @end
 
-@implementation ScreenshotViewController
+@implementation DPScreenshotViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -264,7 +264,7 @@
         // open a session if we don't have one already
         if (!FBSession.activeSession.isOpen)
         {
-            AppDelegate* appDel = [[UIApplication sharedApplication] delegate];
+            DPAppDelegate* appDel = [[UIApplication sharedApplication] delegate];
             [appDel openSessionWithAllowLoginUI:YES];
         }
         

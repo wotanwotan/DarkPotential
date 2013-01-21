@@ -6,10 +6,10 @@
 //  Copyright (c) 2012 Joel Glanfield. All rights reserved.
 //
 
-#import "MainMenuViewController.h"
+#import "DPMainMenuViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface MainMenuViewController ()
+@interface DPMainMenuViewController ()
 
 - (void) playMWGAudio;
 - (void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation MainMenuViewController
+@implementation DPMainMenuViewController
 
 +(void)initialize
 {
@@ -62,49 +62,11 @@
     //NSLog(@"%@", segue.identifier);
 	if (segue.identifier != NULL && [segue.identifier rangeOfString:@"ShowCharacterPageSegue"].location != NSNotFound)
 	{
-        CharacterViewController* controller = segue.destinationViewController;
+        DPCharacterViewController* controller = segue.destinationViewController;
 		controller.delegate = self;
         controller.currentCharacter = self.currentCharacter;
 	}
 }
-
-/*- (void) animateButton:(UIButton*)theButton animateFromLeft:(BOOL)fromLeft
-{    
-    CGRect screenBounds = [[UIScreen mainScreen] bounds];
-    CGRect btnFrame = theButton.frame;
-    CGRect finalFrame = CGRectMake(btnFrame.origin.x, btnFrame.origin.y, btnFrame.size.width, btnFrame.size.height);
-    
-    // move button off screen
-    if (fromLeft)
-        theButton.frame = CGRectMake(finalFrame.origin.x - screenBounds.size.width, finalFrame.origin.y, finalFrame.size.width, finalFrame.size.height);
-    else
-        theButton.frame = CGRectMake(finalFrame.origin.x + screenBounds.size.width, finalFrame.origin.y, finalFrame.size.width, finalFrame.size.height);
-
-    // un-hide the button
-    [theButton setHidden:NO];
-    
-    float dur = 0.2;
-    float delay = currentButtonToAnimate == 0 ? 0.4 : 0.2;
-    
-    // animate the button
-    [UIView animateWithDuration:dur delay:delay options:UIViewAnimationOptionAllowUserInteraction animations:^{
-        theButton.frame = finalFrame;
-    } completion:^(BOOL finished){
-        if (finished)
-        {
-            currentButtonToAnimate++;
-            if (currentButtonToAnimate < numButtonsToAnimate)
-            {
-                BOOL fromLeft = currentButtonToAnimate % 2 == 0;
-                [self animateButton:[animatedButtons objectAtIndex:currentButtonToAnimate] animateFromLeft:fromLeft];
-            }
-            else // animate the logo
-            {
-                [self animateMWGLogo];
-            }
-        }
-    }];
-}*/
 
 - (void) playAudioWithName:(NSString*)audioFileName
 {
@@ -132,30 +94,9 @@
     [self.audioPlayer stop]; // necessary?
 }
 
-- (IBAction)launchMWGWebsite:(id)sender
-{
-    NSURL *url = [[NSURL alloc] initWithString: @"http://miniwargaming.com"];
-    
-    [[UIApplication sharedApplication] openURL:url];
-}
-
 - (IBAction)experienceButtonPressed:(id)sender
 {
     [self playAudioWithName:@"menu_whoosh_in.mp3"];
-    
-/*    [UIView animateWithDuration:0.15 delay:0.0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
-        self.experienceBtn1.transform = CGAffineTransformMakeScale(0.8, 0.8);
-
-    } completion:^(BOOL finished){
-        if (finished)
-        {
-            [UIView animateWithDuration:0.15 delay:0.0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
-                self.experienceBtn1.transform = CGAffineTransformMakeScale(1,1);
-            } completion:nil
-            ];
-        }
-    }];
-*/
 
     switch ([sender tag])
     {
@@ -172,7 +113,7 @@
     }
 }
 
-- (void) characterViewDidClose:(CharacterViewController*)controller
+- (void) characterViewDidClose:(DPCharacterViewController*)controller
 {
     [self playAudioWithName:@"menu_whoosh_in.mp3"];
     [self dismissViewControllerAnimated:YES completion:nil];

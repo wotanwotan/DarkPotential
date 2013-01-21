@@ -9,15 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "DPConstants.h"
-#import "CharacterViewController.h"
+#import "DPCharacterViewController.h"
 
-@interface MainMenuViewController : UIViewController<AVAudioPlayerDelegate,CharacterViewClosedDelegate>
-//{
-////    int currentButtonToAnimate;
-////    int numButtonsToAnimate;
-////    NSArray* animatedButtons;
-//
-//}
+@interface DPMainMenuViewController : UIViewController<AVAudioPlayerDelegate,DPCharacterViewClosedDelegate>
 
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 @property (nonatomic) enum DPCharacter currentCharacter;

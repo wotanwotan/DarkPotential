@@ -10,7 +10,7 @@
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
 
-@interface ScreenshotViewController : UIViewController<MFMailComposeViewControllerDelegate>
+@interface DPScreenshotViewController : UIViewController<MFMailComposeViewControllerDelegate>
 {
 
 }

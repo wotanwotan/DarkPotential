@@ -7,7 +7,7 @@
         <!--Main Menu View Controller-->
         <scene sceneID="9OX-Y7-5Lh">
             <objects>
-                <viewController id="hay-Li-0Lz" customClass="MainMenuViewController" sceneMemberID="viewController">
+                <viewController id="hay-Li-0Lz" customClass="DPMainMenuViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UUb-rR-ya6">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -111,7 +111,7 @@
         <!--Character View Controller-->
         <scene sceneID="O5Q-3A-org">
             <objects>
-                <viewController id="Eur-OI-aEU" customClass="CharacterViewController" sceneMemberID="viewController">
+                <viewController id="Eur-OI-aEU" customClass="DPCharacterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9NQ-Cg-Hwv">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -186,7 +186,7 @@
         <!--Info View Controller-->
         <scene sceneID="U2L-wG-VOK">
             <objects>
-                <viewController id="vWb-u2-77h" customClass="InfoViewController" sceneMemberID="viewController">
+                <viewController id="vWb-u2-77h" customClass="DPInfoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="55P-ej-qXg">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
