@@ -572,7 +572,7 @@ static QCARutils *qUtils = nil; // singleton class
             
             // Cache the projection matrix:
             const QCAR::CameraCalibration& cameraCalibration = QCAR::CameraDevice::getInstance().getCameraCalibration();
-            projectionMatrix = QCAR::Tool::getProjectionGL(cameraCalibration, 2.0f, 2000.0f);
+            projectionMatrix = QCAR::Tool::getProjectionGL(cameraCalibration, 2.0f, 20000.0f);
         }
         
         // Restore camera settings

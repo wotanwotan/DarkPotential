@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 Joel Glanfield. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 @interface DPARViewButtonCustomizer : NSObject
 
 @property (strong, nonatomic) UIButton* customButton;

@@ -90,9 +90,9 @@
 {
     DPWebViewController *webView;
     if ([[[UIDevice currentDevice] model] isEqualToString:@"iPad"])
-        webView = [[DPWebViewController alloc] initWithNibName:@"WebViewController-iPad" bundle:nil];
+        webView = [[DPWebViewController alloc] initWithNibName:@"DPWebViewController-iPad" bundle:nil];
     else
-        webView = [[DPWebViewController alloc] initWithNibName:@"WebViewController" bundle:nil];
+        webView = [[DPWebViewController alloc] initWithNibName:@"DPWebViewController" bundle:nil];
     
     switch ([sender tag])
     {

@@ -13,6 +13,7 @@
 #import "EAGLView.h"
 #import "DPARViewCameraButtonCustomizer.h"
 #import "DPARViewTorchButtonCustomizer.h"
+#import "DPARViewBackButtonCustomizer.h"
 #import <AVFoundation/AVFoundation.h>
 
 
@@ -83,10 +84,10 @@
     
     // back button
     UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [backButton setFrame:CGRectMake (10, 10, 30, 30)];
-    [backButton setBackgroundImage:[UIImage imageNamed:@"button-back"] forState:UIControlStateNormal];
+    [backButton setFrame:CGRectMake (10, 10, 36, 36)];
     [backButton setTag:0];
     [backButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [[DPARViewBackButtonCustomizer alloc] initWithButton:backButton];
 
     
     // torch button - if available

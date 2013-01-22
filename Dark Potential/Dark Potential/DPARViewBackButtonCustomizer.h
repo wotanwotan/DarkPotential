@@ -1,5 +1,5 @@
 //
-//  DPARViewTorchButtonCustomizer.h
+//  DPARViewBackButtonCustomizer.h
 //  Dark Potential
 //
 //  Created by Joel Glanfield on 2013-01-21.
@@ -8,6 +8,6 @@
 
 #import "DPARViewButtonCustomizer.h"
 
-@interface DPARViewTorchButtonCustomizer : DPARViewButtonCustomizer
+@interface DPARViewBackButtonCustomizer : DPARViewButtonCustomizer
 
 @end

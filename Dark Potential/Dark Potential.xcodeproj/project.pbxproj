@@ -134,6 +134,7 @@
 		E2186A591647421400FEADC3 /* DPCharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2186A581647421400FEADC3 /* DPCharacterViewController.m */; };
 		E21F25CF1644890900CA0971 /* DPInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E21F25CE1644890900CA0971 /* DPInfoViewController.m */; };
 		E21F25D21644896200CA0971 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21F25D11644896200CA0971 /* MediaPlayer.framework */; };
+		E222D0BD16AE149000ABEB2C /* DPARViewBackButtonCustomizer.m in Sources */ = {isa = PBXBuildFile; fileRef = E222D0BC16AE149000ABEB2C /* DPARViewBackButtonCustomizer.m */; };
 		E270AC001649E208003E6A1F /* menu_whoosh_in.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E270ABFF1649E208003E6A1F /* menu_whoosh_in.mp3 */; };
 		E270AC0A1649F84F003E6A1F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E270AC091649F84F003E6A1F /* Default.png */; };
 		E270AC0C1649F853003E6A1F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E270AC0B1649F853003E6A1F /* Default@2x.png */; };
@@ -160,7 +161,6 @@
 		E2A1CB8D16435190009F1CBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1CB681643518F009F1CBA /* Foundation.framework */; };
 		E2A1CBA31643521A009F1CBA /* DarkPotential-AppIcon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBA21643521A009F1CBA /* DarkPotential-AppIcon-57.png */; };
 		E2A1CBA51643521E009F1CBA /* DarkPotential-AppIcon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBA41643521E009F1CBA /* DarkPotential-AppIcon-114.png */; };
-		E2A1CBAE164354C5009F1CBA /* experience-banner-empty.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBA7164354C5009F1CBA /* experience-banner-empty.png */; };
 		E2A1CBB2164354C5009F1CBA /* navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBAB164354C5009F1CBA /* navbar.png */; };
 		E2A1CBB3164354C5009F1CBA /* navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A1CBAC164354C5009F1CBA /* navbar@2x.png */; };
 /* End PBXBuildFile section */
@@ -320,6 +320,8 @@
 		E21F25CD1644890900CA0971 /* DPInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPInfoViewController.h; sourceTree = "<group>"; };
 		E21F25CE1644890900CA0971 /* DPInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPInfoViewController.m; sourceTree = "<group>"; };
 		E21F25D11644896200CA0971 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		E222D0BB16AE149000ABEB2C /* DPARViewBackButtonCustomizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPARViewBackButtonCustomizer.h; sourceTree = "<group>"; };
+		E222D0BC16AE149000ABEB2C /* DPARViewBackButtonCustomizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPARViewBackButtonCustomizer.m; sourceTree = "<group>"; };
 		E270ABFF1649E208003E6A1F /* menu_whoosh_in.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = menu_whoosh_in.mp3; sourceTree = "<group>"; };
 		E270AC091649F84F003E6A1F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		E270AC0B1649F853003E6A1F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
@@ -333,7 +335,6 @@
 		E270AC30164A06F5003E6A1F /* background-iphone5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background-iphone5.jpg"; sourceTree = "<group>"; };
 		E270AC31164A06F5003E6A1F /* background-iphone5@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background-iphone5@2x.jpg"; sourceTree = "<group>"; };
 		E28BBD7916449D3C0016B2D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		E28BBD7F1644A6510016B2D2 /* MWGIntro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MWGIntro.mp3; sourceTree = "<group>"; };
 		E2A1CB621643518F009F1CBA /* Dark Potential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dark Potential.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A1CB661643518F009F1CBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E2A1CB681643518F009F1CBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -351,7 +352,6 @@
 		E2A1CB8A16435190009F1CBA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		E2A1CBA21643521A009F1CBA /* DarkPotential-AppIcon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DarkPotential-AppIcon-57.png"; path = "../DarkPotential-AppIcon-57.png"; sourceTree = "<group>"; };
 		E2A1CBA41643521E009F1CBA /* DarkPotential-AppIcon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DarkPotential-AppIcon-114.png"; path = "../DarkPotential-AppIcon-114.png"; sourceTree = "<group>"; };
-		E2A1CBA7164354C5009F1CBA /* experience-banner-empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "experience-banner-empty.png"; sourceTree = "<group>"; };
 		E2A1CBAB164354C5009F1CBA /* navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbar.png; sourceTree = "<group>"; };
 		E2A1CBAC164354C5009F1CBA /* navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbar@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -523,7 +523,6 @@
 				5D019A3C1697586400150A39 /* experiencebanner-xlanthos-onclick@2x~ipad.png */,
 				5D019A321697543500150A39 /* experiencebanner-xlanthos-onclick~ipad.png */,
 				5D019A331697543500150A39 /* experiencebanner-xlanthos~ipad.png */,
-				E2A1CBA7164354C5009F1CBA /* experience-banner-empty.png */,
 			);
 			name = "Experience buttons";
 			sourceTree = "<group>";
@@ -547,6 +546,37 @@
 				5D019A481697696100150A39 /* DPWebViewController-iPad.xib */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E222D0BE16AE15F200ABEB2C /* Custom Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				5DAD1DC216ADBCFF00833CD0 /* DPARViewButtonCustomizer.h */,
+				5DAD1DC316ADBCFF00833CD0 /* DPARViewButtonCustomizer.m */,
+				5DAD1DC516ADC93C00833CD0 /* DPARViewCameraButtonCustomizer.h */,
+				5DAD1DC616ADC93C00833CD0 /* DPARViewCameraButtonCustomizer.m */,
+				5DAD1DC816ADCC5A00833CD0 /* DPARViewTorchButtonCustomizer.h */,
+				5DAD1DC916ADCC5A00833CD0 /* DPARViewTorchButtonCustomizer.m */,
+				E222D0BB16AE149000ABEB2C /* DPARViewBackButtonCustomizer.h */,
+				E222D0BC16AE149000ABEB2C /* DPARViewBackButtonCustomizer.m */,
+			);
+			name = "Custom Buttons";
+			sourceTree = "<group>";
+		};
+		E222D0BF16AE1DB600ABEB2C /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				5D5A109B1695D39600B9CB17 /* MWGIntro.mp4 */,
+			);
+			name = Video;
+			sourceTree = "<group>";
+		};
+		E222D0C016AE1DC100ABEB2C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5D15DDEA1694B74200C942C6 /* bebas.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		E270AC171649FF44003E6A1F /* Info */ = {
@@ -587,7 +617,6 @@
 			isa = PBXGroup;
 			children = (
 				E270ABFF1649E208003E6A1F /* menu_whoosh_in.mp3 */,
-				E28BBD7F1644A6510016B2D2 /* MWGIntro.mp3 */,
 			);
 			name = Audio;
 			sourceTree = "<group>";
@@ -641,25 +670,17 @@
 		E2A1CB6C1643518F009F1CBA /* Dark Potential */ = {
 			isa = PBXGroup;
 			children = (
-				5D5A109B1695D39600B9CB17 /* MWGIntro.mp4 */,
-				5D15DDEA1694B74200C942C6 /* bebas.ttf */,
 				E28BBD7C16449F850016B2D2 /* Audio */,
+				E222D0BF16AE1DB600ABEB2C /* Video */,
+				E222D0C016AE1DC100ABEB2C /* Fonts */,
 				E2A1CBA1164351F6009F1CBA /* Images */,
 				5DA8717B164AF8030017B893 /* QCAR stuff */,
+				E222D0BE16AE15F200ABEB2C /* Custom Buttons */,
 				E2186A56164741EF00FEADC3 /* View Controllers */,
 				E2A1CB751643518F009F1CBA /* DPAppDelegate.h */,
 				E2A1CB761643518F009F1CBA /* DPAppDelegate.mm */,
 				E2A1CB7E1643518F009F1CBA /* MainStoryboard.storyboard */,
 				5D019A2E169752E700150A39 /* MainStoryboard-iPad.storyboard */,
-				5DF97EC3169480CB00046053 /* DPBios.h */,
-				5DF97EC6169483F300046053 /* DPBios.m */,
-				5D469C1816AB736F000BD3FB /* DPConstants.h */,
-				5DAD1DC216ADBCFF00833CD0 /* DPARViewButtonCustomizer.h */,
-				5DAD1DC316ADBCFF00833CD0 /* DPARViewButtonCustomizer.m */,
-				5DAD1DC516ADC93C00833CD0 /* DPARViewCameraButtonCustomizer.h */,
-				5DAD1DC616ADC93C00833CD0 /* DPARViewCameraButtonCustomizer.m */,
-				5DAD1DC816ADCC5A00833CD0 /* DPARViewTorchButtonCustomizer.h */,
-				5DAD1DC916ADCC5A00833CD0 /* DPARViewTorchButtonCustomizer.m */,
 				E2A1CB6D1643518F009F1CBA /* Supporting Files */,
 			);
 			path = "Dark Potential";
@@ -668,6 +689,9 @@
 		E2A1CB6D1643518F009F1CBA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5DF97EC3169480CB00046053 /* DPBios.h */,
+				5DF97EC6169483F300046053 /* DPBios.m */,
+				5D469C1816AB736F000BD3FB /* DPConstants.h */,
 				5D019A2A169752AA00150A39 /* Default-Portrait~ipad.png */,
 				5D019A2C169752C700150A39 /* Default-Portrait@2x~ipad.png */,
 				E270AC0D1649F856003E6A1F /* Default-568h@2x.png */,
@@ -792,7 +816,6 @@
 				E2A1CB801643518F009F1CBA /* MainStoryboard.storyboard in Resources */,
 				E2A1CBA31643521A009F1CBA /* DarkPotential-AppIcon-57.png in Resources */,
 				E2A1CBA51643521E009F1CBA /* DarkPotential-AppIcon-114.png in Resources */,
-				E2A1CBAE164354C5009F1CBA /* experience-banner-empty.png in Resources */,
 				E2A1CBB2164354C5009F1CBA /* navbar.png in Resources */,
 				E2A1CBB3164354C5009F1CBA /* navbar@2x.png in Resources */,
 				E2186A4C16473E1B00FEADC3 /* mwglogo.png in Resources */,
@@ -954,6 +977,7 @@
 				5DAD1DC416ADBCFF00833CD0 /* DPARViewButtonCustomizer.m in Sources */,
 				5DAD1DC716ADC93C00833CD0 /* DPARViewCameraButtonCustomizer.m in Sources */,
 				5DAD1DCA16ADCC5A00833CD0 /* DPARViewTorchButtonCustomizer.m in Sources */,
+				E222D0BD16AE149000ABEB2C /* DPARViewBackButtonCustomizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1048,7 +1072,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joe Simms (DM5PZCT3ZC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthew Glanfield (4KF26JBWE2)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Documents/FacebookSDK\"",
@@ -1064,7 +1088,7 @@
 				);
 				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "Dark Potential";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0662C3AF-8307-4558-BC8D-A844026B97E5";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3217CA9F-C4D2-4A34-B0A5-0B282E99528B";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
