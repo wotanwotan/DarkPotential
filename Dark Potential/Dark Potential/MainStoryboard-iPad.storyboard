@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3083" systemVersion="12C3012" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="hay-Li-0Lz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3083" systemVersion="12C60" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="hay-Li-0Lz">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -381,7 +381,7 @@
         <image name="joel~ipad.png" width="211" height="92"/>
         <image name="menu-bg~ipad.png" width="768" height="1024"/>
         <image name="mwglogo~ipad.png" width="163" height="60"/>
-        <image name="navbar.png" width="320" height="64"/>
+        <image name="navbar.png" width="640" height="128"/>
         <image name="steph~ipad.png" width="211" height="92"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
