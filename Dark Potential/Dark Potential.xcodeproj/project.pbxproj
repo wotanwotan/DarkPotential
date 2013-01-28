@@ -69,7 +69,6 @@
 		5D96EAB51694B85C008345DB /* bebas.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D15DDEA1694B74200C942C6 /* bebas.ttf */; };
 		5DA3CFA6164C201600260F49 /* DPScreenshotViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3CFA4164C201600260F49 /* DPScreenshotViewController.mm */; };
 		5DA3CFA7164C201600260F49 /* DPScreenshotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA3CFA5164C201600260F49 /* DPScreenshotViewController.xib */; };
-		5DA87179164AF5FA0017B893 /* libQCAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA87178164AF5FA0017B893 /* libQCAR.a */; };
 		5DA8717F164AF81C0017B893 /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA8717D164AF81C0017B893 /* EAGLView.mm */; };
 		5DA87195164AF86E0017B893 /* AR_EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87183164AF86E0017B893 /* AR_EAGLView.mm */; };
 		5DA87196164AF86E0017B893 /* ARParentViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87185164AF86E0017B893 /* ARParentViewController.mm */; };
@@ -93,6 +92,7 @@
 		5DB29B4C16B6C1FF000CF9FB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB29B4B16B6C1FF000CF9FB /* FacebookSDK.framework */; };
 		5DB29B4E16B6C217000CF9FB /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DB29B4D16B6C217000CF9FB /* FacebookSDKResources.bundle */; };
 		5DB29B5016B6C221000CF9FB /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DB29B4F16B6C221000CF9FB /* FBUserSettingsViewResources.bundle */; };
+		5DB29B5216B6C3A5000CF9FB /* libQCAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB29B5116B6C3A5000CF9FB /* libQCAR.a */; };
 		5DCA890B169604FA00725CEF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCA8908169604FA00725CEF /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5DCA890C169604FA00725CEF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCA8909169604FA00725CEF /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5DCA890D169604FA00725CEF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCA890A169604FA00725CEF /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -215,7 +215,6 @@
 		5DA3CFA3164C201600260F49 /* DPScreenshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPScreenshotViewController.h; sourceTree = "<group>"; };
 		5DA3CFA4164C201600260F49 /* DPScreenshotViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DPScreenshotViewController.mm; sourceTree = "<group>"; };
 		5DA3CFA5164C201600260F49 /* DPScreenshotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DPScreenshotViewController.xib; sourceTree = "<group>"; };
-		5DA87178164AF5FA0017B893 /* libQCAR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQCAR.a; path = "../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/lib/arm/libQCAR.a"; sourceTree = "<group>"; };
 		5DA8717C164AF81C0017B893 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
 		5DA8717D164AF81C0017B893 /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EAGLView.mm; sourceTree = "<group>"; };
 		5DA87182164AF86E0017B893 /* AR_EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AR_EAGLView.h; sourceTree = "<group>"; };
@@ -251,6 +250,7 @@
 		5DB29B4B16B6C1FF000CF9FB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		5DB29B4D16B6C217000CF9FB /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
 		5DB29B4F16B6C221000CF9FB /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
+		5DB29B5116B6C3A5000CF9FB /* libQCAR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libQCAR.a; sourceTree = "<group>"; };
 		5DCA8908169604FA00725CEF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		5DCA8909169604FA00725CEF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		5DCA890A169604FA00725CEF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -318,13 +318,13 @@
 				5D5B77D5164AFAF100C330CE /* CoreMedia.framework in Frameworks */,
 				5D5B77D2164AFACF00C330CE /* OpenGLES.framework in Frameworks */,
 				5D5B77D3164AFACF00C330CE /* QuartzCore.framework in Frameworks */,
-				5DA87179164AF5FA0017B893 /* libQCAR.a in Frameworks */,
 				E28BBD7A16449D3C0016B2D2 /* AVFoundation.framework in Frameworks */,
 				E21F25D21644896200CA0971 /* MediaPlayer.framework in Frameworks */,
 				E2A1CB671643518F009F1CBA /* UIKit.framework in Frameworks */,
 				E2A1CB691643518F009F1CBA /* Foundation.framework in Frameworks */,
 				E2A1CB6B1643518F009F1CBA /* CoreGraphics.framework in Frameworks */,
 				5DB29B4C16B6C1FF000CF9FB /* FacebookSDK.framework in Frameworks */,
+				5DB29B5216B6C3A5000CF9FB /* libQCAR.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,7 +573,7 @@
 				5DCA890A169604FA00725CEF /* Social.framework */,
 				5D691C3A1695EE930072E2A7 /* Twitter.framework */,
 				5D691C371695EA7B0072E2A7 /* MessageUI.framework */,
-				5DA87178164AF5FA0017B893 /* libQCAR.a */,
+				5DB29B5116B6C3A5000CF9FB /* libQCAR.a */,
 				5D5B77DA164AFB1A00C330CE /* Security.framework */,
 				5D5B77D8164AFB0E00C330CE /* CoreVideo.framework */,
 				5D5B77D6164AFAFF00C330CE /* SystemConfiguration.framework */,
@@ -967,17 +967,18 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joe Simms (DM5PZCT3ZC)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../Documents/FacebookSDK\"",
+					"\"$(SRCROOT)/../FacebookSDK\"",
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dark Potential/Dark Potential-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/include";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../vuforia-sdk-ios-1-5-9/build/include";
 				INFOPLIST_FILE = "Dark Potential/Dark Potential-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/lib/arm\"",
+					"\"$(SRCROOT)/../vuforia-sdk-ios-1-5-9/build/lib/arm\"",
+					"\"$(SRCROOT)\"",
 				);
 				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "Dark Potential";
@@ -992,24 +993,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthew Glanfield (4KF26JBWE2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joel Glanfield (D3BF96E7YY)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../Documents/FacebookSDK\"",
+					"\"$(SRCROOT)/../FacebookSDK\"",
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dark Potential/Dark Potential-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/include";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../vuforia-sdk-ios-1-5-9/build/include";
 				INFOPLIST_FILE = "Dark Potential/Dark Potential-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../Development/iOS/vuforia-sdk-ios-1-5-9/build/lib/arm\"",
+					"\"$(SRCROOT)/../vuforia-sdk-ios-1-5-9/build/lib/arm\"",
+					"\"$(SRCROOT)\"",
 				);
 				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "Dark Potential";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3217CA9F-C4D2-4A34-B0A5-0B282E99528B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "55185C95-9590-416B-A8BF-BFB48CCF139C";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
