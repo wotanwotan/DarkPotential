@@ -90,9 +90,9 @@
 		5DAD1E1416ADCE4800833CD0 /* social-save~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DAD1DFC16ADCE4800833CD0 /* social-save~ipad.png */; };
 		5DAD1E1916ADCE4800833CD0 /* social-twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DAD1E0116ADCE4800833CD0 /* social-twitter.png */; };
 		5DAD1E1A16ADCE4800833CD0 /* social-twitter~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DAD1E0216ADCE4800833CD0 /* social-twitter~ipad.png */; };
-		5DCA8902169604A100725CEF /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCA8901169604A100725CEF /* FacebookSDK.framework */; };
-		5DCA8905169604BC00725CEF /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DCA8904169604BC00725CEF /* FacebookSDKResources.bundle */; };
-		5DCA8907169604CF00725CEF /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DCA8906169604CF00725CEF /* FBUserSettingsViewResources.bundle */; };
+		5DB29B4C16B6C1FF000CF9FB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB29B4B16B6C1FF000CF9FB /* FacebookSDK.framework */; };
+		5DB29B4E16B6C217000CF9FB /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DB29B4D16B6C217000CF9FB /* FacebookSDKResources.bundle */; };
+		5DB29B5016B6C221000CF9FB /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DB29B4F16B6C221000CF9FB /* FBUserSettingsViewResources.bundle */; };
 		5DCA890B169604FA00725CEF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCA8908169604FA00725CEF /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5DCA890C169604FA00725CEF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCA8909169604FA00725CEF /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5DCA890D169604FA00725CEF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCA890A169604FA00725CEF /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -248,9 +248,9 @@
 		5DAD1DFC16ADCE4800833CD0 /* social-save~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-save~ipad.png"; sourceTree = "<group>"; };
 		5DAD1E0116ADCE4800833CD0 /* social-twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-twitter.png"; sourceTree = "<group>"; };
 		5DAD1E0216ADCE4800833CD0 /* social-twitter~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-twitter~ipad.png"; sourceTree = "<group>"; };
-		5DCA8901169604A100725CEF /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
-		5DCA8904169604BC00725CEF /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../../../Documents/FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
-		5DCA8906169604CF00725CEF /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBUserSettingsViewResources.bundle; path = ../../../Documents/FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
+		5DB29B4B16B6C1FF000CF9FB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		5DB29B4D16B6C217000CF9FB /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
+		5DB29B4F16B6C221000CF9FB /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
 		5DCA8908169604FA00725CEF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		5DCA8909169604FA00725CEF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		5DCA890A169604FA00725CEF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -324,7 +324,7 @@
 				E2A1CB671643518F009F1CBA /* UIKit.framework in Frameworks */,
 				E2A1CB691643518F009F1CBA /* Foundation.framework in Frameworks */,
 				E2A1CB6B1643518F009F1CBA /* CoreGraphics.framework in Frameworks */,
-				5DCA8902169604A100725CEF /* FacebookSDK.framework in Frameworks */,
+				5DB29B4C16B6C1FF000CF9FB /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,13 +565,13 @@
 		E2A1CB651643518F009F1CBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5DB29B4F16B6C221000CF9FB /* FBUserSettingsViewResources.bundle */,
+				5DB29B4D16B6C217000CF9FB /* FacebookSDKResources.bundle */,
+				5DB29B4B16B6C1FF000CF9FB /* FacebookSDK.framework */,
 				5DCA8908169604FA00725CEF /* Accounts.framework */,
 				5DCA8909169604FA00725CEF /* AdSupport.framework */,
 				5DCA890A169604FA00725CEF /* Social.framework */,
 				5D691C3A1695EE930072E2A7 /* Twitter.framework */,
-				5DCA8906169604CF00725CEF /* FBUserSettingsViewResources.bundle */,
-				5DCA8904169604BC00725CEF /* FacebookSDKResources.bundle */,
-				5DCA8901169604A100725CEF /* FacebookSDK.framework */,
 				5D691C371695EA7B0072E2A7 /* MessageUI.framework */,
 				5DA87178164AF5FA0017B893 /* libQCAR.a */,
 				5D5B77DA164AFB1A00C330CE /* Security.framework */,
@@ -763,8 +763,6 @@
 				5D5A10951695C7F000B9CB17 /* info-youtube.png in Resources */,
 				5D5A109A1695CB4B00B9CB17 /* DPWebViewController.xib in Resources */,
 				5D5A109C1695D39700B9CB17 /* MWGIntro.mp4 in Resources */,
-				5DCA8905169604BC00725CEF /* FacebookSDKResources.bundle in Resources */,
-				5DCA8907169604CF00725CEF /* FBUserSettingsViewResources.bundle in Resources */,
 				5D019A271697527A00150A39 /* DarkPotential-AppIcon-72.png in Resources */,
 				5D019A291697527E00150A39 /* DarkPotential-AppIcon-144.png in Resources */,
 				5D019A2B169752AA00150A39 /* Default-Portrait~ipad.png in Resources */,
@@ -813,6 +811,8 @@
 				E2A33D4916AF7581009C6BFF /* experiencebanner-xlanthos-onclick~ipad.png in Resources */,
 				E2A33D4A16AF7581009C6BFF /* experiencebanner-xlanthos~ipad.png in Resources */,
 				E2A33D4C16AF75BA009C6BFF /* button-back.png in Resources */,
+				5DB29B4E16B6C217000CF9FB /* FacebookSDKResources.bundle in Resources */,
+				5DB29B5016B6C221000CF9FB /* FBUserSettingsViewResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -964,10 +964,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthew Glanfield (4KF26JBWE2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joe Simms (DM5PZCT3ZC)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Documents/FacebookSDK\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dark Potential/Dark Potential-Prefix.pch";
@@ -980,7 +981,7 @@
 				);
 				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "Dark Potential";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3217CA9F-C4D2-4A34-B0A5-0B282E99528B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0662C3AF-8307-4558-BC8D-A844026B97E5";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
@@ -995,6 +996,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Documents/FacebookSDK\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dark Potential/Dark Potential-Prefix.pch";
