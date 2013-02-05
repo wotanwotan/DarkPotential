@@ -25,10 +25,10 @@
     QCARutils *qUtils = [QCARutils getInstance];
     
     // Provide a list of targets we're expecting - the first in the list is the default
-    [qUtils addTargetName:@"Stones & Chips" atPath:@"StonesAndChips.xml"];
+//    [qUtils addTargetName:@"Stones & Chips" atPath:@"StonesAndChips.xml"];
 //    [qUtils addTargetName:@"Tarmac" atPath:@"Tarmac.xml"];
 //    [qUtils addTargetName:@"XlanthosSSTop" atPath:@"Dark_Potential.xml"];
-    [qUtils addTargetName:@"ReclaimerSSTop" atPath:@"Dark_Potential.xml"];
+    [qUtils addTargetName:@"DP_Trackable" atPath:@"Dark_Potential.xml"];
     
     arViewRect.size = [[UIScreen mainScreen] bounds].size;
     arViewRect.origin.x = arViewRect.origin.y = 0;
@@ -186,13 +186,13 @@
 - (UIImage*) glToUIImage
 {
     CGFloat scale = [[UIScreen mainScreen] scale];
-    CGRect s;
+    CGRect s = [[UIScreen mainScreen] bounds];
     
     // need to swap width/height because Vuforia assumes landscape but the app is portrait
     if ([[[UIDevice currentDevice] model] isEqualToString:@"iPad"])
         s = CGRectMake(0, 0, 1024.0f * scale, (768.0f) * scale);
     else
-        s = CGRectMake(0, 0, 480.0f * scale, (320.0f) * scale);
+        s = CGRectMake(0, 0, s.size.height * scale, s.size.width * scale);
     
     uint8_t *buffer = (uint8_t *) malloc(s.size.width * s.size.height * 4);
     

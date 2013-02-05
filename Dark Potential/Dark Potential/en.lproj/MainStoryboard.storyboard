@@ -346,7 +346,7 @@
     <resources>
         <image name="background-iphone5.png" width="640" height="1136"/>
         <image name="button-back.png" width="60" height="60"/>
-        <image name="button-launch-xlanthos.png" width="97" height="86"/>
+        <image name="button-launch-xlanthos.png" width="49" height="43"/>
         <image name="button-support.png" width="234" height="122"/>
         <image name="button-video.png" width="234" height="122"/>
         <image name="experiencebanner-pmc-onclick.png" width="16" height="16"/>

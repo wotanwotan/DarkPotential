@@ -25,9 +25,14 @@ namespace {
     };
 
     // Model scale factor
-    const float kObjectScale = 6.0f;
+    const float kObjectScale = 1.0f;
     
-    static const float planeVertices[] = { -6.0, -9, 1.0, 6.0, -9, 1.0, 6.0, 9, 1.0, -6.0, 9, 1.0 };
+    static const float X = 3.6;
+    static const float TopY = 3.0;
+    static const float BottomY = -7.2;
+    static const float Z = 1.0;
+    
+    static const float planeVertices[] = { -X, BottomY, Z, X, BottomY, Z, X, TopY, Z, -X, TopY, Z };
     
     static const float planeTexcoords[] = { 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 };
     

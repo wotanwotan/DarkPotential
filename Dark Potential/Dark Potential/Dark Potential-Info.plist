@@ -43,7 +43,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>B1</string>
+	<string>B2</string>
 	<key>FacebookAppID</key>
 	<string>324571460990714</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -54,8 +54,6 @@
 	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard</string>
-	<key>UIMainStoryboardFile~ipad</key>
-	<string>MainStoryboard-iPad</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -63,8 +61,6 @@
 		<string>video-camera</string>
 	</array>
 	<key>UIStatusBarHidden</key>
-	<true/>
-	<key>UIStatusBarHidden~ipad</key>
 	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
