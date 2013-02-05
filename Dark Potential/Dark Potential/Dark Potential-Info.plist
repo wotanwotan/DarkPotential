@@ -30,7 +30,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.3.4</string>
+	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -43,7 +43,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>B1</string>
 	<key>FacebookAppID</key>
 	<string>324571460990714</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -60,6 +60,7 @@
 	<array>
 		<string>armv7</string>
 		<string>gyroscope</string>
+		<string>video-camera</string>
 	</array>
 	<key>UIStatusBarHidden</key>
 	<true/>
