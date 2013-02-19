@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E2A1CB611643518F009F1CBA"
-               BuildableName = "Dark Potential.app"
+               BuildableName = "Dark Potential AR.app"
                BlueprintName = "Dark Potential"
                ReferencedContainer = "container:Dark Potential.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E2A1CB611643518F009F1CBA"
-            BuildableName = "Dark Potential.app"
+            BuildableName = "Dark Potential AR.app"
             BlueprintName = "Dark Potential"
             ReferencedContainer = "container:Dark Potential.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E2A1CB611643518F009F1CBA"
-            BuildableName = "Dark Potential.app"
+            BuildableName = "Dark Potential AR.app"
             BlueprintName = "Dark Potential"
             ReferencedContainer = "container:Dark Potential.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E2A1CB611643518F009F1CBA"
-            BuildableName = "Dark Potential.app"
+            BuildableName = "Dark Potential AR.app"
             BlueprintName = "Dark Potential"
             ReferencedContainer = "container:Dark Potential.xcodeproj">
          </BuildableReference>
