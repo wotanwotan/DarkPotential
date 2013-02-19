@@ -213,7 +213,7 @@
 		E270AC27164A0155003E6A1F /* joel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joel.png; sourceTree = "<group>"; };
 		E270AC2B164A015E003E6A1F /* steph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = steph.png; sourceTree = "<group>"; };
 		E28BBD7916449D3C0016B2D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		E2A1CB621643518F009F1CBA /* Dark Potential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dark Potential.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2A1CB621643518F009F1CBA /* Dark Potential AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dark Potential AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A1CB661643518F009F1CBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E2A1CB681643518F009F1CBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E2A1CB6A1643518F009F1CBA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -461,7 +461,7 @@
 		E2A1CB631643518F009F1CBA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E2A1CB621643518F009F1CBA /* Dark Potential.app */,
+				E2A1CB621643518F009F1CBA /* Dark Potential AR.app */,
 				E2A1CB8916435190009F1CBA /* Dark PotentialTests.octest */,
 			);
 			name = Products;
@@ -573,7 +573,7 @@
 			);
 			name = "Dark Potential";
 			productName = "Dark Potential";
-			productReference = E2A1CB621643518F009F1CBA /* Dark Potential.app */;
+			productReference = E2A1CB621643518F009F1CBA /* Dark Potential AR.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E2A1CB8816435190009F1CBA /* Dark PotentialTests */ = {
@@ -828,35 +828,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Spider Man (DR4DUVEJ63)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../FacebookSDK\"",
-					"\"$(SRCROOT)\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Dark Potential/Dark Potential-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../vuforia-sdk-ios-1-5-9/build/include";
-				INFOPLIST_FILE = "Dark Potential/Dark Potential-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../vuforia-sdk-ios-1-5-9/build/lib/arm\"",
-					"\"$(SRCROOT)\"",
-				);
-				OTHER_LDFLAGS = "-lsqlite3.0";
-				PRODUCT_NAME = "Dark Potential";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E31FB8B5-88D0-4CE9-B06B-64DCA698C44B";
-				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = armv7;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		E2A1CB9D16435190009F1CBA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joel Glanfield (D3BF96E7YY)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -874,8 +845,37 @@
 					"\"$(SRCROOT)\"",
 				);
 				OTHER_LDFLAGS = "-lsqlite3.0";
-				PRODUCT_NAME = "Dark Potential";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "55185C95-9590-416B-A8BF-BFB48CCF139C";
+				PRODUCT_NAME = "Dark Potential AR";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "107B2EA7-D396-4BF2-9F79-02BCAE6D4C33";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E2A1CB9D16435190009F1CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthew Glanfield (4KF26JBWE2)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../FacebookSDK\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dark Potential/Dark Potential-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../vuforia-sdk-ios-1-5-9/build/include";
+				INFOPLIST_FILE = "Dark Potential/Dark Potential-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../vuforia-sdk-ios-1-5-9/build/lib/arm\"",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = "-lsqlite3.0";
+				PRODUCT_NAME = "Dark Potential AR";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E2BF88A3-FDC7-4C83-B7AE-C1E947AB0707";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;

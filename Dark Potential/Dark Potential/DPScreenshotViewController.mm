@@ -148,7 +148,7 @@
     [picker addAttachmentData:UIImagePNGRepresentation(self.screenshotImage) mimeType:@"image/png" fileName:@"image.png"];
     
     // Fill out the email body text
-    NSString *emailBody = @"Check out my Dark Potential AR picture!";
+    NSString *emailBody = @"I got my picture taken with a life size Dark Potential model, using the Dark Potential AR app!";
     [picker setMessageBody:emailBody isHTML:NO];
     
     [self presentViewController:picker animated:YES completion:nil];
@@ -189,7 +189,7 @@
     SLComposeViewController *tweetViewController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
     
     // Set the initial tweet text. See the framework for additional properties that can be set.
-    [tweetViewController setInitialText:@"Check out my #DarkPotential AR app picture!"];
+    [tweetViewController setInitialText:@"I got my picture taken with a life size #DarkPotential model, using the Dark Potential AR app!"];
     [tweetViewController addImage:self.screenshotImage];
     
     // Create the completion handler block.
@@ -230,7 +230,7 @@
         SLComposeViewController *fbViewController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
         
         // Set the initial tweet text. See the framework for additional properties that can be set.
-        [fbViewController setInitialText:@"Check out my #DarkPotential AR app picture!"];
+        [fbViewController setInitialText:@"I got my picture taken with a life size Dark Potential model, using the Dark Potential AR app!"];
         [fbViewController addImage:self.screenshotImage];
         
         // Create the completion handler block.

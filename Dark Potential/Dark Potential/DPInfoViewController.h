@@ -18,7 +18,6 @@
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *backButton;
 
 - (IBAction)playVideoButtonPressed:(id)sender;
-- (IBAction)exitButtonPressed:(id)sender;
 - (IBAction)launchWebView:(id)sender;
 - (IBAction)emailSupportButtonPressed:(id)sender;
 

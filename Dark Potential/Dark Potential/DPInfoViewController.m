@@ -73,7 +73,7 @@
     [[UINavigationBar appearance] setBackgroundImage:nil
                                        forBarMetrics:UIBarMetricsDefault];
     
-    NSString *videoURLString = @"http://miniwargaming.s3.amazonaws.com/The-Vault/DVDs/TutorialFlesh/Fleshdark1.mp4";
+    NSString *videoURLString = @"http://www.darkpotential.com/apphowto.mp4";
     NSURL *videoURL = [NSURL URLWithString:videoURLString];
     
     MPMoviePlayerViewController *movieView = [[MPMoviePlayerViewController alloc] initWithContentURL:videoURL];
@@ -81,7 +81,7 @@
     [self presentMoviePlayerViewControllerAnimated:movieView];
 }
 
-- (IBAction)exitButtonPressed:(id)sender
+- (void)exitButtonPressed:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
