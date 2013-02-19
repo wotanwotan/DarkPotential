@@ -19,8 +19,6 @@
 		5D469C1316AB6EF4000BD3FB /* button-launch-pmc.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D469C0D16AB6EF4000BD3FB /* button-launch-pmc.png */; };
 		5D469C1516AB6EF4000BD3FB /* button-launch-reclaimers.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D469C0F16AB6EF4000BD3FB /* button-launch-reclaimers.png */; };
 		5D469C1716AB6EF4000BD3FB /* button-launch-xlanthos.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D469C1116AB6EF4000BD3FB /* button-launch-xlanthos.png */; };
-		5D469C1A16AB7A21000BD3FB /* Xlanthos.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D469C1916AB7A21000BD3FB /* Xlanthos.png */; };
-		5D469C1C16AB7DD3000BD3FB /* PMCSniper.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D469C1B16AB7DD3000BD3FB /* PMCSniper.png */; };
 		5D5A108F1695C7F000B9CB17 /* info-fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5A10871695C7F000B9CB17 /* info-fb.png */; };
 		5D5A10911695C7F000B9CB17 /* info-twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5A10891695C7F000B9CB17 /* info-twitter.png */; };
 		5D5A10931695C7F000B9CB17 /* info-web.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5A108B1695C7F000B9CB17 /* info-web.png */; };
@@ -39,15 +37,6 @@
 		5D96EAB51694B85C008345DB /* bebas.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D15DDEA1694B74200C942C6 /* bebas.ttf */; };
 		5DA3CFA6164C201600260F49 /* DPScreenshotViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3CFA4164C201600260F49 /* DPScreenshotViewController.mm */; };
 		5DA3CFA7164C201600260F49 /* DPScreenshotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA3CFA5164C201600260F49 /* DPScreenshotViewController.xib */; };
-		5DA8717F164AF81C0017B893 /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA8717D164AF81C0017B893 /* EAGLView.mm */; };
-		5DA87195164AF86E0017B893 /* AR_EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87183164AF86E0017B893 /* AR_EAGLView.mm */; };
-		5DA87196164AF86E0017B893 /* ARParentViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87185164AF86E0017B893 /* ARParentViewController.mm */; };
-		5DA87197164AF86E0017B893 /* ARViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87187164AF86E0017B893 /* ARViewController.mm */; };
-		5DA87198164AF86E0017B893 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87189164AF86E0017B893 /* OverlayView.m */; };
-		5DA87199164AF86E0017B893 /* OverlayViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA8718B164AF86E0017B893 /* OverlayViewController.mm */; };
-		5DA8719A164AF86E0017B893 /* QCARutils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA8718D164AF86E0017B893 /* QCARutils.mm */; };
-		5DA8719D164AF86E0017B893 /* ShaderUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87191164AF86E0017B893 /* ShaderUtils.cpp */; };
-		5DA8719E164AF86E0017B893 /* Texture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DA87194164AF86E0017B893 /* Texture.mm */; };
 		5DAD1DC416ADBCFF00833CD0 /* DPARViewButtonCustomizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD1DC316ADBCFF00833CD0 /* DPARViewButtonCustomizer.m */; };
 		5DAD1DC716ADC93C00833CD0 /* DPARViewCameraButtonCustomizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD1DC616ADC93C00833CD0 /* DPARViewCameraButtonCustomizer.m */; };
 		5DAD1DCA16ADCC5A00833CD0 /* DPARViewTorchButtonCustomizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD1DC916ADCC5A00833CD0 /* DPARViewTorchButtonCustomizer.m */; };
@@ -58,7 +47,6 @@
 		5DB29B4C16B6C1FF000CF9FB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB29B4B16B6C1FF000CF9FB /* FacebookSDK.framework */; };
 		5DB29B4E16B6C217000CF9FB /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DB29B4D16B6C217000CF9FB /* FacebookSDKResources.bundle */; };
 		5DB29B5016B6C221000CF9FB /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DB29B4F16B6C221000CF9FB /* FBUserSettingsViewResources.bundle */; };
-		5DB29B5216B6C3A5000CF9FB /* libQCAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB29B5116B6C3A5000CF9FB /* libQCAR.a */; };
 		5DCA890B169604FA00725CEF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCA8908169604FA00725CEF /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5DCA890C169604FA00725CEF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCA8909169604FA00725CEF /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5DCA890D169604FA00725CEF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCA890A169604FA00725CEF /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -66,12 +54,7 @@
 		5DCB5FC416C1A29800258312 /* button-launch-pmc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCB5FC116C1A29800258312 /* button-launch-pmc@2x.png */; };
 		5DCB5FC516C1A29800258312 /* button-launch-reclaimers@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCB5FC216C1A29800258312 /* button-launch-reclaimers@2x.png */; };
 		5DCB5FC616C1A29800258312 /* button-launch-xlanthos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCB5FC316C1A29800258312 /* button-launch-xlanthos@2x.png */; };
-		5DCC62F2167A44320069DE40 /* Reclaimer_squad_member.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCC62F1167A44320069DE40 /* Reclaimer_squad_member.png */; };
 		5DF97EC7169483F300046053 /* DPBios.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF97EC6169483F300046053 /* DPBios.m */; };
-		5DF97ECE16948BCF00046053 /* Dark_Potential.dat in Resources */ = {isa = PBXBuildFile; fileRef = 5DF97ECC16948BCF00046053 /* Dark_Potential.dat */; };
-		5DF97ECF16948BCF00046053 /* Dark_Potential.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5DF97ECD16948BCF00046053 /* Dark_Potential.xml */; };
-		5DF97ED116948CC100046053 /* Dark_Potential.dat in Resources */ = {isa = PBXBuildFile; fileRef = 5DF97ECC16948BCF00046053 /* Dark_Potential.dat */; };
-		5DF97ED216948CC100046053 /* Dark_Potential.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5DF97ECD16948BCF00046053 /* Dark_Potential.xml */; };
 		E2186A4D16473E1B00FEADC3 /* mwglogo.png in Resources */ = {isa = PBXBuildFile; fileRef = E2186A4B16473E1B00FEADC3 /* mwglogo.png */; };
 		E2186A5116473EDD00FEADC3 /* menu-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E2186A4F16473EDD00FEADC3 /* menu-bg.png */; };
 		E2186A5516473FF200FEADC3 /* menu-bg-iphone5.png in Resources */ = {isa = PBXBuildFile; fileRef = E2186A5316473FF200FEADC3 /* menu-bg-iphone5.png */; };
@@ -128,10 +111,6 @@
 		5D469C0F16AB6EF4000BD3FB /* button-launch-reclaimers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-launch-reclaimers.png"; sourceTree = "<group>"; };
 		5D469C1116AB6EF4000BD3FB /* button-launch-xlanthos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-launch-xlanthos.png"; sourceTree = "<group>"; };
 		5D469C1816AB736F000BD3FB /* DPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPConstants.h; sourceTree = "<group>"; };
-		5D469C1916AB7A21000BD3FB /* Xlanthos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Xlanthos.png; sourceTree = "<group>"; };
-		5D469C1B16AB7DD3000BD3FB /* PMCSniper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PMCSniper.png; sourceTree = "<group>"; };
-		5D469C2216AB7F79000BD3FB /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
-		5D469C2316AB7F79000BD3FB /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
 		5D5A10871695C7F000B9CB17 /* info-fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-fb.png"; sourceTree = "<group>"; };
 		5D5A10891695C7F000B9CB17 /* info-twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-twitter.png"; sourceTree = "<group>"; };
 		5D5A108B1695C7F000B9CB17 /* info-web.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-web.png"; sourceTree = "<group>"; };
@@ -151,24 +130,6 @@
 		5DA3CFA3164C201600260F49 /* DPScreenshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPScreenshotViewController.h; sourceTree = "<group>"; };
 		5DA3CFA4164C201600260F49 /* DPScreenshotViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DPScreenshotViewController.mm; sourceTree = "<group>"; };
 		5DA3CFA5164C201600260F49 /* DPScreenshotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DPScreenshotViewController.xib; sourceTree = "<group>"; };
-		5DA8717C164AF81C0017B893 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
-		5DA8717D164AF81C0017B893 /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EAGLView.mm; sourceTree = "<group>"; };
-		5DA87182164AF86E0017B893 /* AR_EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AR_EAGLView.h; sourceTree = "<group>"; };
-		5DA87183164AF86E0017B893 /* AR_EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AR_EAGLView.mm; sourceTree = "<group>"; };
-		5DA87184164AF86E0017B893 /* ARParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARParentViewController.h; sourceTree = "<group>"; };
-		5DA87185164AF86E0017B893 /* ARParentViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ARParentViewController.mm; sourceTree = "<group>"; };
-		5DA87186164AF86E0017B893 /* ARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
-		5DA87187164AF86E0017B893 /* ARViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ARViewController.mm; sourceTree = "<group>"; };
-		5DA87188164AF86E0017B893 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
-		5DA87189164AF86E0017B893 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
-		5DA8718A164AF86E0017B893 /* OverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayViewController.h; sourceTree = "<group>"; };
-		5DA8718B164AF86E0017B893 /* OverlayViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OverlayViewController.mm; sourceTree = "<group>"; };
-		5DA8718C164AF86E0017B893 /* QCARutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCARutils.h; sourceTree = "<group>"; };
-		5DA8718D164AF86E0017B893 /* QCARutils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QCARutils.mm; sourceTree = "<group>"; };
-		5DA87191164AF86E0017B893 /* ShaderUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderUtils.cpp; sourceTree = "<group>"; };
-		5DA87192164AF86E0017B893 /* ShaderUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderUtils.h; sourceTree = "<group>"; };
-		5DA87193164AF86E0017B893 /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture.h; sourceTree = "<group>"; };
-		5DA87194164AF86E0017B893 /* Texture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Texture.mm; sourceTree = "<group>"; };
 		5DAD1DC216ADBCFF00833CD0 /* DPARViewButtonCustomizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPARViewButtonCustomizer.h; sourceTree = "<group>"; };
 		5DAD1DC316ADBCFF00833CD0 /* DPARViewButtonCustomizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPARViewButtonCustomizer.m; sourceTree = "<group>"; };
 		5DAD1DC516ADC93C00833CD0 /* DPARViewCameraButtonCustomizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPARViewCameraButtonCustomizer.h; sourceTree = "<group>"; };
@@ -182,7 +143,6 @@
 		5DB29B4B16B6C1FF000CF9FB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		5DB29B4D16B6C217000CF9FB /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
 		5DB29B4F16B6C221000CF9FB /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
-		5DB29B5116B6C3A5000CF9FB /* libQCAR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libQCAR.a; sourceTree = "<group>"; };
 		5DCA8908169604FA00725CEF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		5DCA8909169604FA00725CEF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		5DCA890A169604FA00725CEF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -190,11 +150,8 @@
 		5DCB5FC116C1A29800258312 /* button-launch-pmc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-launch-pmc@2x.png"; sourceTree = "<group>"; };
 		5DCB5FC216C1A29800258312 /* button-launch-reclaimers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-launch-reclaimers@2x.png"; sourceTree = "<group>"; };
 		5DCB5FC316C1A29800258312 /* button-launch-xlanthos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-launch-xlanthos@2x.png"; sourceTree = "<group>"; };
-		5DCC62F1167A44320069DE40 /* Reclaimer_squad_member.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reclaimer_squad_member.png; sourceTree = "<group>"; };
 		5DF97EC3169480CB00046053 /* DPBios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPBios.h; sourceTree = "<group>"; };
 		5DF97EC6169483F300046053 /* DPBios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPBios.m; sourceTree = "<group>"; };
-		5DF97ECC16948BCF00046053 /* Dark_Potential.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dark_Potential.dat; sourceTree = "<group>"; };
-		5DF97ECD16948BCF00046053 /* Dark_Potential.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Dark_Potential.xml; sourceTree = "<group>"; };
 		E2186A4B16473E1B00FEADC3 /* mwglogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mwglogo.png; sourceTree = "<group>"; };
 		E2186A4F16473EDD00FEADC3 /* menu-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bg.png"; sourceTree = "<group>"; };
 		E2186A5316473FF200FEADC3 /* menu-bg-iphone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bg-iphone5.png"; sourceTree = "<group>"; };
@@ -256,7 +213,6 @@
 				E2A1CB691643518F009F1CBA /* Foundation.framework in Frameworks */,
 				E2A1CB6B1643518F009F1CBA /* CoreGraphics.framework in Frameworks */,
 				5DB29B4C16B6C1FF000CF9FB /* FacebookSDK.framework in Frameworks */,
-				5DB29B5216B6C3A5000CF9FB /* libQCAR.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,27 +256,6 @@
 			name = Social;
 			sourceTree = "<group>";
 		};
-		5D469C2116AB7F04000BD3FB /* Shaders */ = {
-			isa = PBXGroup;
-			children = (
-				5D469C2216AB7F79000BD3FB /* Shader.fsh */,
-				5D469C2316AB7F79000BD3FB /* Shader.vsh */,
-			);
-			name = Shaders;
-			sourceTree = "<group>";
-		};
-		5D5B77DC164AFDD500C330CE /* Image targets */ = {
-			isa = PBXGroup;
-			children = (
-				5D469C1B16AB7DD3000BD3FB /* PMCSniper.png */,
-				5D469C1916AB7A21000BD3FB /* Xlanthos.png */,
-				5DCC62F1167A44320069DE40 /* Reclaimer_squad_member.png */,
-				5DF97ECC16948BCF00046053 /* Dark_Potential.dat */,
-				5DF97ECD16948BCF00046053 /* Dark_Potential.xml */,
-			);
-			name = "Image targets";
-			sourceTree = "<group>";
-		};
 		5D74774A1643F0E7003C576B /* App icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,41 +263,6 @@
 				E2A1CBA21643521A009F1CBA /* DarkPotential-AppIcon-57.png */,
 			);
 			name = "App icons";
-			sourceTree = "<group>";
-		};
-		5DA8717B164AF8030017B893 /* QCAR stuff */ = {
-			isa = PBXGroup;
-			children = (
-				5D5B77DC164AFDD500C330CE /* Image targets */,
-				5DA87181164AF86E0017B893 /* ARCommon */,
-				5DA8717C164AF81C0017B893 /* EAGLView.h */,
-				5DA8717D164AF81C0017B893 /* EAGLView.mm */,
-			);
-			name = "QCAR stuff";
-			sourceTree = "<group>";
-		};
-		5DA87181164AF86E0017B893 /* ARCommon */ = {
-			isa = PBXGroup;
-			children = (
-				5D469C2116AB7F04000BD3FB /* Shaders */,
-				5DA87182164AF86E0017B893 /* AR_EAGLView.h */,
-				5DA87183164AF86E0017B893 /* AR_EAGLView.mm */,
-				5DA87184164AF86E0017B893 /* ARParentViewController.h */,
-				5DA87185164AF86E0017B893 /* ARParentViewController.mm */,
-				5DA87186164AF86E0017B893 /* ARViewController.h */,
-				5DA87187164AF86E0017B893 /* ARViewController.mm */,
-				5DA87188164AF86E0017B893 /* OverlayView.h */,
-				5DA87189164AF86E0017B893 /* OverlayView.m */,
-				5DA8718A164AF86E0017B893 /* OverlayViewController.h */,
-				5DA8718B164AF86E0017B893 /* OverlayViewController.mm */,
-				5DA8718C164AF86E0017B893 /* QCARutils.h */,
-				5DA8718D164AF86E0017B893 /* QCARutils.mm */,
-				5DA87191164AF86E0017B893 /* ShaderUtils.cpp */,
-				5DA87192164AF86E0017B893 /* ShaderUtils.h */,
-				5DA87193164AF86E0017B893 /* Texture.h */,
-				5DA87194164AF86E0017B893 /* Texture.mm */,
-			);
-			path = ARCommon;
 			sourceTree = "<group>";
 		};
 		E2186A3E164739DA00FEADC3 /* Experience buttons */ = {
@@ -478,7 +378,6 @@
 				5DCA890A169604FA00725CEF /* Social.framework */,
 				5D691C3A1695EE930072E2A7 /* Twitter.framework */,
 				5D691C371695EA7B0072E2A7 /* MessageUI.framework */,
-				5DB29B5116B6C3A5000CF9FB /* libQCAR.a */,
 				5D5B77DA164AFB1A00C330CE /* Security.framework */,
 				5D5B77D8164AFB0E00C330CE /* CoreVideo.framework */,
 				5D5B77D6164AFAFF00C330CE /* SystemConfiguration.framework */,
@@ -502,7 +401,6 @@
 				E222D0BF16AE1DB600ABEB2C /* Video */,
 				E222D0C016AE1DC100ABEB2C /* Fonts */,
 				E2A1CBA1164351F6009F1CBA /* Images */,
-				5DA8717B164AF8030017B893 /* QCAR stuff */,
 				E222D0BE16AE15F200ABEB2C /* Custom Buttons */,
 				E2186A56164741EF00FEADC3 /* View Controllers */,
 				E2A1CB751643518F009F1CBA /* DPAppDelegate.h */,
@@ -627,8 +525,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DF97ED116948CC100046053 /* Dark_Potential.dat in Resources */,
-				5DF97ED216948CC100046053 /* Dark_Potential.xml in Resources */,
 				E2A1CB711643518F009F1CBA /* InfoPlist.strings in Resources */,
 				E2A1CB801643518F009F1CBA /* MainStoryboard.storyboard in Resources */,
 				E2A1CBA31643521A009F1CBA /* DarkPotential-AppIcon-57.png in Resources */,
@@ -645,7 +541,6 @@
 				E270AC29164A0155003E6A1F /* joel.png in Resources */,
 				E270AC2D164A015E003E6A1F /* steph.png in Resources */,
 				5DA3CFA7164C201600260F49 /* DPScreenshotViewController.xib in Resources */,
-				5DCC62F2167A44320069DE40 /* Reclaimer_squad_member.png in Resources */,
 				5D96EAB51694B85C008345DB /* bebas.ttf in Resources */,
 				5D5A108F1695C7F000B9CB17 /* info-fb.png in Resources */,
 				5D5A10911695C7F000B9CB17 /* info-twitter.png in Resources */,
@@ -664,8 +559,6 @@
 				5D469C1316AB6EF4000BD3FB /* button-launch-pmc.png in Resources */,
 				5D469C1516AB6EF4000BD3FB /* button-launch-reclaimers.png in Resources */,
 				5D469C1716AB6EF4000BD3FB /* button-launch-xlanthos.png in Resources */,
-				5D469C1A16AB7A21000BD3FB /* Xlanthos.png in Resources */,
-				5D469C1C16AB7DD3000BD3FB /* PMCSniper.png in Resources */,
 				5DAD1E0716ADCE4800833CD0 /* social-fb.png in Resources */,
 				5DAD1E0D16ADCE4800833CD0 /* social-mail.png in Resources */,
 				5DAD1E1316ADCE4800833CD0 /* social-save.png in Resources */,
@@ -684,8 +577,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DF97ECE16948BCF00046053 /* Dark_Potential.dat in Resources */,
-				5DF97ECF16948BCF00046053 /* Dark_Potential.xml in Resources */,
 				5D15DDEB1694B74200C942C6 /* bebas.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -718,15 +609,6 @@
 				E2A1CB831643518F009F1CBA /* DPMainMenuViewController.m in Sources */,
 				E21F25CF1644890900CA0971 /* DPInfoViewController.m in Sources */,
 				E2186A591647421400FEADC3 /* DPCharacterViewController.m in Sources */,
-				5DA8717F164AF81C0017B893 /* EAGLView.mm in Sources */,
-				5DA87195164AF86E0017B893 /* AR_EAGLView.mm in Sources */,
-				5DA87196164AF86E0017B893 /* ARParentViewController.mm in Sources */,
-				5DA87197164AF86E0017B893 /* ARViewController.mm in Sources */,
-				5DA87198164AF86E0017B893 /* OverlayView.m in Sources */,
-				5DA87199164AF86E0017B893 /* OverlayViewController.mm in Sources */,
-				5DA8719A164AF86E0017B893 /* QCARutils.mm in Sources */,
-				5DA8719D164AF86E0017B893 /* ShaderUtils.cpp in Sources */,
-				5DA8719E164AF86E0017B893 /* Texture.mm in Sources */,
 				5DA3CFA6164C201600260F49 /* DPScreenshotViewController.mm in Sources */,
 				5DF97EC7169483F300046053 /* DPBios.m in Sources */,
 				5D5A10991695CB4B00B9CB17 /* DPWebViewController.m in Sources */,

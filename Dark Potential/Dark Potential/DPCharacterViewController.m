@@ -7,7 +7,7 @@
 //
 
 #import "DPCharacterViewController.h"
-#import "ARParentViewController.h"
+//#import "ARParentViewController.h"
 #import "DPBios.h"
 
 @interface DPCharacterViewController ()
@@ -65,9 +65,9 @@
 {
     if ([segue.identifier isEqualToString:@"SegueToAR"])
     {
-        NSLog(@"SegueToAR");
+/*        NSLog(@"SegueToAR");
         ARParentViewController *arVC = segue.destinationViewController;
-        arVC.currentCharacter = self.currentCharacter;
+        arVC.currentCharacter = self.currentCharacter;*/
     }
 }
 
